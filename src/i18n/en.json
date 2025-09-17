@@ -1,0 +1,56 @@
+{
+  "app": {
+    "title": "PexEdu",
+    "description": "Match wildlife pairs, learn their traits, and build your discovery deck."
+  },
+  "controls": {
+    "groupLabel": "Animal group",
+    "gridLabel": "Number of cards",
+    "gridOption": "{{count}} cards",
+    "start": "Start new game",
+    "changeSetup": "Apply settings",
+    "restart": "Restart",
+    "availableCount": "{{count}} animals ready",
+    "language": "Language"
+  },
+  "status": {
+    "idle": "Pick a group and start the adventure.",
+    "inProgress": "Game in progress",
+    "completed": "Game completed"
+  },
+  "stats": {
+    "moves": "Moves",
+    "time": "Time",
+    "completed": "All pairs cleared!"
+  },
+  "game": {
+    "waitingForStart": "Select a group and grid size to begin.",
+    "tapToReveal": "Flip to reveal",
+    "returnToMenu": "Return to menu",
+    "continue": "Keep playing",
+    "attributes": {
+      "size": "Size",
+      "lifespan": "Life expectancy",
+      "habitat": "Habitat",
+      "funFact": "Fun fact"
+    }
+  },
+  "deck": {
+    "title": "Discovery deck",
+    "counter": "{{current}} / {{total}}",
+    "prev": "Previous",
+    "next": "Next",
+    "empty": "Find matches to start filling your deck."
+  },
+  "completion": {
+    "title": "Great memory!",
+    "subtitle": "You revealed every pair."
+  },
+  "groups": {
+    "mammals": "Mammals",
+    "fish": "Fish",
+    "amphibians": "Amphibians",
+    "reptiles": "Reptiles",
+    "birds": "Birds"
+  }
+}

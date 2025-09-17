@@ -1,0 +1,56 @@
+{
+  "app": {
+    "title": "PexEdu",
+    "description": "Spojujte dvojice zvířat, poznejte jejich vlastnosti a sbírejte karty do balíčku."
+  },
+  "controls": {
+    "groupLabel": "Skupina zvířat",
+    "gridLabel": "Počet karet",
+    "gridOption": "{{count}} karet",
+    "start": "Spustit novou hru",
+    "changeSetup": "Použít nastavení",
+    "restart": "Restartovat",
+    "availableCount": "{{count}} zvířat připraveno",
+    "language": "Jazyk"
+  },
+  "status": {
+    "idle": "Vyberte skupinu a začněte dobrodružství.",
+    "inProgress": "Hra právě probíhá",
+    "completed": "Hra je dokončena"
+  },
+  "stats": {
+    "moves": "Tahů",
+    "time": "Čas",
+    "completed": "Všechny dvojice odhalené!"
+  },
+  "game": {
+    "waitingForStart": "Vyberte skupinu a velikost pole, abyste mohli začít.",
+    "tapToReveal": "Otoč kartu",
+    "returnToMenu": "Zp?t do menu",
+    "continue": "Pokra?ovat ve h?e",
+    "attributes": {
+      "size": "Velikost",
+      "lifespan": "Délka života",
+      "habitat": "Prostředí",
+      "funFact": "Zajímavost"
+    }
+  },
+  "deck": {
+    "title": "Sbírka karet",
+    "counter": "{{current}} / {{total}}",
+    "prev": "Předchozí",
+    "next": "Další",
+    "empty": "Najděte dvojice a plňte balíček."
+  },
+  "completion": {
+    "title": "Skvělá paměť!",
+    "subtitle": "Odhalili jste všechny páry."
+  },
+  "groups": {
+    "mammals": "Savci",
+    "fish": "Ryby",
+    "amphibians": "Obojživelníci",
+    "reptiles": "Plazi",
+    "birds": "Ptáci"
+  }
+}

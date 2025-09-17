@@ -1,0 +1,75 @@
+- Application Type: Web-based educational Pexeso (memory match) game.
+- firs read this whole document then analyse best aproach and define steps to create the Application
+- Content:
+  - Animal groups: Mammals, Fish, Amphibians, Reptiles, Birds.
+  - Each group will have 30 animals.
+  - Each animal card will display:
+    - Image
+    - Size
+    - Life expectancy
+    - Habitat
+    - Fun fact
+- Data Sourcing:
+  - A script will be created to automate data collection.
+  - one script shall be created and edited, do not create multiple scripts with bug fixes always fix the main script
+  - Animal information (size, etc.) will be sourced from reliable internet sources using the animal's scientific name.
+  - The script will ensure:
+    - No duplicate animals within a group.
+    - No duplicate images.
+    - All animals have complete information (size, life expectancy, habitat, fun fact).
+  - keep consistency never have these entries as unknown, too generic, never guess you need to find relevant information on the internet or replace the animal completely if you do not find any relevant informations on the internet.
+  - Animal images and animal data will be downloaded from the britannica.com page search by the scientific name
+- Game Features:
+  - Player can choose the grid size: 12, 18, or 24 cards.
+  - Animals for the game will be chosen randomly from the available pool.
+  - When a player finds a match, the pair of cards is moved to a "deck".
+  - The player can review the collected cards in the deck, cycling through them.
+  - The player select which group of animals to play with.
+  - The game tracks the number of moves and time taken to complete the game.
+  - At the end of the game, the player is shown their performance (time and moves taken).
+  - The player can restart the game at any time.
+
+- UI/UX:
+  - Simple, modern, and clean user interface.
+  - Mobile-first design: The UI must be optimized for mobile screens, prioritizing vertical space and ensuring easy interaction.
+- Technical Requirements:
+  - Use best software engineering practices.
+  - use react for app structure (frameworks in this brackeckets are just for back up solution flask, djanngo, fastapi, react, vue, angular)
+  - The project structure should be prepared for future multi-language support (i18n).
+  - The app shall have two language mutations: English and Czech.
+  - The project should be structured for easy deployment to GitHub Pages.
+
+
+- Backup-and-Ignore Policy
+
+Scope: Non‑relevant, deprecated, or superseded files not required for app runtime or the single data script.
+Action: Rename such files to the same path with a .bak suffix (optionally timestamped: .bak.YYYYMMDD).
+Guarantee: The app and scripts must not read .bak files; all references must point to active files only.
+Tracking: .bak files are ignored by Git and excluded from commits and releases.
+Retention: Keep .bak files for a review window (e.g., 14–30 days). After that, delete them.
+Acceptance Criteria
+
+No .bak files are committed (verified by .gitignore and CI).
+The app builds and runs without any .bak references.
+The data script runs cleanly with no reads/writes to .bak paths.
+A short note is added to PRs when files are converted to .bak (why, when to delete).
+.gitignore (add)
+
+*.bak
+data/*.bak
+/.bak
+optional: ignore dated backups explicitly
+.bak.
+data/.bak.
+Suggested Workflow
+
+When deprecating a file: rename to file.ext.bak[.YYYYMMDD], update any code/docs to the new source, run app/tests.
+Open PR: note files moved to .bak and the planned deletion date.
+Periodic cleanup: remove .bak files older than the retention period.
+Optional CI Check (policy-only)
+
+Fail build if any .bak is referenced by src/** or scripts/** (static scan).
+Warn if .bak files are older than retention threshold.
+Restore Procedure
+
+To restore, rename file.ext.bak back to file.ext, re-run the app/script, and remove any conflicting newer copy as needed.
