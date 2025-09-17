@@ -1,4 +1,4 @@
-export type AnimalGroup = 'mammals' | 'fish' | 'amphibians' | 'reptiles' | 'birds';
+﻿export type AnimalGroup = 'mammals' | 'fish' | 'amphibians' | 'reptiles' | 'birds';
 
 export interface AnimalEntry {
   id: string;
@@ -11,6 +11,8 @@ export interface AnimalEntry {
   funFact: string;
   image: string;
 }
+
+export type AnimalLocaleOverrides = Partial<Pick<AnimalEntry, 'commonName' | 'size' | 'lifeExpectancy' | 'habitat' | 'funFact'>>;
 
 export interface GameSettings {
   group: AnimalGroup;

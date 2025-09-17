@@ -6,8 +6,8 @@
     "scientificName": "Loxodonta africana",
     "size": "Height: up to 3.3 m at the shoulder; Weight: 4,500-6,800 kg.",
     "lifeExpectancy": "60-70 years in the wild",
-    "habitat": "Once found throughout sub-Saharan Africa , the effects of poaching and habitat loss have caused the animal’s numbers and geographic range to decline to the point where conservation organizations have classified it as an endangered species .",
-    "funFact": "The African bush elephant is considered one of Africa’s “Big Five” animals with which the continent is associated.",
+    "habitat": "Savannas, grasslands, and woodlands across sub-Saharan Africa.",
+    "funFact": "Matriarch-led herds communicate using infrasonic rumbles that travel for kilometers.",
     "image": "/assets/animals/loxodonta_africana.jpg"
   },
   {
@@ -17,8 +17,8 @@
     "scientificName": "Balaenoptera musculus",
     "size": "Length: 24-30 m; Weight: up to 180 metric tons.",
     "lifeExpectancy": "80-90 years",
-    "habitat": "The blue whale is found alone or in small groups in all oceans, but populations in the Southern Hemisphere are much larger.",
-    "funFact": "Their hearts, which typically weigh about 180 kg (roughly 400 pounds), are the largest of any animal.",
+    "habitat": "Pelagic waters of all major oceans, migrating seasonally between feeding and breeding grounds.",
+    "funFact": "Its heart is roughly the size of a compact car and beats only a few times per minute while diving.",
     "image": "/assets/animals/balaenoptera_musculus.jpg"
   },
   {
@@ -28,8 +28,8 @@
     "scientificName": "Ailuropoda melanoleuca",
     "size": "Length: 1.2-1.9 m; Weight: 70-125 kg.",
     "lifeExpectancy": "20 years in the wild and up to 30 years with expert care",
-    "habitat": "Each animal confines its activities to a range of about 4 to 6 square km (1.5 to 2.3 square miles), but these home ranges often overlap substantially.",
-    "funFact": "giant panda ,  ( Ailuropoda melanoleuca ),  bear with striking black-and-white coloration inhabiting bamboo forests in the mountains of central China .",
+    "habitat": "Cool temperate bamboo forests in China's Sichuan, Shaanxi, and Gansu provinces.",
+    "funFact": "A panda's pseudo-thumb is an enlarged wrist bone that lets it deftly strip bamboo stalks.",
     "image": "/assets/animals/ailuropoda_melanoleuca.jpg"
   },
   {
@@ -39,8 +39,8 @@
     "scientificName": "Panthera tigris tigris",
     "size": "Length: 2.7-3.1 m including tail; Weight: 180-260 kg for males.",
     "lifeExpectancy": "8-10 years in the wild",
-    "habitat": "The Bengal tiger’s appearance is distinguished from other tiger subspecies by its orange coat accented by prominent brownish-to-black stripes; a rare white-coated variant of the subspecies (the white tiger ) also exists.",
-    "funFact": "While some 2,000–2,500 remain in the wild, several thousand more are thought to reside in zoos and private reserves around the world.",
+    "habitat": "Mangroves, grasslands, and forests across India, Bangladesh, Nepal, and Bhutan.",
+    "funFact": "Each tiger's stripe pattern is unique, working like a fingerprint when stalking prey through cover.",
     "image": "/assets/animals/panthera_tigris_tigris.jpg"
   },
   {
@@ -50,8 +50,8 @@
     "scientificName": "Canis lupus",
     "size": "Length: 1.2-1.6 m; Weight: 30-50 kg depending on region.",
     "lifeExpectancy": "6-8 years in the wild",
-    "habitat": "The largest wolves are found in west-central Canada , Alaska , and across northern Asia .",
-    "funFact": "It inhabits vast areas of the Northern Hemisphere.",
+    "habitat": "Forests, tundra, deserts, and mountains across North America and Eurasia.",
+    "funFact": "Wolves' howls can carry over 10 km, coordinating pack members when hunting or defending territory.",
     "image": "/assets/animals/canis_lupus.jpg"
   },
   {
@@ -61,8 +61,8 @@
     "scientificName": "Ursus maritimus",
     "size": "Length: 2.4-3 m; Weight: 350-600 kg for males.",
     "lifeExpectancy": "20-25 years in the wild",
-    "habitat": "A polar bear is a great white northern bear (family Ursidae) found throughout the Arctic region.",
-    "funFact": "Except for one subspecies of grizzly bear , the polar bear is the largest and most powerful carnivore on land.",
+    "habitat": "Arctic sea ice, coastal fjords, and islands surrounding the North Pole.",
+    "funFact": "Hollow, translucent fur and a thick blubber layer insulate polar bears even in minus 40°C storms.",
     "image": "/assets/animals/ursus_maritimus.jpg"
   },
   {
@@ -72,8 +72,8 @@
     "scientificName": "Phascolarctos cinereus",
     "size": "Length: 60-85 cm; Weight: 4-15 kg depending on latitude.",
     "lifeExpectancy": "10-12 years in the wild",
-    "habitat": "Their habitats require the eucalyptus trees on which they feed and in which they live.",
-    "funFact": "Koalas can live to about 15 years of age in the wild and somewhat longer in captivity.",
+    "habitat": "Eucalyptus woodlands along Australia's eastern and southern coasts.",
+    "funFact": "Koalas sleep up to 20 hours per day to conserve energy for digesting fibrous eucalyptus leaves.",
     "image": "/assets/animals/phascolarctos_cinereus.jpg"
   },
   {
@@ -83,8 +83,8 @@
     "scientificName": "Osphranter rufus",
     "size": "Body length: 1.3-1.6 m; Weight: 55-90 kg for males.",
     "lifeExpectancy": "8-12 years in the wild",
-    "habitat": "This seems to be related to the storage of elastic strain energy in its tendons and muscles.",
-    "funFact": "In addition, the heavy tail swings downward as…",
+    "habitat": "Open plains, grasslands, and deserts across central Australia.",
+    "funFact": "Powerful hind legs let males bound 9 m in a single leap while the tail works as a balancing third leg.",
     "image": "/assets/animals/osphranter_rufus.jpg"
   },
   {
@@ -94,8 +94,8 @@
     "scientificName": "Pongo pygmaeus",
     "size": "Arm span: up to 2.0 m; Weight: 35-80 kg.",
     "lifeExpectancy": "30-40 years in the wild",
-    "habitat": "The Bornean orangutan ( Pongo pygmaeus ) inhabits large portions of Borneo, whereas the Sumatran orangutan ( P.",
-    "funFact": "abelii ) and the Tapanuli orangutan ( P.",
+    "habitat": "Lowland tropical rainforests of Borneo.",
+    "funFact": "Orangutans build a fresh nest of branches and leaves high in the canopy every evening.",
     "image": "/assets/animals/pongo_pygmaeus.jpg"
   },
   {
@@ -105,8 +105,8 @@
     "scientificName": "Hippopotamus amphibius",
     "size": "Length: 3.3-5 m; Weight: 1,400-3,200 kg.",
     "lifeExpectancy": "40-50 years",
-    "habitat": "Rare battles may erupt when strange bulls invade territories in the mating season.",
-    "funFact": "hippopotamus ,  ( Hippopotamus amphibius ),  amphibious African ungulate mammal .",
+    "habitat": "Slow-moving rivers, lakes, and wetlands across sub-Saharan Africa.",
+    "funFact": "Hippos secrete an orange 'blood sweat' that acts as both sunscreen and antibacterial protection.",
     "image": "/assets/animals/hippopotamus_amphibius.jpg"
   },
   {
@@ -116,8 +116,8 @@
     "scientificName": "Panthera leo",
     "size": "Length: 1.7-2.5 m excluding tail; Weight: 150-250 kg for males.",
     "lifeExpectancy": "10-14 years in the wild",
-    "habitat": "Lions live in a variety of habitats but prefer grassland, savanna, dense scrub, and open woodland.",
-    "funFact": "In captivity, they may live over 25 years.",
+    "habitat": "Savannas and open woodlands across eastern and southern Africa.",
+    "funFact": "Lions are the only truly social big cats, living in prides that cooperatively raise cubs.",
     "image": "/assets/animals/panthera_leo.jpg"
   },
   {
@@ -127,8 +127,8 @@
     "scientificName": "Acinonyx jubatus",
     "size": "Length: 1.1-1.5 m; Weight: 35-65 kg.",
     "lifeExpectancy": "10-12 years in the wild",
-    "habitat": "Cheetahs inhabit a wide variety of habitats, including the dry, open country and grasslands where they are most often seen, as well as areas of denser vegetation and rocky upland terrain.",
-    "funFact": "Nearly all the cheetahs remaining in the wild live in Africa.",
+    "habitat": "Open grasslands and semi-arid plains of sub-Saharan Africa.",
+    "funFact": "Semi-retractable claws and a flexible spine let cheetahs sprint over 100 km/h.",
     "image": "/assets/animals/acinonyx_jubatus.jpg"
   },
   {
@@ -138,8 +138,8 @@
     "scientificName": "Gorilla beringei beringei",
     "size": "Height: 1.4-1.8 m standing; Weight: 120-195 kg for adult males.",
     "lifeExpectancy": "35-40 years",
-    "habitat": "beringei beringei ), found in the montane rainforests and bamboo forests of the highland terrain north and east of Lake Kivu, near the borders of Uganda, Rwanda, and Congo (Kinshasa).",
-    "funFact": "…the Congo (Kinshasa), and the mountain gorilla ( G.",
+    "habitat": "Montane cloud forests of the Virunga Massif and Bwindi Impenetrable Forest.",
+    "funFact": "They build fresh foliage nests on the ground every night after foraging.",
     "image": "/assets/animals/gorilla_beringei_beringei.jpg"
   },
   {
@@ -149,8 +149,8 @@
     "scientificName": "Panthera uncia",
     "size": "Body length: 1.0-1.3 m; Weight: 32-55 kg.",
     "lifeExpectancy": "12-15 years in the wild",
-    "habitat": "Their wild prey has decreased as herding and ranching activities have expanded throughout their geographic range .",
-    "funFact": "The snow leopard inhabits the mountains of central Asia and the Indian subcontinent , ranging from an elevation of about 1,800 metres (about 6,000 feet) in the winter to about 5,500 metres (18,000 feet) in the summer.",
+    "habitat": "High-altitude cliffs and alpine meadows across Central and South Asia.",
+    "funFact": "A snow leopard's tail can be as long as its body and wraps around like a scarf for warmth.",
     "image": "/assets/animals/panthera_uncia.jpg"
   },
   {
@@ -160,8 +160,8 @@
     "scientificName": "Vulpes lagopus",
     "size": "Length: 75-110 cm including tail; Weight: 3-8 kg.",
     "lifeExpectancy": "3-6 years in the wild",
-    "habitat": "Arctic fox ,  ( Vulpes lagopus ),  northern fox of the family Canidae , found throughout the Arctic region, usually on tundra or mountains near the sea.",
-    "funFact": "As an adaptation to the climate, Arctic foxes have short rounded ears, a short muzzle, and fur-covered soles.",
+    "habitat": "Tundra and pack ice regions across the circumpolar Arctic.",
+    "funFact": "Its dense coat changes from brown in summer to white in winter for camouflage.",
     "image": "/assets/animals/vulpes_lagopus.jpg"
   },
   {
@@ -171,8 +171,8 @@
     "scientificName": "Ornithorhynchus anatinus",
     "size": "Length: 43-50 cm; Weight: 0.7-2.4 kg.",
     "lifeExpectancy": "15-20 years",
-    "habitat": "The platypus is found in terrain ranging from the high country of Tasmania and the Australian Alps to lowland areas close to the sea.",
-    "funFact": "Adding to its distinctive appearance are conspicuous white patches of fur under the eyes.",
+    "habitat": "Freshwater streams, billabongs, and rivers of eastern Australia and Tasmania.",
+    "funFact": "Male platypuses bear venomous ankle spurs delivering powerful defensive stings.",
     "image": "/assets/animals/ornithorhynchus_anatinus.jpg"
   },
   {
@@ -182,8 +182,8 @@
     "scientificName": "Tursiops truncatus",
     "size": "Length: 2.5-3.8 m; Weight: 200-500 kg.",
     "lifeExpectancy": "40-50 years",
-    "habitat": "The common bottlenose dolphin ( Tursiops truncatus ), which is the most widely recognized dolphin species, is found worldwide in warm and temperate seas.",
-    "funFact": "It has also become the subject of scientific studies because of its intelligence and ability to…",
+    "habitat": "Coastal and offshore waters of temperate and tropical oceans worldwide.",
+    "funFact": "Each dolphin develops a signature whistle that acts like a personal name.",
     "image": "/assets/animals/tursiops_truncatus.jpg"
   },
   {
@@ -193,8 +193,8 @@
     "scientificName": "Bradypus variegatus",
     "size": "Length: 42-80 cm; Weight: 3.5-6 kg.",
     "lifeExpectancy": "20-30 years",
-    "habitat": "tridactylus ) is found in northern South America; the maned sloth ( B.",
-    "funFact": "The brown-throated three-toed sloth ( B.",
+    "habitat": "Lowland rainforests from Honduras through northern Argentina.",
+    "funFact": "Algae grow in its shaggy fur, providing camouflage and extra nutrients when groomed.",
     "image": "/assets/animals/bradypus_variegatus.jpg"
   },
   {
@@ -204,8 +204,8 @@
     "scientificName": "Myrmecophaga tridactyla",
     "size": "Length: 1.8-2.4 m including tail; Weight: 30-50 kg.",
     "lifeExpectancy": "14-16 years in the wild",
-    "habitat": "Native to grasslands, savannas, and humid forests from Central to South America.",
-    "funFact": "A giant anteater uses a two foot tongue that flicks 160 times per minute to lap up ants and termites.",
+    "habitat": "Savannas, wetlands, and tropical forests of Central and South America.",
+    "funFact": "Its tongue can flick 160 times per minute to lap up ants and termites.",
     "image": "/assets/animals/myrmecophaga_tridactyla.jpg"
   },
   {
@@ -215,8 +215,8 @@
     "scientificName": "Vombatus ursinus",
     "size": "Length: 70-110 cm; Weight: 20-35 kg.",
     "lifeExpectancy": "15 years in the wild and up to 30 in care",
-    "habitat": "Inhabits forest edges, heathlands, and alpine regions of southeastern Australia and Tasmania.",
-    "funFact": "Wombats produce cube shaped droppings that stay put on logs and rocks to mark territory.",
+    "habitat": "Burrow systems in forests and heathlands of southeastern Australia.",
+    "funFact": "Wombats produce cube-shaped scat that stacks neatly to mark territory.",
     "image": "/assets/animals/vombatus_ursinus.jpg"
   },
   {
@@ -226,8 +226,8 @@
     "scientificName": "Lycaon pictus",
     "size": "Length: 75-110 cm; Weight: 20-30 kg.",
     "lifeExpectancy": "9-11 years in the wild",
-    "habitat": "It hunts in packs of 15 to 60 or more and is found in parts of Africa south and east of the Sahara, particularly in grasslands.",
-    "funFact": "The African wild dog is about 76–102 cm (30–41 inches) long, exclusive of its 31–41-cm tail, stands about 60 cm (24 inches) tall at the shoulder, and weighs about 16–23 kg (35–50 pounds).",
+    "habitat": "Savannas, open woodlands, and scrublands of sub-Saharan Africa.",
+    "funFact": "Packs share food by regurgitating meals for pups and injured members.",
     "image": "/assets/animals/lycaon_pictus.jpg"
   },
   {
@@ -237,8 +237,8 @@
     "scientificName": "Alces alces",
     "size": "Height: up to 2.1 m at the shoulder; Weight: 380-700 kg.",
     "lifeExpectancy": "15-20 years",
-    "habitat": "The largest moose specimens are found in Alaska and eastern Siberia; there bulls weigh 600 kg (1,300 pounds) and stand 2 metres (7 feet) tall at the shoulder.",
-    "funFact": "The name moose is common in North America ; it is derived from the word moosh (“stripper and eater of bark”) in the Algonquian language of the Innu people of Quebec , Canada .",
+    "habitat": "Boreal forests, marshes, and tundra edges of northern North America and Eurasia.",
+    "funFact": "Bulls regrow massive palmate antlers every year that can span wider than 1.8 m.",
     "image": "/assets/animals/alces_alces.jpg"
   },
   {
@@ -248,8 +248,8 @@
     "scientificName": "Bison bison",
     "size": "Length: 2.1-3.5 m; Weight: 318-1,000 kg.",
     "lifeExpectancy": "15-20 years in the wild",
-    "habitat": "Much huntable land disappeared as industrial advance eliminated wildlife habitats and new farming methods reduced hedgerows and plowed under stubble soon after harvest,…",
-    "funFact": "Both species were drastically reduced in numbers by hunting and now occupy small protected areas…",
+    "habitat": "Prairies, plains, and river valleys across North America.",
+    "funFact": "Despite their bulk, bison can pivot quickly and sprint up to 55 km/h.",
     "image": "/assets/animals/bison_bison.jpg"
   },
   {
@@ -259,8 +259,8 @@
     "scientificName": "Suricata suricatta",
     "size": "Length: 25-35 cm; Weight: 0.7-1 kg.",
     "lifeExpectancy": "7-10 years in the wild",
-    "habitat": "Meerkats live in cooperative packs of 3 to 25 with partially overlapping home ranges of a few square kilometres, which they mark with secretions of the anal glands.",
-    "funFact": "The meerkat is slender and has a pointed little face, tiny ears, and black eye patches.",
+    "habitat": "Arid scrublands and savannas of southern Africa.",
+    "funFact": "Groups take turns standing guard and use distinct alarm calls for different predators.",
     "image": "/assets/animals/suricata_suricatta.jpg"
   },
   {
@@ -270,8 +270,8 @@
     "scientificName": "Vulpes vulpes",
     "size": "Length: 90-105 cm including tail; Weight: 3.5-8 kg.",
     "lifeExpectancy": "3-5 years in the wild",
-    "habitat": "In North America, black and silver coats are found, with a variable amount of white or white-banded hair occurring in a black coat, and these animals are sometimes called silver foxes .",
-    "funFact": "It has the largest natural distribution of any land mammal except human beings.",
+    "habitat": "Forests, farmlands, tundra edges, and urban fringes across the Northern Hemisphere.",
+    "funFact": "Red foxes pinpoint prey beneath snow by listening for vibrations before making a high pounce.",
     "image": "/assets/animals/vulpes_vulpes.jpg"
   },
   {
@@ -281,8 +281,8 @@
     "scientificName": "Okapia johnstoni",
     "size": "Height: 1.5-2 m at the shoulder; Weight: 200-350 kg.",
     "lifeExpectancy": "20-30 years",
-    "habitat": "Found in the rainforests of the Congo region, the okapi was unknown to science until 1901, when British explorer Sir Harry Hamilton Johnston sent the first bits of hide to the British Museum .",
-    "funFact": "However, British American explorer Sir Henry Morton Stanley had made the first report of the animal as early as 1890.",
+    "habitat": "Dense understory of the Ituri rainforest in the Democratic Republic of Congo.",
+    "funFact": "Its prehensile tongue is so long it can clean its eyelids and ears.",
     "image": "/assets/animals/okapia_johnstoni.jpg"
   },
   {
@@ -292,8 +292,8 @@
     "scientificName": "Trichechus manatus",
     "size": "Length: 2.7-4 m; Weight: 400-1,300 kg.",
     "lifeExpectancy": "40-60 years",
-    "habitat": "It also occurs around the Greater Antilles islands of the Caribbean",
-    "funFact": "Today’s West Indian manatee has changed little compared with its ancestors of the past few million years.",
+    "habitat": "Warm coastal shallows, estuaries, rivers, and freshwater springs in the Caribbean and southeastern United States.",
+    "funFact": "Manatees graze up to 10% of their body weight in seagrass daily to fuel their slow metabolism.",
     "image": "/assets/animals/trichechus_manatus.jpg"
   },
   {
@@ -303,8 +303,8 @@
     "scientificName": "Manis pentadactyla",
     "size": "Length: 60-80 cm; Weight: 2-7 kg.",
     "lifeExpectancy": "13-20 years (wild estimate)",
-    "habitat": "gigantea , also classified as Smutsia gigantea ) of Africa, are terrestrial.",
-    "funFact": "All are nocturnal and able to swim a little.",
+    "habitat": "Forests, bamboo groves, and farmlands across southern China and Southeast Asia.",
+    "funFact": "Overlapping keratin scales armor the pangolin, letting it curl into a near-impenetrable ball.",
     "image": "/assets/animals/manis_pentadactyla.jpg"
   },
   {
@@ -314,8 +314,8 @@
     "scientificName": "Sarcophilus harrisii",
     "size": "Length: 52-80 cm; Weight: 6-8 kg.",
     "lifeExpectancy": "5-6 years in the wild",
-    "habitat": "The Tasmanian devil is named for the Australian island-state of Tasmania , its only native habitat.",
-    "funFact": "The coat is mainly black, and there is a whitish breast mark; sometimes the rump and sides are white-marked as well.",
+    "habitat": "Coastal heath, forests, and agricultural areas on the island of Tasmania.",
+    "funFact": "It has the strongest bite force relative to body size among living mammals.",
     "image": "/assets/animals/sarcophilus_harrisii.jpg"
   },
   {
@@ -325,8 +325,8 @@
     "scientificName": "Monodon monoceros",
     "size": "Length: 4-5.5 m; Weight: 800-1,600 kg.",
     "lifeExpectancy": "Over 50 years",
-    "habitat": "narwhal ,  ( Monodon monoceros ),  a small toothed whale found along coasts and in rivers throughout the Arctic .",
-    "funFact": "Males possess a long straight tusk that projects forward from above the mouth.",
+    "habitat": "Cold Arctic waters around Canada, Greenland, Svalbard, and Russia.",
+    "funFact": "Males grow a spiraled canine tooth up to 3 m long packed with sensory nerve endings.",
     "image": "/assets/animals/monodon_monoceros.jpg"
   },
   {
@@ -336,8 +336,8 @@
     "scientificName": "Amphiprion ocellaris",
     "size": "Length: up to 11 cm.",
     "lifeExpectancy": "6-10 years in the wild",
-    "habitat": "The common clown fish is found on coral reefs in the tropical Pacific and Indian oceans from northwestern Australia , Southeast Asia , and Indonesia to Taiwan and Japan’s Ryukyu Islands .",
-    "funFact": "The species achieved popular recognition through its depiction in the animated feature film Finding Nemo (2003).",
+    "habitat": "Warm shallow reefs of the Indo-Pacific, living symbiotically among sea anemones.",
+    "funFact": "All clownfish hatch as males; the dominant fish can change sex to become the breeding female.",
     "image": "/assets/animals/amphiprion_ocellaris.jpg"
   },
   {
@@ -347,8 +347,8 @@
     "scientificName": "Carcharodon carcharias",
     "size": "Length: 4-6 m; Weight: 680-1,100 kg.",
     "lifeExpectancy": "Up to 70 years",
-    "habitat": "White sharks have a complex circulatory system that conserves heat, and this heat is distributed throughout the body to warm its critical regions, giving the white shark a body temperature higher than the temperature of the surrounding water.",
-    "funFact": "This adaptation is called regional endothermy, which is a type of warm-bloodedness.",
+    "habitat": "Temperate coastal and offshore waters worldwide.",
+    "funFact": "Great whites sense faint electrical fields using ampullae of Lorenzini to locate prey.",
     "image": "/assets/animals/carcharodon_carcharias.jpg"
   },
   {
@@ -358,8 +358,8 @@
     "scientificName": "Rhincodon typus",
     "size": "Length: commonly 10-12 m; Weight: up to 20 tonnes.",
     "lifeExpectancy": "80-130 years",
-    "habitat": "Whale sharks are found in marine environments worldwide but mainly in tropical oceans .",
-    "funFact": "whale shark ,  ( Rhincodon typus ),  gigantic but harmless shark (family Rhincodontidae) that is the largest living fish .",
+    "habitat": "Tropical and warm-temperate oceans, frequenting plankton-rich surface waters.",
+    "funFact": "Despite its size, it filter-feeds on plankton through a mouth wider than 1.5 m.",
     "image": "/assets/animals/rhincodon_typus.jpg"
   },
   {
@@ -369,8 +369,8 @@
     "scientificName": "Paracanthurus hepatus",
     "size": "Length: up to 30 cm.",
     "lifeExpectancy": "8-20 years",
-    "habitat": "The members of the family are large-mouthed fish , deep-bodied but thin from side to side.",
-    "funFact": "The John Dory ( Zenopsis conchifera ), a food fish of the Atlantic and Mediterranean, is one of the better-known species.",
+    "habitat": "Coral reefs of the Indo-Pacific from East Africa to Micronesia.",
+    "funFact": "A scalpel-like spine near its tail flicks out to deter predators.",
     "image": "/assets/animals/paracanthurus_hepatus.jpg"
   },
   {
@@ -380,8 +380,8 @@
     "scientificName": "Salmo salar",
     "size": "Length: 71-76 cm; Weight: 3.6-5.4 kg, larger in northern rivers.",
     "lifeExpectancy": "4-6 years, with some surviving over a decade",
-    "habitat": "Found on both sides of the Atlantic Ocean , it enters streams in the fall to spawn .",
-    "funFact": "After spawning, adults are called kelts and may live to spawn again.",
+    "habitat": "North Atlantic Ocean and the freshwater rivers used for spawning migrations.",
+    "funFact": "Atlantic salmon use the Earth's magnetic field and scent cues to return to their natal streams.",
     "image": "/assets/animals/salmo_salar.jpg"
   },
   {
@@ -391,8 +391,8 @@
     "scientificName": "Pterois volitans",
     "size": "Length: 30-38 cm.",
     "lifeExpectancy": "10-15 years",
-    "habitat": "Native to Indo Pacific coral reefs but invasive across the western Atlantic and Caribbean.",
-    "funFact": "A single lionfish can wipe out most juvenile fish on a reef thanks to its ambush hunting style.",
+    "habitat": "Tropical Indo-Pacific reefs; introduced populations in the western Atlantic and Caribbean.",
+    "funFact": "Venomous dorsal spines deliver a painful sting, and striped fins confuse would-be predators.",
     "image": "/assets/animals/pterois_volitans.jpg"
   },
   {
@@ -402,8 +402,8 @@
     "scientificName": "Mobula birostris",
     "size": "Wingspan: 4-7 m; Weight: up to 1,350 kg.",
     "lifeExpectancy": "40-50 years",
-    "habitat": "Inhabit tropical and subtropical oceans, cruising between productive coastal and offshore waters.",
-    "funFact": "Manta rays are known for leaping clear of the sea in spectacular flips and belly flops.",
+    "habitat": "Open tropical and subtropical oceans, often at productive upwelling sites.",
+    "funFact": "Manta rays make high leaps clear of the water during social and mating displays.",
     "image": "/assets/animals/mobula_birostris.jpg"
   },
   {
@@ -413,8 +413,8 @@
     "scientificName": "Hippocampus kuda",
     "size": "Length: 12-17 cm.",
     "lifeExpectancy": "1-5 years",
-    "habitat": "Seahorses are found in shallow coastal waters in latitudes from about 52° N to 45° S.",
-    "funFact": "Their habitats include coral reefs , mangroves , sea grass beds, and estuaries .",
+    "habitat": "Seagrass beds, mangroves, and sheltered coastal reefs across the Indo-Pacific.",
+    "funFact": "Male seahorses brood fertilized eggs in a pouch and give birth to miniature young.",
     "image": "/assets/animals/hippocampus_kuda.jpg"
   },
   {
@@ -424,8 +424,8 @@
     "scientificName": "Takifugu rubripes",
     "size": "Length: 30-40 cm.",
     "lifeExpectancy": "About 10 years",
-    "habitat": "Found in bays, estuaries, and coastal waters around Japan, Korea, and China.",
-    "funFact": "Their organs contain tetrodotoxin so licensed chefs prepare fugu to avoid deadly poisoning.",
+    "habitat": "Coastal waters of Japan, Korea, and China.",
+    "funFact": "Organs contain tetrodotoxin, a neurotoxin hundreds of times stronger than cyanide.",
     "image": "/assets/animals/takifugu_rubripes.jpg"
   },
   {
@@ -435,8 +435,8 @@
     "scientificName": "Xiphias gladius",
     "size": "Length: 3-4.5 m; Weight: 90-650 kg.",
     "lifeExpectancy": "Up to 9 years",
-    "habitat": "The swordfish, an elongated, scaleless fish, has a tall dorsal fin, and a long sword , used in slashing at prey fishes, extends from its snout.",
-    "funFact": "The sword is flat, rather than rounded as in marlins and other spear-nosed fishes, and has thus given rise to the name broadbill.",
+    "habitat": "Tropical and temperate oceans from the surface to over 650 m deep.",
+    "funFact": "Heat-exchanging muscles warm its eyes and brain for sharp vision during deep chases.",
     "image": "/assets/animals/xiphias_gladius.jpg"
   },
   {
@@ -446,8 +446,8 @@
     "scientificName": "Electrophorus electricus",
     "size": "Length: 1.75-2.5 m; Weight: up to 20 kg.",
     "lifeExpectancy": "Around 15 years",
-    "habitat": "…of this group is the electric eel ( Electrophorus electricus ).",
-    "funFact": "The electrical organs, three on each side of the body, are derived from modified muscle tissue.",
+    "habitat": "Slow-moving rivers, floodplains, and swamps of the Amazon and Orinoco basins.",
+    "funFact": "Specialized electric organs can discharge shocks exceeding 600 volts to stun prey.",
     "image": "/assets/animals/electrophorus_electricus.jpg"
   },
   {
@@ -457,8 +457,8 @@
     "scientificName": "Latimeria chalumnae",
     "size": "Length: 1.5-2 m; Weight: 80-100 kg.",
     "lifeExpectancy": "Up to 60 years",
-    "habitat": "Between 1952 and 2000, about 200 specimens of Latimeria were caught on…",
-    "funFact": "…1938 a living member ( Latimeria chalumnae ) was netted in the Indian Ocean near the southern coast of Africa.",
+    "habitat": "Deep volcanic slopes off the Comoros Islands, South Africa, and Indonesia.",
+    "funFact": "Thought extinct until 1938, coelacanths have limb-like fins that hint at early tetrapod evolution.",
     "image": "/assets/animals/latimeria_chalumnae.jpg"
   },
   {
@@ -468,8 +468,8 @@
     "scientificName": "Mola mola",
     "size": "Length: 1.8-2.5 m; Weight: up to 2,200 kg.",
     "lifeExpectancy": "At least 10 years in the wild",
-    "habitat": "With the exception of the relatively deepwater Triacanthodidae and Triodontidae, the members of this order are usually found in waters less than about 65 metres (200 feet)…",
-    "funFact": "…and the ocean sunfish ( Mola mola ), which may weigh over 900 kg (1 ton).",
+    "habitat": "Temperate and tropical oceans, basking near the surface and diving for jellyfish.",
+    "funFact": "A female sunfish can release more than 300 million eggs in a single spawning.",
     "image": "/assets/animals/mola_mola.jpg"
   },
   {
@@ -479,8 +479,8 @@
     "scientificName": "Arapaima gigas",
     "size": "Length: 2-3 m; Weight: up to 200 kg.",
     "lifeExpectancy": "15-20 years",
-    "habitat": "The fish has a peculiar profile in that the front of the body is long and narrow, whereas the rear is flat and possesses only a rudimentary , rounded tail.",
-    "funFact": "The pirarucu is a fish belonging to a primitive group of carnivorous bony-tongued fishes, the Osteoglossidae , that crush their prey with a large tongue studded with teeth.",
+    "habitat": "Oxygen-poor floodplain lakes and rivers of the Amazon Basin.",
+    "funFact": "Arapaimas surface to gulp air using a lung-like swim bladder, letting them survive in stagnant water.",
     "image": "/assets/animals/arapaima_gigas.jpg"
   },
   {
@@ -490,8 +490,8 @@
     "scientificName": "Betta splendens",
     "size": "Length: 6-8 cm.",
     "lifeExpectancy": "2-5 years",
-    "habitat": "The Siamese fighting fish, a native of Thailand , was domesticated there for use in contests.",
-    "funFact": "Combat consists mainly of fin nipping and is accompanied by a display of extended gill covers, spread fins, and intensified colouring.",
+    "habitat": "Shallow rice paddies, canals, and floodplains of Thailand and Cambodia.",
+    "funFact": "Males build bubble nests on the water surface and guard the eggs inside.",
     "image": "/assets/animals/betta_splendens.jpg"
   },
   {
@@ -501,8 +501,8 @@
     "scientificName": "Thunnus thynnus",
     "size": "Length: 2-3 m; Weight: 225-450 kg.",
     "lifeExpectancy": "35-40 years",
-    "habitat": "Generally, most percoid fishes fall within the range of 30 to 250…",
-    "funFact": "Populations of red tuna ( Thunnus thynnus ) occur throughout the Mediterranean Sea and the eastern Atlantic.",
+    "habitat": "North Atlantic Ocean and the Mediterranean Sea, undertaking long-distance migrations.",
+    "funFact": "Countercurrent circulation lets bluefin maintain body temperatures above ambient seawater.",
     "image": "/assets/animals/thunnus_thynnus.jpg"
   },
   {
@@ -512,8 +512,8 @@
     "scientificName": "Mitsukurina owstoni",
     "size": "Length: 3-4 m.",
     "lifeExpectancy": "Estimated at 40 years",
-    "habitat": "Although captured sporadically worldwide, most specimens have been taken from deep marine waters near Japan.",
-    "funFact": "The goblin shark can sling its jaws forward like a slingshot to snare prey in the darkness of the deep sea.",
+    "habitat": "Deep continental slopes worldwide, typically below 100 m.",
+    "funFact": "It catapults its protrusible jaws forward to snare fish and squid in the deep sea.",
     "image": "/assets/animals/mitsukurina_owstoni.jpg"
   },
   {
@@ -523,8 +523,8 @@
     "scientificName": "Melanocetus johnsonii",
     "size": "Length: up to 20 cm for females; males are dwarf-sized.",
     "lifeExpectancy": "Unknown, estimated 15-30 years",
-    "habitat": "However, most anglerfish are about 30 centimeters (1 foot) long.",
-    "funFact": "Deep-sea anglerfish can grow up to 1.2 meters (4 feet) in length.",
+    "habitat": "Bathypelagic zones of the Atlantic and Pacific Oceans.",
+    "funFact": "Females lure prey with a glowing lure while tiny males fuse onto them for life.",
     "image": "/assets/animals/melanocetus_johnsonii.jpg"
   },
   {
@@ -534,8 +534,8 @@
     "scientificName": "Exocoetus volitans",
     "size": "Length: 20-25 cm.",
     "lifeExpectancy": "Up to 5 years",
-    "habitat": "It is an epipelagic species gliding above tropical and subtropical seas worldwide.",
-    "funFact": "Glides of 200 metres or more let flying fish escape pursuing tuna and dolphins.",
+    "habitat": "Warm tropical and subtropical oceans near the surface.",
+    "funFact": "They can glide over 200 m using enlarged pectoral fins to escape predators.",
     "image": "/assets/animals/exocoetus_volitans.jpg"
   },
   {
@@ -545,8 +545,8 @@
     "scientificName": "Gadus morhua",
     "size": "Length: commonly 61–76 cm; Weight: up to 40 kg in older individuals.",
     "lifeExpectancy": "Up to 25 years in cold northern waters",
-    "habitat": "Historically, the term cod referred to Atlantic cod ( Gadus morhua ), a cold-water fish found on both sides of the North Atlantic .",
-    "funFact": "In the present day, the term applies to all members of the genus Gadus ; however, it may be used colloquially to refer to select members of the order Perciformes .",
+    "habitat": "North Atlantic continental shelves, from Greenland and the Barents Sea to Cape Hatteras.",
+    "funFact": "Atlantic cod form immense winter spawning aggregations that historically drew fleets to Newfoundland and Iceland.",
     "image": "/assets/animals/gadus_morhua.jpg"
   },
   {
@@ -556,8 +556,8 @@
     "scientificName": "Oncorhynchus mykiss",
     "size": "Length: 50-76 cm; Weight: 2-7 kg.",
     "lifeExpectancy": "6-11 years",
-    "habitat": "A brightly coloured fish of lakes and swift streams, it is covered with small black spots and has a reddish band along either side.",
-    "funFact": "The steelhead , an oceangoing form, is large and bluish and is also a prized game fish.",
+    "habitat": "Cold freshwater rivers, lakes, and coastal streams in North America; widely introduced elsewhere.",
+    "funFact": "Some populations go to sea as steelhead before returning to their natal rivers to spawn.",
     "image": "/assets/animals/oncorhynchus_mykiss.jpg"
   },
   {
@@ -567,8 +567,8 @@
     "scientificName": "Somniosus microcephalus",
     "size": "Length: 4-7 m; Weight: up to 1,000 kg.",
     "lifeExpectancy": "Estimated 250-400 years",
-    "habitat": "The species is primarily found in the cold-water environments of the Arctic Ocean and North Atlantic, from Baffin Bay eastward to the Barents Sea , but its range also extends southward to the North Sea and the waters adjacent to the Eastern Seaboard of the United States .",
-    "funFact": "Greenland shark ,  ( Somniosus microcephalus ),  member of the sleeper shark family Somniosidae (order Squaliformes, which also includes the dogfish family, Squalidae) also known for being the world’s longest-lived vertebrate .",
+    "habitat": "Deep, cold waters of the North Atlantic and Arctic Oceans.",
+    "funFact": "Greenland sharks grow less than 1 cm per year and are among the longest-lived vertebrates.",
     "image": "/assets/animals/somniosus_microcephalus.jpg"
   },
   {
@@ -578,8 +578,8 @@
     "scientificName": "Epinephelus itajara",
     "size": "Length: up to 2.5 m; Weight: 360 kg.",
     "lifeExpectancy": "At least 35 years",
-    "habitat": "lanceolatus ) found in the Pacific and Indian ocean basins may reach 2.7 metres (8.8 feet) in length.",
-    "funFact": "The adult is dull olive-brown with faint spots and bands.",
+    "habitat": "Reefs, mangroves, and shipwrecks in tropical Atlantic waters.",
+    "funFact": "It produces deep booming sounds to defend territory from rivals.",
     "image": "/assets/animals/epinephelus_itajara.jpg"
   },
   {
@@ -589,8 +589,8 @@
     "scientificName": "Silurus glanis",
     "size": "Length: 2-3 m; Weight: up to 150 kg.",
     "lifeExpectancy": "30-50 years",
-    "habitat": "It is a long-bodied, scaleless fish , usually mottled greenish to blackish with a pale belly and dark fins.",
-    "funFact": "It has a long anal fin, a small dorsal fin near the large, flattened head, and six mouth barbels, two of which, on the upper jaw, are very long.",
+    "habitat": "Slow-moving rivers and large lakes across Europe and western Asia.",
+    "funFact": "Wels catfish gulp air at the surface to survive in oxygen-poor waters and occasionally ambush birds.",
     "image": "/assets/animals/silurus_glanis.jpg"
   },
   {
@@ -600,8 +600,8 @@
     "scientificName": "Synchiropus splendidus",
     "size": "Length: 6-7 cm.",
     "lifeExpectancy": "Up to 10 years",
-    "habitat": "Most perciforms are marine fishes, generally found along coastal areas of tropical and temperate regions of the world.",
-    "funFact": "Perciforms are bony fishes that occur in abundance in both marine and freshwater areas of the world, ranging from shallow freshwater ponds to depths of more than 2,300 metres (7,500 feet) in the oceans.",
+    "habitat": "Lagoon reefs in the western Pacific Ocean.",
+    "funFact": "Its vivid cells secrete a noxious mucus that discourages predators.",
     "image": "/assets/animals/synchiropus_splendidus.jpg"
   },
   {
@@ -611,8 +611,8 @@
     "scientificName": "Lates niloticus",
     "size": "Length: 1-2 m; Weight: up to 200 kg.",
     "lifeExpectancy": "16-20 years",
-    "habitat": "It has an elongated body, a protruding lower jaw , a rounded tail, and two dorsal fins.",
-    "funFact": "niloticus was introduced into Lake Victoria in Africa, home to hundreds of cichlid fishes.",
+    "habitat": "Large freshwater lakes and rivers across sub-Saharan Africa, notably Lake Victoria.",
+    "funFact": "Juveniles school in shallow bays while adults become solitary ambush predators.",
     "image": "/assets/animals/lates_niloticus.jpg"
   },
   {
@@ -622,8 +622,8 @@
     "scientificName": "Istiophorus platypterus",
     "size": "Length: 1.8-3.4 m; Weight: 58-100 kg.",
     "lifeExpectancy": "13-15 years",
-    "habitat": "Roam warm surface waters of the Atlantic and Indo Pacific, often near strong currents.",
-    "funFact": "Their speeds over 110 km per hour make them one of the fastest fish on the planet.",
+    "habitat": "Warm and temperate sections of the Atlantic and Indo-Pacific Oceans.",
+    "funFact": "Sailfish can surge over 100 km/h, folding their dorsal fin to cut drag.",
     "image": "/assets/animals/istiophorus_platypterus.jpg"
   },
   {
@@ -633,8 +633,8 @@
     "scientificName": "Cetorhinus maximus",
     "size": "Length: 7-9 m; Weight: up to 5,200 kg.",
     "lifeExpectancy": "Around 50 years",
-    "habitat": "Named for its habit of floating or slowly swimming at the surface, the basking shark is found predominantly in coastal areas in temperate regions of the Atlantic and Pacific oceans .",
-    "funFact": "basking shark ,  ( Cetorhinus maximus ),  huge, slow-swimming shark of the family Cetorhinidae.",
+    "habitat": "Temperate coastal waters, often skim-feeding at the surface for plankton.",
+    "funFact": "It filters about 2,000 liters of seawater per hour through gill rakers.",
     "image": "/assets/animals/cetorhinus_maximus.jpg"
   },
   {
@@ -644,8 +644,8 @@
     "scientificName": "Cheilinus undulatus",
     "size": "Length: up to 2.3 m; Weight: 190 kg.",
     "lifeExpectancy": "Over 30 years",
-    "habitat": "Wrasses are found throughout the world in tropical and temperate seas.",
-    "funFact": "Most species are elongated and relatively slender.",
+    "habitat": "Outer reef slopes and channels across the Indo-Pacific.",
+    "funFact": "The species is protogynous: individuals start female and many later transition to male.",
     "image": "/assets/animals/cheilinus_undulatus.jpg"
   },
   {
@@ -655,8 +655,8 @@
     "scientificName": "Salvelinus alpinus",
     "size": "Length: 60-80 cm; Weight: 2-9 kg.",
     "lifeExpectancy": "20 or more years",
-    "habitat": "The development of an anadromous life cycle—that is, spawning in fresh water but migrating to the sea for feeding and maturation—has allowed species of trout and salmon to extend their range greatly,…",
-    "funFact": "Like the other chars, the Arctic char is a good…",
+    "habitat": "Cold glacial lakes and arctic coastal waters around the circumpolar north.",
+    "funFact": "Arctic char can overwinter under ice for months, feeding little until spring melt.",
     "image": "/assets/animals/salvelinus_alpinus.jpg"
   },
   {
@@ -666,8 +666,8 @@
     "scientificName": "Ambystoma mexicanum",
     "size": "Length: 23-28 cm.",
     "lifeExpectancy": "10-15 years",
-    "habitat": "Axolotl populations have declined considerably due to a combination of habitat loss (largely driven by Mexico City’s continued urbanization), water pollution , and invasive species (such as carp and tilapia , which compete with axolotls for food and prey upon them).",
-    "funFact": "The name axolotl is also applied to any full-grown larva of Ambystoma tigrinum (tiger salamander) that has not yet lost its external gills.",
+    "habitat": "Cool canals and remnants of the Xochimilco lake system near Mexico City.",
+    "funFact": "Axolotls remain in a larval state and can regrow limbs, spinal cord, and even parts of their heart.",
     "image": "/assets/animals/ambystoma_mexicanum.jpg"
   },
   {
@@ -677,8 +677,8 @@
     "scientificName": "Dendrobates tinctorius",
     "size": "Length: 3-5 cm.",
     "lifeExpectancy": "4-6 years in the wild; longer in care",
-    "habitat": "Poison frogs, or dendrobatids, are small and range from 12 to 19 mm (0.5 to 0.75 inch) from snout to vent in the minute poison frogs ( Minyobates ) to about 65 mm (2.6 inches) in the skunk frog ( Aromobates nocturnus ).",
-    "funFact": "Poison frogs inhabit the forests of the New World tropics from Nicaragua to Peru and Brazil , and a few species are used by South American tribes to coat the tips of darts and arrows.",
+    "habitat": "Humid rainforests of Suriname and northern Brazil.",
+    "funFact": "Alkaloid toxins from their ant diet can paralyze or kill predators many times their size.",
     "image": "/assets/animals/dendrobates_tinctorius.jpg"
   },
   {
@@ -688,8 +688,8 @@
     "scientificName": "Agalychnis callidryas",
     "size": "Length: 4-7 cm.",
     "lifeExpectancy": "Around 5 years",
-    "habitat": "They are found primarily in the New World tropics but are also present in Europe , Australia , and across much of nontropical Asia .",
-    "funFact": "Of these, the hylid, or “true,” tree frogs from the family Hylidae are the most numerous.",
+    "habitat": "Humid lowland forests from southern Mexico to Colombia.",
+    "funFact": "When startled, it flashes red eyes and bright side stripes to disorient predators before leaping away.",
     "image": "/assets/animals/agalychnis_callidryas.jpg"
   },
   {
@@ -699,8 +699,8 @@
     "scientificName": "Salamandra salamandra",
     "size": "Length: 20-30 cm.",
     "lifeExpectancy": "20 years or more",
-    "habitat": "Favors damp deciduous forests and springs across central and southern Europe.",
-    "funFact": "Bright yellow blotches warn predators that the salamander secretes toxic skin alkaloids.",
+    "habitat": "Moist deciduous forests and mountain streams across central and southern Europe.",
+    "funFact": "Glands behind the eyes ooze potent alkaloid toxins when the salamander is threatened.",
     "image": "/assets/animals/salamandra_salamandra.jpg"
   },
   {
@@ -710,8 +710,8 @@
     "scientificName": "Rhinella marina",
     "size": "Length: 10-15 cm; large females can exceed 20 cm.",
     "lifeExpectancy": "10-15 years",
-    "habitat": "This toxic species is native to South and Central America but is now found across the world, from Australia and Oceania to Caribbean islands and parts of the United States , after being introduced as a natural pesticide on sugarcane plantations.",
-    "funFact": "cane toad ,  ( Rhinella marina ),  a large terrestrial omnivorous amphibian considered to be one of the most invasive pests on Earth.",
+    "habitat": "Tropical forests, wetlands, and urban edges—native to Central/South America and invasive in Australia.",
+    "funFact": "Huge parotoid glands exude bufotoxins that can fatally poison predators.",
     "image": "/assets/animals/rhinella_marina.jpg"
   },
   {
@@ -721,8 +721,8 @@
     "scientificName": "Notophthalmus viridescens",
     "size": "Length: 7-12 cm.",
     "lifeExpectancy": "10-15 years",
-    "habitat": "Salamandrids range from moderately slender to robust-bodied forms.",
-    "funFact": "The family is divided informally into newts and “true salamanders” (that is, all non-newt species within Salamandridae regardless of genus).",
+    "habitat": "Woodland ponds and wetlands in eastern North America.",
+    "funFact": "It cycles through aquatic larva, terrestrial bright-orange eft, then aquatic adult stages.",
     "image": "/assets/animals/notophthalmus_viridescens.jpg"
   },
   {
@@ -732,8 +732,8 @@
     "scientificName": "Cryptobranchus alleganiensis",
     "size": "Length: 30-74 cm.",
     "lifeExpectancy": "25-30 years",
-    "habitat": "It is found in the Black River system of Arkansas and Missouri .",
-    "funFact": "The hellbender is typically coloured brownish gray with black spots.",
+    "habitat": "Clear, fast-flowing streams of the Appalachian and Ozark regions in the United States.",
+    "funFact": "Loose, wrinkled skin increases surface area so it can absorb oxygen directly from the water.",
     "image": "/assets/animals/cryptobranchus_alleganiensis.jpg"
   },
   {
@@ -743,8 +743,8 @@
     "scientificName": "Andrias davidianus",
     "size": "Length: 1.2-1.8 m; Weight: up to 50 kg.",
     "lifeExpectancy": "Over 50 years",
-    "habitat": "The diversity of animal life is perhaps greatest in the ranges and valleys of Tibet and Sichuan, the latter province being renowned as the home of the giant panda.",
-    "funFact": "japonicus ), which can grow up to 1.7 metres (5.6 feet) in length.",
+    "habitat": "Cold, fast mountain streams in central and southern China.",
+    "funFact": "It vocalizes with barks and hisses and secretes a milky substance that smells like pepper.",
     "image": "/assets/animals/andrias_davidianus.jpg"
   },
   {
@@ -754,8 +754,8 @@
     "scientificName": "Hyalinobatrachium valerioi",
     "size": "Length: 2-3 cm.",
     "lifeExpectancy": "10-14 years",
-    "habitat": "They cling to leaves above forest streams in Costa Rica, Panama, and Colombia.",
-    "funFact": "Males guard egg clutches on leaf undersides until tadpoles drop into streams below.",
+    "habitat": "Moist tropical forests from Costa Rica to Ecuador, usually perched on leaves above streams.",
+    "funFact": "Its translucent belly skin reveals organs and eggs, blending with sunlit leaves.",
     "image": "/assets/animals/hyalinobatrachium_valerioi.jpg"
   },
   {
@@ -765,8 +765,8 @@
     "scientificName": "Ambystoma tigrinum",
     "size": "Length: 18-33 cm.",
     "lifeExpectancy": "12-15 years",
-    "habitat": "Axolotl populations have declined considerably due to a combination of habitat loss (largely driven by Mexico City’s continued urbanization), water pollution , and invasive species (such as carp and tilapia , which compete with axolotls for food and prey upon them).",
-    "funFact": "The name axolotl is also applied to any full-grown larva of Ambystoma tigrinum (tiger salamander) that has not yet lost its external gills.",
+    "habitat": "Prairies, woodlands, and ephemeral ponds across North America.",
+    "funFact": "Larvae can develop enlarged heads and teeth to become cannibal morphs when ponds shrink.",
     "image": "/assets/animals/ambystoma_tigrinum.jpg"
   },
   {
@@ -776,8 +776,8 @@
     "scientificName": "Necturus maculosus",
     "size": "Length: 20-45 cm.",
     "lifeExpectancy": "18-25 years",
-    "habitat": "Occupy cold lakes, ponds, and slow rivers across eastern North America.",
-    "funFact": "They keep feathery external gills their entire lives instead of completing metamorphosis.",
+    "habitat": "Slow rivers and lakes with abundant cover in eastern North America.",
+    "funFact": "Mudpuppies retain feathery external gills for life and remain fully aquatic.",
     "image": "/assets/animals/necturus_maculosus.jpg"
   },
   {
@@ -787,8 +787,8 @@
     "scientificName": "Proteus anguinus",
     "size": "Length: 23-30 cm.",
     "lifeExpectancy": "70 years or more",
-    "habitat": "As an aquatic cave dweller, the olm has lost its skin pigmentation , and its vestigial but light-sensitive eyes are covered with skin.",
-    "funFact": "It retains numerous larval traits, such as well-developed gills , a lateral line system , and tiny limbs.",
+    "habitat": "Karst caves and subterranean streams of the Dinaric Alps in Europe.",
+    "funFact": "Blind olms can go more than 8 years without food thanks to a slow metabolism.",
     "image": "/assets/animals/proteus_anguinus.jpg"
   },
   {
@@ -798,8 +798,8 @@
     "scientificName": "Pipa pipa",
     "size": "Length: 10-20 cm.",
     "lifeExpectancy": "10-15 years",
-    "habitat": "It has a flat, squarish body, small eyes, and a flat head with loose flaps of skin on the snout and jaws.",
-    "funFact": "The digits end in small, star-shaped appendages that aid food finding.",
+    "habitat": "Slow, murky rivers and swamps of northern South America.",
+    "funFact": "Females incubate eggs embedded in the skin of their backs until froglets emerge.",
     "image": "/assets/animals/pipa_pipa.jpg"
   },
   {
@@ -809,8 +809,8 @@
     "scientificName": "Xenopus laevis",
     "size": "Length: 7-12 cm.",
     "lifeExpectancy": "Up to 15 years",
-    "habitat": "It is valuable for mosquito control, because it eats the eggs and young of those insects.",
-    "funFact": "laevis was introduced to the United States and Britain.…",
+    "habitat": "Permanent ponds and lakes throughout sub-Saharan Africa.",
+    "funFact": "This species was once used for human pregnancy tests—injecting urine caused females to lay eggs.",
     "image": "/assets/animals/xenopus_laevis.jpg"
   },
   {
@@ -820,8 +820,8 @@
     "scientificName": "Trichobatrachus robustus",
     "size": "Length: 11-13 cm.",
     "lifeExpectancy": "About 10 years",
-    "habitat": "The largest species grow about 30 cm (12 inches) long.",
-    "funFact": "Frogfishes, members of the group known as anglerfishes, are usually provided with a “fishing pole,” tipped with a fleshy “bait,” located on the snout and derived from the first dorsal fin spine.",
+    "habitat": "Fast-flowing forest streams in Cameroon and Equatorial Guinea.",
+    "funFact": "Males break their own toe bones to create bony claws when defending nests.",
     "image": "/assets/animals/trichobatrachus_robustus.jpg"
   },
   {
@@ -831,8 +831,8 @@
     "scientificName": "Oophaga pumilio",
     "size": "Length: 17-24 mm.",
     "lifeExpectancy": "6-8 years",
-    "habitat": "Males of the Central American dendrobatid Colostethus inguinalis have…",
-    "funFact": "…female strawberry poison frog ( Dendrobates pumilio ; see arrow-poison frog) uses a different strategy to protect her young.",
+    "habitat": "Humid lowland forests of Nicaragua, Costa Rica, and Panama.",
+    "funFact": "Females haul each tadpole to its own bromeliad and feed it unfertilized eggs.",
     "image": "/assets/animals/oophaga_pumilio.jpg"
   },
   {
@@ -842,8 +842,8 @@
     "scientificName": "Rhinoderma darwinii",
     "size": "Length: 2.5-3.5 cm.",
     "lifeExpectancy": "8-10 years",
-    "habitat": "Darwin’s frog is unique among amphibians for its brooding habits.",
-    "funFact": "Males pick up eggs about to hatch and carry the developing young about in their distensible vocal pouch until they are able to fend for themselves.",
+    "habitat": "Temperate Nothofagus forests of Chile and Argentina.",
+    "funFact": "Males brood tadpoles inside their vocal sacs until the froglets hop out.",
     "image": "/assets/animals/rhinoderma_darwinii.jpg"
   },
   {
@@ -853,8 +853,8 @@
     "scientificName": "Rhacophorus nigropalmatus",
     "size": "Length: 8–10 cm, excluding the long toes.",
     "lifeExpectancy": "Estimated at around 6–8 years in the wild",
-    "habitat": "They dwell high in the rainforest canopy of Borneo and peninsular Malaysia.",
-    "funFact": "Huge webbed feet let them glide 15 metres between trees when escaping danger.",
+    "habitat": "Rainforests of the Malay Peninsula, Sumatra, and Borneo, gliding between canopy trees.",
+    "funFact": "Extensive webbing between toes lets the frog glide more than 15 metres from tree to tree.",
     "image": "/assets/animals/rhacophorus_nigropalmatus.jpg"
   },
   {
@@ -864,8 +864,8 @@
     "scientificName": "Conraua goliath",
     "size": "Body length: up to 32 cm; Weight: 3.3 kg.",
     "lifeExpectancy": "15 years",
-    "habitat": "The main threats to the goliath frog, which is an endangered species, include habitat loss due to logging and farming, hunting , water pollution , and being part of the illegal wildlife trade.",
-    "funFact": "It is the world’s largest living frog species.",
+    "habitat": "Large, swift rivers in Cameroon and Equatorial Guinea.",
+    "funFact": "They move rocks and plants to build riverbank pools for their eggs.",
     "image": "/assets/animals/conraua_goliath.jpg"
   },
   {
@@ -875,8 +875,8 @@
     "scientificName": "Phyllobates terribilis",
     "size": "Length: 4.7-5 cm.",
     "lifeExpectancy": "Up to 10 years",
-    "habitat": "Poison frogs, or dendrobatids, are small and range from 12 to 19 mm (0.5 to 0.75 inch) from snout to vent in the minute poison frogs ( Minyobates ) to about 65 mm (2.6 inches) in the skunk frog ( Aromobates nocturnus ).",
-    "funFact": "Poison frogs inhabit the forests of the New World tropics from Nicaragua to Peru and Brazil , and a few species are used by South American tribes to coat the tips of darts and arrows.",
+    "habitat": "Rainforest hillsides along Colombia's Pacific coast.",
+    "funFact": "One frog's skin produces enough batrachotoxin to stop the hearts of 10 humans.",
     "image": "/assets/animals/phyllobates_terribilis.jpg"
   },
   {
@@ -886,8 +886,8 @@
     "scientificName": "Ambystoma maculatum",
     "size": "Length: 15-25 cm.",
     "lifeExpectancy": "Up to 20 years",
-    "habitat": "They are predominantly terrestrial and live in thick herbaceous vegetation and low shrubbery.",
-    "funFact": "They are not as adept at climbing as are most other hylids.",
+    "habitat": "Deciduous forests and vernal pools in eastern North America.",
+    "funFact": "Embryos host symbiotic algae that supply oxygen inside the egg masses.",
     "image": "/assets/animals/ambystoma_maculatum.jpg"
   },
   {
@@ -897,8 +897,8 @@
     "scientificName": "Pseudacris crucifer",
     "size": "Length: 2.5-3.5 cm.",
     "lifeExpectancy": "3-4 years",
-    "habitat": "Outside of the breeding season, when it may be found in ephemeral woodland ponds, it is seldom seen.",
-    "funFact": "The spring peeper, with its high, whistling call, is one of the first frogs to vocalize and breed in spring.",
+    "habitat": "Wooded swamps, marshes, and vernal pools across eastern North America.",
+    "funFact": "Male choruses reach over 90 decibels during early spring nights.",
     "image": "/assets/animals/pseudacris_crucifer.jpg"
   },
   {
@@ -908,8 +908,8 @@
     "scientificName": "Taricha torosa",
     "size": "Length: 12-20 cm.",
     "lifeExpectancy": "10-15 years",
-    "habitat": "The following classification, which is based on their toxic effects, has been found to be useful: (1) plants that are poisonous to eat, (2) plants that are poisonous upon contact, (3) plants that produce photosensitization, and (4) plants that produce airborne allergies (see Table 6).",
-    "funFact": "Several systems have been devised for the classification of poisonous plants, none of which is completely satisfactory.",
+    "habitat": "Coastal and foothill woodlands with slow-moving streams in California.",
+    "funFact": "Skin glands secrete tetrodotoxin potent enough to deter most predators.",
     "image": "/assets/animals/taricha_torosa.jpg"
   },
   {
@@ -919,8 +919,8 @@
     "scientificName": "Siphonops annulatus",
     "size": "Length: 30-60 cm.",
     "lifeExpectancy": "Estimated 13-15 years",
-    "habitat": "Burrows through moist soils in South American forests, gardens, and plantations.",
-    "funFact": "Skin secretions discourage predators, and mothers feed hatchlings with outer skin layers.",
+    "habitat": "Moist leaf litter and soils of South American tropical forests.",
+    "funFact": "Mothers grow nutrient-rich skin that hatchlings eat in rotating shifts.",
     "image": "/assets/animals/siphonops_annulatus.jpg"
   },
   {
@@ -930,8 +930,8 @@
     "scientificName": "Nasikabatrachus sahyadrensis",
     "size": "Length: about 7 cm.",
     "lifeExpectancy": "Likely over 10 years",
-    "habitat": "In many seeing animals , including humans, it is required for vision in dim light and is located in the retina of the eye —specifically, within the tightly packed disks that make up the outer segment of the retina’s photoreceptive rod cells , which are specially adapted for vision under low-light conditions.",
-    "funFact": "Rhodopsin was discovered in 1876 by German physiologist Franz Christian Boll, who observed that the normally reddish purple frog retina turned pale in bright light.",
+    "habitat": "Underground burrows in the Western Ghats of India, surfacing during monsoon rains.",
+    "funFact": "It spends most of its life underground feeding on termites with a specialized snout.",
     "image": "/assets/animals/nasikabatrachus_sahyadrensis.jpg"
   },
   {
@@ -941,8 +941,8 @@
     "scientificName": "Atelopus zeteki",
     "size": "Length: 4-6 cm.",
     "lifeExpectancy": "About 10 years",
-    "habitat": "The Panamanian golden toad’s skin contains a potent water-soluble toxin called zetekitoxin, which affects nerve cells and protects the toad from most predators.",
-    "funFact": "However, if minor precautions are taken, these toads can be safely handled.",
+    "habitat": "Mountain cloud forests of central Panama along fast streams.",
+    "funFact": "Besides calls, they communicate with semaphore-like hand waves in noisy streams.",
     "image": "/assets/animals/atelopus_zeteki.jpg"
   },
   {
@@ -952,8 +952,8 @@
     "scientificName": "Bufo bufo",
     "size": "Length: 6-13 cm.",
     "lifeExpectancy": "10-12 years in the wild",
-    "habitat": "bufo ) are representative, are stout-bodied with short legs that limit them to the characteristic walking or hopping gait.",
-    "funFact": "The thick, dry, often warty skin on the back is generally…",
+    "habitat": "Gardens, forests, and wetlands across Europe and parts of Asia.",
+    "funFact": "Parotoid glands exude bufotoxin, and the toad inflates its body to appear larger.",
     "image": "/assets/animals/bufo_bufo.jpg"
   },
   {
@@ -963,8 +963,8 @@
     "scientificName": "Dryophytes versicolor",
     "size": "Length: 3-5 cm.",
     "lifeExpectancy": "7-9 years",
-    "habitat": "Lives in woodlands, swamps, and backyard trees across eastern North America.",
-    "funFact": "They can shift from bright green to mottled gray in hours to match tree bark.",
+    "habitat": "Woodlands, swamps, and backyard trees in eastern North America.",
+    "funFact": "It can survive being frozen solid by producing glycerol-based antifreeze in its tissues.",
     "image": "/assets/animals/dryophytes_versicolor.jpg"
   },
   {
@@ -974,8 +974,8 @@
     "scientificName": "Lithobates sylvaticus",
     "size": "Length: 5-8 cm.",
     "lifeExpectancy": "3-4 years",
-    "habitat": "It is a cool-climate species that occurs from the northeastern quarter of the United States and throughout most of Canada to central and southern Alaska.",
-    "funFact": "The wood frog is tan to brown with a distinctly dark facial mask.",
+    "habitat": "Boreal forests, bogs, and tundra edges across North America.",
+    "funFact": "Wood frogs can freeze up to 65% of their body water and resume activity after thawing.",
     "image": "/assets/animals/lithobates_sylvaticus.jpg"
   },
   {
@@ -985,8 +985,8 @@
     "scientificName": "Lissotriton vulgaris",
     "size": "Length: 7-11 cm.",
     "lifeExpectancy": "6-14 years",
-    "habitat": "On the ventral, flexor aspect of the pectoral limb, the pectoralis is found in all tetrapods.",
-    "funFact": "The limbs of urodeles are quite weak and tend to be carried forward passively with the undulations of the body.",
+    "habitat": "Ponds, marshes, and damp grasslands throughout Europe.",
+    "funFact": "Males develop a dramatic wavy crest and tail filament during the breeding season.",
     "image": "/assets/animals/lissotriton_vulgaris.jpg"
   },
   {
@@ -996,8 +996,8 @@
     "scientificName": "Varanus komodoensis",
     "size": "Length: 2-3 m; Weight: 70-90 kg.",
     "lifeExpectancy": "Around 30 years",
-    "habitat": "However, in 2021 the IUCN decided to list the Komodo dragon as an endangered species because climate models suggested that between 30 and 70 percent of the species’ habitat would be lost by 2040 to increases in sea level .",
-    "funFact": "The dragon is a monitor lizard of the family Varanidae.",
+    "habitat": "Dry forests and savannas on the Indonesian islands of Komodo, Rinca, Flores, and Gili Motang.",
+    "funFact": "Komodo dragons possess mildly venomous saliva that lowers prey blood pressure.",
     "image": "/assets/animals/varanus_komodoensis.jpg"
   },
   {
@@ -1007,8 +1007,8 @@
     "scientificName": "Chelonia mydas",
     "size": "Shell length: 83-114 cm; Weight: 110-190 kg.",
     "lifeExpectancy": "60-70 years",
-    "habitat": "It has the proportionately largest head of the sea turtles; this feature may be an adaptation that…",
-    "funFact": "Green sea turtles prefer marine grasses but, if these are not available, will eat algae.",
+    "habitat": "Tropical and subtropical seas worldwide, nesting on sandy beaches.",
+    "funFact": "Adults graze seagrass beds, trimming them like lawnmowers to keep meadows healthy.",
     "image": "/assets/animals/chelonia_mydas.jpg"
   },
   {
@@ -1018,8 +1018,8 @@
     "scientificName": "Ophiophagus hannah",
     "size": "Length: 3-4.5 m.",
     "lifeExpectancy": "Around 20 years",
-    "habitat": "Occupy forests, bamboo thickets, and mangroves from India through Southeast Asia.",
-    "funFact": "Unlike most snakes, females build and guard nests for their eggs.",
+    "habitat": "Humid forests of India, Southeast Asia, and southern China.",
+    "funFact": "It is the world's longest venomous snake and constructs a leaf nest to guard its eggs.",
     "image": "/assets/animals/ophiophagus_hannah.jpg"
   },
   {
@@ -1029,8 +1029,8 @@
     "scientificName": "Heloderma suspectum",
     "size": "Length: 55-62 cm; Weight: 1.3-2.3 kg.",
     "lifeExpectancy": "20-30 years",
-    "habitat": "It grows to about 50 cm (about 20 inches), is stout-bodied with black and pink blotches or bands, and has beadlike scales.",
-    "funFact": "A closely related species, the Mexican beaded lizard ( H.",
+    "habitat": "Desert scrub and rocky foothills in the southwestern United States and northwestern Mexico.",
+    "funFact": "Venom flows along grooved teeth and helps subdue prey after a crushing bite.",
     "image": "/assets/animals/heloderma_suspectum.jpg"
   },
   {
@@ -1040,8 +1040,8 @@
     "scientificName": "Crocodylus niloticus",
     "size": "Length: 3.5-5 m; Weight: 225-750 kg.",
     "lifeExpectancy": "70-100 years",
-    "habitat": "Although there are reports of population declines in some areas, such decreases are localized, since most populations are found in protected areas or in areas not frequented by people.",
-    "funFact": "The Nile crocodile is the largest crocodile in Africa and one of the largest living reptiles , some individuals rivaling the estuarine (or saltwater) crocodile ( C.",
+    "habitat": "Rivers, lakes, and wetlands throughout sub-Saharan Africa.",
+    "funFact": "Hatchlings chirp inside the eggs, prompting mothers to excavate the nest and carry them to water.",
     "image": "/assets/animals/crocodylus_niloticus.jpg"
   },
   {
@@ -1051,8 +1051,8 @@
     "scientificName": "Chelonoidis niger",
     "size": "Shell length: 1-1.3 m; Weight: 180-400 kg.",
     "lifeExpectancy": "Over 100 years",
-    "habitat": "Inhabit volcanic highlands and arid lowlands across the Galapagos Islands.",
-    "funFact": "Each island hosts tortoises with unique shell shapes adapted to local vegetation.",
+    "habitat": "Volcanic highlands and arid lowlands across the Galápagos Islands.",
+    "funFact": "Individuals help disperse seeds over kilometers, reshaping island plant communities.",
     "image": "/assets/animals/chelonoidis_niger.jpg"
   },
   {
@@ -1062,8 +1062,8 @@
     "scientificName": "Pogona vitticeps",
     "size": "Length: 45-60 cm.",
     "lifeExpectancy": "8-12 years",
-    "habitat": "The heart consists of four chambers arranged in a linear sequence.",
-    "funFact": "Before the origin of lungs , the vertebrate circulatory system had a single circuit: in the fishes , blood flows from heart to gills to body and back to the heart.",
+    "habitat": "Arid woodlands, savanna, and deserts of central Australia.",
+    "funFact": "They darken and flare their spiky 'beard' to signal dominance or absorb heat.",
     "image": "/assets/animals/pogona_vitticeps.jpg"
   },
   {
@@ -1073,8 +1073,8 @@
     "scientificName": "Dermochelys coriacea",
     "size": "Length: 1.5-2 m; Weight: 250-700 kg.",
     "lifeExpectancy": "Over 45 years",
-    "habitat": "The leatherback sea turtle lives in the world’s temperate and tropical oceans , from the high seas to intertidal habitats.",
-    "funFact": "leatherback sea turtle ,  ( Dermochelys coriacea ), species of sea turtle notable because it lacks scales and a hard shell.",
+    "habitat": "Open oceans worldwide, nesting on tropical beaches.",
+    "funFact": "A flexible shell and insulating fat let leatherbacks dive beyond 1,000 m into cold depths.",
     "image": "/assets/animals/dermochelys_coriacea.jpg"
   },
   {
@@ -1084,8 +1084,8 @@
     "scientificName": "Alligator mississippiensis",
     "size": "Length: 3-4.5 m; Weight: 230-360 kg.",
     "lifeExpectancy": "35-50 years in the wild",
-    "habitat": "The alligator’s geographic range extends from the Mexican states of Coahuila , Nuevo León , and Tamaulipas northeastward to Oklahoma and Arkansas and eastward through the Gulf Coast to North Carolina , South Carolina , Georgia , and Florida .",
-    "funFact": "The species is one of two classified in the genus Alligator , the other being the Chinese alligator ( A.",
+    "habitat": "Freshwater swamps, marshes, and slow rivers of the southeastern United States.",
+    "funFact": "Alligators build 'gator holes' that provide refuge for other animals during droughts.",
     "image": "/assets/animals/alligator_mississippiensis.jpg"
   },
   {
@@ -1095,8 +1095,8 @@
     "scientificName": "Chlamydosaurus kingii",
     "size": "Length: 70-90 cm.",
     "lifeExpectancy": "10-15 years",
-    "habitat": "The scaly membrane around its neck is used as a large part of the lizard ’s defensive posture.",
-    "funFact": "Normally, the neck frill , often as wide as the lizard is long, lies like a cape over the shoulders.",
+    "habitat": "Tropical woodlands of northern Australia and southern New Guinea.",
+    "funFact": "When threatened it unfurls a 30 cm frill, hisses, and stands upright to look larger.",
     "image": "/assets/animals/chlamydosaurus_kingii.jpg"
   },
   {
@@ -1106,8 +1106,8 @@
     "scientificName": "Furcifer pardalis",
     "size": "Length: 40-52 cm.",
     "lifeExpectancy": "5-7 years",
-    "habitat": "Two species occur in Asia; one is native to southern India and Sri Lanka ( Chamaeleo zeylanicus ), and the other (the European chameleon, C.",
-    "funFact": "chameleon ,  (family Chamaeleonidae),  any of a group of primarily arboreal (tree-dwelling) Old World lizards best known for their ability to change body colour .",
+    "habitat": "Coastal rainforests and plantations of Madagascar.",
+    "funFact": "They shift colors in seconds to signal mood, temperature, or dominance.",
     "image": "/assets/animals/furcifer_pardalis.jpg"
   },
   {
@@ -1117,8 +1117,8 @@
     "scientificName": "Python regius",
     "size": "Length: 1-1.5 m.",
     "lifeExpectancy": "20-30 years",
-    "habitat": "Terrestrial pythons are regularly found near water and are proficient swimmers, but they hunt and eat almost exclusively on land.",
-    "funFact": "Most pythons are terrestrial to semiarboreal, and a few, such as the green tree python ( Morelia viridis ) of Australia and New Guinea , are strongly arboreal.",
+    "habitat": "Savannas, grasslands, and forest edges of West and Central Africa.",
+    "funFact": "When alarmed they coil into a tight ball with head tucked safely inside.",
     "image": "/assets/animals/python_regius.jpg"
   },
   {
@@ -1128,8 +1128,8 @@
     "scientificName": "Crotalus atrox",
     "size": "Length: 1-1.5 m.",
     "lifeExpectancy": "15-20 years",
-    "habitat": "Its typical habitats are brushy flatlands and slopes, rock ledges, high river banks, and junk piles on the edges of towns and cities .",
-    "funFact": "western diamondback rattlesnake ,  ( Crotalus atrox ),  a large, venomous, aggressive, and highly dangerous pit viper inhabiting arid and semiarid scrublands in North America from southern California east to western Arkansas in the U.S.",
+    "habitat": "Deserts, grasslands, and rocky canyons of the southwestern United States and northern Mexico.",
+    "funFact": "Interlocking keratin segments on the tail vibrate up to 90 times per second to issue a warning buzz.",
     "image": "/assets/animals/crotalus_atrox.jpg"
   },
   {
@@ -1139,8 +1139,8 @@
     "scientificName": "Cyclura lewisi",
     "size": "Length: 1.2-1.5 m.",
     "lifeExpectancy": "25-40 years",
-    "habitat": "Iguanids are found throughout the Americas from southern Canada to the tip of South America .",
-    "funFact": "The only exceptions are one genus ( Brachylophus ) in Fiji and other Pacific islands and two genera ( Oplurus and Chalarodon ) in Madagascar.",
+    "habitat": "Dry shrublands and coastal forests on Grand Cayman Island.",
+    "funFact": "Once near extinction, intensive conservation bred hundreds for release back into the wild.",
     "image": "/assets/animals/cyclura_lewisi.jpg"
   },
   {
@@ -1150,8 +1150,8 @@
     "scientificName": "Moloch horridus",
     "size": "Length: 15-20 cm.",
     "lifeExpectancy": "15-20 years",
-    "habitat": "This harmless reptile is extremely difficult to find in its natural habitat, partly because of its cryptic coloration and morphology and partly because it remains perfectly still when approached.",
-    "funFact": "The shape of its body and many of its habits are similar to those of horned lizards of North America , which are in the family Iguanidae.",
+    "habitat": "Sandy deserts and scrub of central Australia.",
+    "funFact": "Capillary channels between its scales wick dew and rain straight to its mouth.",
     "image": "/assets/animals/moloch_horridus.jpg"
   },
   {
@@ -1161,8 +1161,8 @@
     "scientificName": "Boa constrictor",
     "size": "Length: 2-3.5 m.",
     "lifeExpectancy": "20-30 years",
-    "habitat": "Its range is wide, from Argentina to northern Mexico.",
-    "funFact": "Though it thrives in tropical rainforests, it also inhabits savannas, cane fields, and semiarid scrublands.",
+    "habitat": "Tropical forests, savannas, and semi-arid regions from Mexico to Argentina.",
+    "funFact": "Heat-sensing pits along the lips help locate warm-blooded prey at night.",
     "image": "/assets/animals/boa_constrictor.jpg"
   },
   {
@@ -1172,8 +1172,8 @@
     "scientificName": "Eunectes murinus",
     "size": "Length: 5-6 m; Weight: up to 250 kg.",
     "lifeExpectancy": "10-30 years",
-    "habitat": "Found in swamps, slow rivers, and flooded forests of the Amazon and Orinoco basins.",
-    "funFact": "As ambush predators they sense prey vibrations with pressure sensitive pits on the snout.",
+    "habitat": "Swamps, slow rivers, and flooded forests of the Amazon and Orinoco basins.",
+    "funFact": "Females can give birth to litters of live young that each measure nearly a meter long.",
     "image": "/assets/animals/eunectes_murinus.jpg"
   },
   {
@@ -1183,8 +1183,8 @@
     "scientificName": "Amblyrhynchus cristatus",
     "size": "Length: 70-120 cm; Weight: up to 12 kg.",
     "lifeExpectancy": "30-40 years",
-    "habitat": "Endemic to rocky shorelines of the Galapagos Islands where cold currents upwell.",
-    "funFact": "They sneeze out salt to purge the seawater ingested while grazing underwater algae.",
+    "habitat": "Rocky coasts of the Galápagos Islands.",
+    "funFact": "They dive into chilly surf to graze algae, then expel salt by sneezing crystals from nasal glands.",
     "image": "/assets/animals/amblyrhynchus_cristatus.jpg"
   },
   {
@@ -1194,8 +1194,8 @@
     "scientificName": "Gekko gecko",
     "size": "Length: 30-35 cm.",
     "lifeExpectancy": "Around 10 years",
-    "habitat": "Occupy tropical forests and human dwellings across Southeast Asia and the Pacific.",
-    "funFact": "Their loud two syllable ?to-kay? call is the source of the species name.",
+    "habitat": "Rainforests, cliffs, and urban buildings across Southeast Asia.",
+    "funFact": "It delivers forceful bites and calls 'to-kay!' loudly each night.",
     "image": "/assets/animals/gekko_gecko.jpg"
   },
   {
@@ -1205,8 +1205,8 @@
     "scientificName": "Trachemys scripta elegans",
     "size": "Shell length: 12-28 cm.",
     "lifeExpectancy": "20-40 years",
-    "habitat": "Some tortoises rarely see water, while other turtles spend virtually their entire lives in it, be it in a single small pond or traveling the vast open ocean .",
-    "funFact": "There are more than 350 species of turtles.",
+    "habitat": "Slow-moving rivers, ponds, and wetlands in the southern United States and introduced worldwide.",
+    "funFact": "They bask communally on logs and slip into the water at the slightest disturbance.",
     "image": "/assets/animals/trachemys_scripta_elegans.jpg"
   },
   {
@@ -1216,8 +1216,8 @@
     "scientificName": "Macrochelys temminckii",
     "size": "Shell length: 40-80 cm; Weight: up to 80 kg.",
     "lifeExpectancy": "70-100 years",
-    "habitat": "Although native populations are found exclusively in the United States , from Texas east to Georgia and Florida and from Illinois and Kansas south to the Gulf Coast , non-native populations are found in various other states and in South Africa , where it is considered an invasive species .",
-    "funFact": "alligator snapping turtle ,  ( Macrochelys temminckii ), species of freshwater turtle in the family Chelydridae .",
+    "habitat": "Deep rivers, swamps, and oxbow lakes of the southeastern United States.",
+    "funFact": "A worm-like lure on its tongue wiggles to entice fish into its powerful jaws.",
     "image": "/assets/animals/macrochelys_temminckii.jpg"
   },
   {
@@ -1227,8 +1227,8 @@
     "scientificName": "Dendroaspis polylepis",
     "size": "Length: 2.5-4.5 m.",
     "lifeExpectancy": "11-20 years",
-    "habitat": "It lives in sub-Saharan Africa and is one of the continent’s most dangerous snakes.",
-    "funFact": "The average black mamba is 2–2.5 metres (6.6–8.2 feet) long, with a maximum length of 4.3 metres (14 feet).",
+    "habitat": "Savannas, scrub, and rocky outcrops across sub-Saharan Africa.",
+    "funFact": "The black mamba can raise a third of its body and strike repeatedly with fast-acting neurotoxic venom.",
     "image": "/assets/animals/dendroaspis_polylepis.jpg"
   },
   {
@@ -1238,8 +1238,8 @@
     "scientificName": "Terrapene carolina",
     "size": "Shell length: 12-19 cm.",
     "lifeExpectancy": "40-60 years",
-    "habitat": "Prefer moist forests, meadows, and marsh edges in the eastern United States.",
-    "funFact": "A hinged plastron lets them close their shell so tightly even predators cannot pry it open.",
+    "habitat": "Moist forests, fields, and meadows in eastern North America.",
+    "funFact": "A hinged plastron lets box turtles seal themselves completely inside their shell.",
     "image": "/assets/animals/terrapene_carolina.jpg"
   },
   {
@@ -1249,8 +1249,8 @@
     "scientificName": "Phrynosoma cornutum",
     "size": "Length: 6-12 cm.",
     "lifeExpectancy": "5-8 years",
-    "habitat": "The usual habitat is desert or semidesert sandy country.",
-    "funFact": "They inhabit western North America from British Columbia southward to Guatemala and from Arkansas and Kansas westward to the Pacific coast.",
+    "habitat": "Sandy deserts and shrublands of the southwestern United States and northern Mexico.",
+    "funFact": "It can squirt blood from the corners of its eyes to deter canid predators.",
     "image": "/assets/animals/phrynosoma_cornutum.jpg"
   },
   {
@@ -1260,8 +1260,8 @@
     "scientificName": "Varanus salvadorii",
     "size": "Length: 2.4-2.7 m.",
     "lifeExpectancy": "15-20 years",
-    "habitat": "Compared with Australia’s estuarine, or saltwater, crocodile ( Crocodylus porosus )—which is larger and more aggressive and lives in saltwater and brackish waters in tropical coastal areas—the freshwater crocodile ( C.",
-    "funFact": "freshwater crocodile ,  ( Crocodylus johnsoni ),  moderately large species of crocodile inhabiting inland swamps , rivers , and other tropical freshwater environments in the northern parts of Queensland , Western Australia , and Australia’s Northern Territory .",
+    "habitat": "Lowland rainforests of New Guinea.",
+    "funFact": "Its prehensile tail and long claws make it an agile climber in dense canopy.",
     "image": "/assets/animals/varanus_salvadorii.jpg"
   },
   {
@@ -1271,8 +1271,8 @@
     "scientificName": "Bitis gabonica",
     "size": "Length: 1-2 m; Weight: up to 10 kg.",
     "lifeExpectancy": "Around 20 years",
-    "habitat": "The Gaboon viper also possesses the longest fangs of any snake, measuring up to 4 cm (1.6 inches) long.",
-    "funFact": "The stout body is boldly patterned with rectangles and triangles of buff, purple, and brown, which gives the snake its velvetlike appearance.",
+    "habitat": "Humid forests and savannas of central and West Africa.",
+    "funFact": "It has the longest fangs of any venomous snake, measuring up to 5 cm.",
     "image": "/assets/animals/bitis_gabonica.jpg"
   },
   {
@@ -1282,8 +1282,8 @@
     "scientificName": "Gopherus agassizii",
     "size": "Shell length: 25-36 cm; Weight: 4-7 kg.",
     "lifeExpectancy": "50-80 years",
-    "habitat": "Live in desert scrub and rocky foothills of the Mojave and Sonoran deserts.",
-    "funFact": "They spend most of the year in burrows to escape heat and conserve moisture.",
+    "habitat": "Deserts and arid scrub of the Mojave and Sonoran regions in the United States and Mexico.",
+    "funFact": "It can recycle water stored in its bladder to survive long droughts.",
     "image": "/assets/animals/gopherus_agassizii.jpg"
   },
   {
@@ -1293,8 +1293,8 @@
     "scientificName": "Varanus varius",
     "size": "Length: 1.5-2.1 m.",
     "lifeExpectancy": "About 20 years",
-    "habitat": "They are found in Africa south of the Sahara, through southern and southeastern Asia , in Australia , and on islands in the southwestern Pacific.",
-    "funFact": "About 50 species of Varanus are recognized in the subfamily Varaninae.",
+    "habitat": "Eucalypt forests and woodlands of eastern Australia.",
+    "funFact": "They raid tree hollows for bird eggs and seal termites re-open nests used as warm incubators.",
     "image": "/assets/animals/varanus_varius.jpg"
   },
   {
@@ -1304,8 +1304,8 @@
     "scientificName": "Python bivittatus",
     "size": "Length: 3-5 m; Weight: up to 90 kg.",
     "lifeExpectancy": "20-25 years",
-    "habitat": "The snake’s wide distribution in mainland Southeast Asia and Indonesia and the establishment of a population numbering at least several tens of thousands in the Everglades and other parts of southern Florida conceal severe population crashes of up to 80 percent in a single decade in some parts of its native geographic range .",
-    "funFact": "In addition, the Burmese python has established populations in southern Florida , where it is considered to be an invasive species .",
+    "habitat": "Marshes, grasslands, and river valleys of Southeast Asia; invasive in Florida's Everglades.",
+    "funFact": "Expandable jaws and flexible ribs allow it to swallow prey wider than its own body.",
     "image": "/assets/animals/python_bivittatus.jpg"
   },
   {
@@ -1315,8 +1315,8 @@
     "scientificName": "Lepidochelys olivacea",
     "size": "Shell length: 60-70 cm; Weight: 35-45 kg.",
     "lifeExpectancy": "Around 50 years",
-    "habitat": "Inhabit tropical oceans worldwide and nest on sandy beaches during mass arribadas.",
-    "funFact": "Tens of thousands of females may crawl ashore together during a single nesting event.",
+    "habitat": "Tropical and subtropical oceans, nesting in massive arribada events on sandy beaches.",
+    "funFact": "Thousands of females synchronize nesting during arribadas, carpeting beaches for a few nights.",
     "image": "/assets/animals/lepidochelys_olivacea.jpg"
   },
   {
@@ -1326,8 +1326,8 @@
     "scientificName": "Haliaeetus leucocephalus",
     "size": "Wingspan: 1.8-2.3 m; Weight: 3-6.3 kg.",
     "lifeExpectancy": "20-30 years in the wild",
-    "habitat": "bald eagle ,  ( Haliaeetus leucocephalus ),  the only eagle solely native to North America , and the national bird of the United States.",
-    "funFact": "Below are five facts about the bald eagle.",
+    "habitat": "Near large lakes, reservoirs, and coasts across North America.",
+    "funFact": "Pairs build tree nests that can weigh over a metric ton after years of reuse.",
     "image": "/assets/animals/haliaeetus_leucocephalus.jpg"
   },
   {
@@ -1337,8 +1337,8 @@
     "scientificName": "Falco peregrinus",
     "size": "Wingspan: 74-120 cm; Weight: 0.6-1.5 kg.",
     "lifeExpectancy": "13-20 years",
-    "habitat": "After World War II the peregrine falcon suffered a precipitous population decline throughout most of its global range.",
-    "funFact": "The peregrine falcon is best known for its diving speed during flight —which can reach more than 300 km (186 miles) per hour—making it not only the world’s fastest bird but also the world’s fastest animal .",
+    "habitat": "Cliffs, mountains, and urban skyscrapers on every continent except Antarctica.",
+    "funFact": "Peregrines stoop on prey at speeds exceeding 320 km/h, making them the fastest animals alive.",
     "image": "/assets/animals/falco_peregrinus.jpg"
   },
   {
@@ -1348,8 +1348,8 @@
     "scientificName": "Aptenodytes forsteri",
     "size": "Height: 1.1-1.3 m; Weight: 23-45 kg.",
     "lifeExpectancy": "15-20 years",
-    "habitat": "Adults are coloured black and white with areas of orange and yellow on the head, neck, and breast.",
-    "funFact": "The species gathers together into approximately 50 colonies that settle on ice shelves and landfast ice along the coastline of Antarctica .",
+    "habitat": "Sea ice and frigid Antarctic waters.",
+    "funFact": "Males incubate eggs on their feet for two months while fasting through polar night.",
     "image": "/assets/animals/aptenodytes_forsteri.jpg"
   },
   {
@@ -1359,8 +1359,8 @@
     "scientificName": "Ara macao",
     "size": "Length: 81-96 cm; Weight: 0.9-1.5 kg.",
     "lifeExpectancy": "40-50 years",
-    "habitat": "Found in lowland rainforests from southern Mexico through the Amazon basin.",
-    "funFact": "Pairs remain bonded for life and coordinate their flights and loud calls.",
+    "habitat": "Tropical rainforests and river edges of Central and northern South America.",
+    "funFact": "Pairs mate for life and scream loud contact calls to stay together above the canopy.",
     "image": "/assets/animals/ara_macao.jpg"
   },
   {
@@ -1370,8 +1370,8 @@
     "scientificName": "Cyanocitta cristata",
     "size": "Length: 25-30 cm; Wingspan: 34-43 cm.",
     "lifeExpectancy": "7 years in the wild; longer in captivity",
-    "habitat": "The blue jay is found in coniferous and deciduous forests east of the Rocky Mountains in both the United States and southern Canada .",
-    "funFact": "It is an intelligent, adaptable species related to crows and ravens , and it has learned to coexist with people , living in cities and suburban residential areas, where it is infamous for its aggressive behavior at bird feeders.",
+    "habitat": "Deciduous forests, parks, and suburban neighborhoods in eastern North America.",
+    "funFact": "Blue jays mimic hawk calls to warn flock mates or to scare competitors away from food.",
     "image": "/assets/animals/cyanocitta_cristata.jpg"
   },
   {
@@ -1381,8 +1381,8 @@
     "scientificName": "Grus japonensis",
     "size": "Height: up to 1.5 m; Wingspan: 2.2-2.5 m.",
     "lifeExpectancy": "40 years or more",
-    "habitat": "Gruiforms are an ancient group with a rich fossil history, but many families are now restricted in range and few in number.",
-    "funFact": "Members of the order occur on every continent, but the only family with worldwide distribution is the Rallidae ( rails , gallinules , and coots ), with 138 living species .",
+    "habitat": "Wetlands and riverine marshes in northeast Asia.",
+    "funFact": "Elaborate courtship dances strengthen lifelong pair bonds.",
     "image": "/assets/animals/grus_japonensis.jpg"
   },
   {
@@ -1392,8 +1392,8 @@
     "scientificName": "Bubo virginianus",
     "size": "Wingspan: 1-1.5 m; Weight: 1-2.5 kg.",
     "lifeExpectancy": "13 years in the wild",
-    "habitat": "It usually eats small rodents and birds but has been known to carry off larger prey.",
-    "funFact": "Adapted to desert and forest, the species migrates only when food is scarce.",
+    "habitat": "Forests, deserts, parks, and city neighborhoods across the Americas.",
+    "funFact": "Feather fringes along its wing edges allow near-silent flight as it ambushes prey.",
     "image": "/assets/animals/bubo_virginianus.jpg"
   },
   {
@@ -1403,8 +1403,8 @@
     "scientificName": "Apteryx mantelli",
     "size": "Height: 40-45 cm; Weight: 2-3.5 kg.",
     "lifeExpectancy": "25-30 years",
-    "habitat": "Occupy dense forests and shrublands across New Zealands North Island.",
-    "funFact": "Their nostrils are at the tip of the bill, helping them sniff out earthworms at night.",
+    "habitat": "Dense temperate forests of New Zealand's North Island.",
+    "funFact": "Kiwi eggs can weigh a fifth of the mother's body mass—the largest egg ratio of any bird.",
     "image": "/assets/animals/apteryx_mantelli.jpg"
   },
   {
@@ -1414,8 +1414,8 @@
     "scientificName": "Balaeniceps rex",
     "size": "Height: 1.2-1.4 m; Wingspan: 2.3-2.6 m.",
     "lifeExpectancy": "35 years",
-    "habitat": "This big bird also eats turtles , fish , and young crocodiles .",
-    "funFact": "Shoebills stand about 115 cm (3.8 feet) tall.",
+    "habitat": "Papyrus swamps and freshwater marshes of East Africa.",
+    "funFact": "A massive shoe-shaped bill snaps shut with enough force to capture lungfish and baby crocodiles.",
     "image": "/assets/animals/balaeniceps_rex.jpg"
   },
   {
@@ -1425,8 +1425,8 @@
     "scientificName": "Sagittarius serpentarius",
     "size": "Height: 1.2-1.5 m; Wingspan: about 2 m.",
     "lifeExpectancy": "15-19 years",
-    "habitat": "Twenty black crest feathers make it appear to be carrying quill pens behind its ears, as secretaries once did.",
-    "funFact": "It has a light gray body, black thighs and flight feathers, and white wing linings.",
+    "habitat": "Open grasslands and savannas of sub-Saharan Africa.",
+    "funFact": "Long legs deliver rapid, crushing kicks to subdue snakes on the ground.",
     "image": "/assets/animals/sagittarius_serpentarius.jpg"
   },
   {
@@ -1436,8 +1436,8 @@
     "scientificName": "Ramphastos toco",
     "size": "Length: 55-65 cm; Weight: 0.6-0.9 kg.",
     "lifeExpectancy": "Up to 20 years",
-    "habitat": "sulfuratus ), which is about 50 cm (20 inches) long.",
-    "funFact": "It is mainly black with lemon yellow on the face, throat, and chest, bright red under the tail,…",
+    "habitat": "Tropical forests, savannas, and gallery woodlands of central South America.",
+    "funFact": "Its oversized bill helps shed heat, acting like a built-in radiator.",
     "image": "/assets/animals/ramphastos_toco.jpg"
   },
   {
@@ -1447,8 +1447,8 @@
     "scientificName": "Archilochus colubris",
     "size": "Length: 7-9 cm; Weight: 2-6 g.",
     "lifeExpectancy": "3-5 years in the wild",
-    "habitat": "…America only one species, the ruby-throated hummingbird ( Archilochus colubris ), is normally found east of the Great Plains.",
-    "funFact": "platycercus ) breeds in the western United States…",
+    "habitat": "Woodlands and gardens of eastern North America; winters in Central America.",
+    "funFact": "They hover with wingbeats around 55 times per second and can fly backward.",
     "image": "/assets/animals/archilochus_colubris.jpg"
   },
   {
@@ -1458,8 +1458,8 @@
     "scientificName": "Struthio camelus",
     "size": "Height: 2.1-2.8 m; Weight: 90-130 kg.",
     "lifeExpectancy": "40-45 years",
-    "habitat": "The ostrich’s egg , averaging about 150 mm (6 inches) in length by 125 mm (5 inches) in diameter and about 1.35 kg (3 pounds), is also the world’s largest.",
-    "funFact": "The male is mostly black but has white plumes in the wings and tail; females are mostly brown.",
+    "habitat": "Open savannas and deserts across Africa.",
+    "funFact": "Ostriches sprint up to 70 km/h using 4 m strides.",
     "image": "/assets/animals/struthio_camelus.jpg"
   },
   {
@@ -1469,8 +1469,8 @@
     "scientificName": "Casuarius casuarius",
     "size": "Height: 1.5-1.8 m; Weight: 45-70 kg.",
     "lifeExpectancy": "Up to 40 years",
-    "habitat": "Reside in tropical rainforests of New Guinea, nearby islands, and northeastern Australia.",
-    "funFact": "Their dagger like inner claws can deliver serious kicks, so they are nicknamed the worlds most dangerous bird.",
+    "habitat": "Dense rainforests of New Guinea and northern Australia.",
+    "funFact": "A dagger-like inner claw can deliver powerful kicks when the bird feels threatened.",
     "image": "/assets/animals/casuarius_casuarius.jpg"
   },
   {
@@ -1480,8 +1480,8 @@
     "scientificName": "Pavo cristatus",
     "size": "Body length: 95-115 cm; Train up to 1.5 m; Weight: 4-6 kg.",
     "lifeExpectancy": "15-20 years",
-    "habitat": "Native to forests and farmland mosaics across the Indian subcontinent.",
-    "funFact": "Males fan iridescent tail feathers to display eyespots during courtship dances.",
+    "habitat": "Forests, farms, and villages across the Indian subcontinent.",
+    "funFact": "Males fan iridescent tail trains covered in 'eyes' to court peahens.",
     "image": "/assets/animals/pavo_cristatus.jpg"
   },
   {
@@ -1491,8 +1491,8 @@
     "scientificName": "Diomedea exulans",
     "size": "Wingspan: 2.5-3.5 m; Weight: 6-12 kg.",
     "lifeExpectancy": "Often over 50 years",
-    "habitat": "It nests on islands near the Antarctic Circle and on some islands in the South Atlantic, and in the nonbreeding…",
-    "funFact": "Albatrosses, such as the wandering albatross ( Diomedea exulans ) that nests on small Antarctic islands, circle the globe during their migrations.",
+    "habitat": "The Southern Ocean, looping vast distances between subantarctic islands.",
+    "funFact": "Their record wingspan lets them glide for hours without flapping.",
     "image": "/assets/animals/diomedea_exulans.jpg"
   },
   {
@@ -1502,8 +1502,8 @@
     "scientificName": "Fratercula arctica",
     "size": "Length: 26-29 cm; Wingspan: 47-63 cm.",
     "lifeExpectancy": "20-30 years",
-    "habitat": "Breed on North Atlantic cliffs and spend winters far out at sea.",
-    "funFact": "They carry several fish crosswise in their beaks thanks to a spiny tongue and palate.",
+    "habitat": "Cliff colonies on islands and coasts of the North Atlantic.",
+    "funFact": "Specialized tongue spines hold a dozen fish crosswise in the beak for chicks.",
     "image": "/assets/animals/fratercula_arctica.jpg"
   },
   {
@@ -1513,8 +1513,8 @@
     "scientificName": "Phoenicopterus roseus",
     "size": "Height: 1.1-1.5 m; Weight: 2-4 kg.",
     "lifeExpectancy": "30-40 years",
-    "habitat": "ruber roseus ) of Africa and southern Europe and Asia.",
-    "funFact": "The Chilean flamingo ( Phoenicopterus chilensis ) is primarily an inland species.",
+    "habitat": "Saline lagoons, mudflats, and coastal wetlands of Africa, Europe, and Asia.",
+    "funFact": "They filter-feed upside down, and their pink color comes from carotenoid pigments in their diet.",
     "image": "/assets/animals/phoenicopterus_roseus.jpg"
   },
   {
@@ -1524,8 +1524,8 @@
     "scientificName": "Bubo scandiacus",
     "size": "Wingspan: 1.3-1.6 m; Weight: 1.6-2.9 kg.",
     "lifeExpectancy": "Around 10 years in the wild",
-    "habitat": "Snowy owls are about 60 cm (about 2 feet) long and have broad wings and a round head without ear tufts.",
-    "funFact": "They eat small mammals (such as hares and lemmings) and birds and nest on the ground in the open.",
+    "habitat": "Arctic tundra across North America, Europe, and Asia.",
+    "funFact": "Feathered legs and toes protect against sub-zero winds on the tundra.",
     "image": "/assets/animals/bubo_scandiacus.jpg"
   },
   {
@@ -1535,8 +1535,8 @@
     "scientificName": "Buceros bicornis",
     "size": "Length: 95-120 cm; Wingspan: around 1.5 m; Weight: 2-4 kg.",
     "lifeExpectancy": "35-40 years",
-    "habitat": "rhinoceros ), possess a brightly coloured beak and casque.",
-    "funFact": "This striking coloration is the result of the bird’s rubbing its beak and casque against the preen gland beneath the tail, which stimulates the production…",
+    "habitat": "Tropical evergreen forests from India to Indonesia.",
+    "funFact": "During nesting, the female seals herself inside a tree cavity with mud, leaving a slot for food deliveries.",
     "image": "/assets/animals/buceros_bicornis.jpg"
   },
   {
@@ -1546,8 +1546,8 @@
     "scientificName": "Menura novaehollandiae",
     "size": "Length: 80-100 cm; Weight: 0.8-1.2 kg.",
     "lifeExpectancy": "20-30 years",
-    "habitat": "Live in dense forests and damp gullies of southeastern Australia.",
-    "funFact": "Males mimic chainsaws, camera shutters, and other sounds during display routines.",
+    "habitat": "Moist forests of southeastern Australia.",
+    "funFact": "Males mimic camera shutters, car alarms, and chainsaws during courtship displays.",
     "image": "/assets/animals/menura_novaehollandiae.jpg"
   },
   {
@@ -1557,8 +1557,8 @@
     "scientificName": "Corvus corax",
     "size": "Length: 56-69 cm; Wingspan: 115-150 cm.",
     "lifeExpectancy": "10-15 years in the wild",
-    "habitat": "They have a wide distribution and thrive in many habitats, from tundra to desert , throughout the Northern Hemisphere.",
-    "funFact": "common raven ,  ( Corvus corax ),  large, black-feathered, highly intelligent bird of the Corvidae family, which includes other types of ravens , crows , magpies , and jays .",
+    "habitat": "Mountains, forests, tundra, and deserts across the Northern Hemisphere.",
+    "funFact": "Ravens solve puzzles, use tools, and engage in aerial acrobatics for play.",
     "image": "/assets/animals/corvus_corax.jpg"
   },
   {
@@ -1568,8 +1568,8 @@
     "scientificName": "Dacelo novaeguineae",
     "size": "Length: 39-42 cm; Weight: 0.3-0.5 kg.",
     "lifeExpectancy": "15-20 years",
-    "habitat": "In its native habitat it eats invertebrates and small vertebrates, including venomous snakes.",
-    "funFact": "In western Australia and New Zealand , where it has been introduced, the kookaburra has been known to attack chickens and ducklings.",
+    "habitat": "Eucalypt forests and suburban parks of eastern Australia.",
+    "funFact": "Family groups perform loud, laughing choruses at dawn and dusk.",
     "image": "/assets/animals/dacelo_novaeguineae.jpg"
   },
   {
@@ -1579,8 +1579,8 @@
     "scientificName": "Harpia harpyja",
     "size": "Wingspan: 1.8-2.2 m; Weight: 6-9 kg.",
     "lifeExpectancy": "25-35 years",
-    "habitat": "Most of the harpy eagle population can be found in the Amazon Basin in South America ; however, the species can also be found in pockets of habitat throughout Central America and northern South America south to Colombia’s Pacific coast to northwestern Venezuela .",
-    "funFact": "The harpy eagle is among the largest living eagles.",
+    "habitat": "Tropical rainforests from southern Mexico to northern Argentina.",
+    "funFact": "Harpy talons rival a grizzly bear's claws and can snatch monkeys from trees.",
     "image": "/assets/animals/harpia_harpyja.jpg"
   },
   {
@@ -1590,8 +1590,8 @@
     "scientificName": "Cygnus olor",
     "size": "Wingspan: 2-2.4 m; Weight: 9-14 kg.",
     "lifeExpectancy": "25-30 years",
-    "habitat": "Found on lakes, slow rivers, and estuaries across Eurasia and introduced parts of North America.",
-    "funFact": "Called mute because they are quieter than other swans, though they hiss loudly when threatened.",
+    "habitat": "Lakes, slow rivers, and ornamental ponds across Europe and introduced regions worldwide.",
+    "funFact": "Pairs form lifelong bonds and arch their necks to display heart-shaped courtship poses.",
     "image": "/assets/animals/cygnus_olor.jpg"
   },
   {
@@ -1601,8 +1601,8 @@
     "scientificName": "Alcedo atthis",
     "size": "Length: 16-17 cm; Wingspan: 24-26 cm.",
     "lifeExpectancy": "2-4 years",
-    "habitat": "Found along clear streams, ponds, and wetlands across Europe, North Africa, and Asia.",
-    "funFact": "They dive headfirst with a transparent eyelid acting like built in goggles.",
+    "habitat": "Clean streams, ponds, and rivers across Europe, Africa, and Asia.",
+    "funFact": "They close a transparent third eyelid to see clearly underwater as they dive.",
     "image": "/assets/animals/alcedo_atthis.jpg"
   },
   {
@@ -1612,8 +1612,8 @@
     "scientificName": "Platalea ajaja",
     "size": "Length: 71-86 cm; Wingspan: 120-127 cm.",
     "lifeExpectancy": "Around 15 years",
-    "habitat": "They forage in coastal marshes, mangroves, and lagoons of the Americas.",
-    "funFact": "Pink plumage comes from carotenoid rich crustaceans in their diet.",
+    "habitat": "Mangroves, estuaries, and coastal marshes from the Gulf Coast to South America.",
+    "funFact": "Its spoon-shaped bill sweeps through water to strain shrimp that tint the bird pink.",
     "image": "/assets/animals/platalea_ajaja.jpg"
   },
   {
@@ -1623,8 +1623,8 @@
     "scientificName": "Upupa epops",
     "size": "Length: 25-32 cm; Wingspan: 44-48 cm.",
     "lifeExpectancy": "Around 10 years",
-    "habitat": "africana ), found from Ethiopia to South Africa .",
-    "funFact": "The hoopoe takes insects and other small invertebrates by probing the ground with its long, downcurved bill.",
+    "habitat": "Open woodlands, orchards, and grasslands across Europe, Asia, and Africa.",
+    "funFact": "They raise a bold crest and secrete a musky oil from the uropygial gland when alarmed.",
     "image": "/assets/animals/upupa_epops.jpg"
   },
   {
@@ -1634,8 +1634,8 @@
     "scientificName": "Nestor notabilis",
     "size": "Length: 46-55 cm; Weight: 0.8-1 kg.",
     "lifeExpectancy": "15-20 years",
-    "habitat": "Inhabit alpine forests and open tussock slopes on New Zealands South Island.",
-    "funFact": "They are famous for playful curiosity and will dismantle car seals or unzip packs.",
+    "habitat": "Alpine forests and subalpine valleys of New Zealand's South Island.",
+    "funFact": "Kea are notorious for prying open backpacks and car seals with their strong bills.",
     "image": "/assets/animals/nestor_notabilis.jpg"
   },
   {
@@ -1645,8 +1645,8 @@
     "scientificName": "Tyto alba",
     "size": "Wingspan: 80-95 cm; Weight: 0.4-0.7 kg.",
     "lifeExpectancy": "4-6 years in the wild",
-    "habitat": "Some are called grass owls (such as the common grass owl, T.",
-    "funFact": "capensis , of India, the South Pacific, Australia, and South…",
+    "habitat": "Grasslands, farmlands, and open woodlands worldwide.",
+    "funFact": "A heart-shaped facial disc funnels faint sounds to its asymmetrical ears for pinpoint hunting.",
     "image": "/assets/animals/tyto_alba.jpg"
   }
 ]

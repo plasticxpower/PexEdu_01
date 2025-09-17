@@ -1,0 +1,1052 @@
+{
+  "loxodonta_africana": {
+    "commonName": "Africký slon",
+    "size": "Dospělí samci dorůstají až 3,3 m v kohoutku a váží 4,5–6,8 tuny.",
+    "lifeExpectancy": "Ve volné přírodě se dožívají přibližně 60–70 let.",
+    "habitat": "Savannas, pastviny a lesy napříč subsaharskou Afrikou.",
+    "funFact": "Stáda vedená matriarchem komunikuje pomocí infrasonického rušování, které cestují po kilometrech."
+  },
+  "balaenoptera_musculus": {
+    "commonName": "Modrá velryba",
+    "size": "Délka 24–30 m, hmotnost až 180 tun.",
+    "lifeExpectancy": "Dožívají se 80–90 let.",
+    "habitat": "Pelagické vody všech hlavních oceánů, sezónně migrující mezi krmením a chovem.",
+    "funFact": "Jeho srdce má zhruba velikost kompaktního automobilu a během potápění bije jen několikrát za minutu."
+  },
+  "ailuropoda_melanoleuca": {
+    "commonName": "Panda velká",
+    "size": "Měří 1,2–1,9 m a váží 70–125 kg.",
+    "lifeExpectancy": "V přírodě žijí okolo 20 let, v lidské péči až 30 let.",
+    "habitat": "Skvělé mírné bambusové lesy v čínských provinciích Sichuan, Shaanxi a Gansu.",
+    "funFact": "Pandova pseudo-talk je zvětšená kosti zápěstí, která jí umožňuje obratně svlékat bambusové stonky."
+  },
+  "panthera_tigris_tigris": {
+    "commonName": "Tygr bengálský",
+    "size": "Samci měří 2,7–3,1 m včetně ocasu a váží 180–260 kg.",
+    "lifeExpectancy": "Ve volné přírodě se dožívají 8–10 let.",
+    "habitat": "Mangrovy, pastviny a lesy po celé Indii, Bangladéši, Nepálu a Bhútánu.",
+    "funFact": "Vzorec každého tygra je jedinečný a pracuje jako otisky prstů, když pronásleduje kořist skrz kryt."
+  },
+  "canis_lupus": {
+    "commonName": "Vlk obecný",
+    "size": "Dospělí vlci měří 1,2–1,6 m a váží 30–50 kg podle oblasti.",
+    "lifeExpectancy": "V divočině obvykle žijí 6–8 let.",
+    "habitat": "Lesy, tundra, pouště a hory po celé Severní Americe a Eurasii.",
+    "funFact": "Howls Wolves mohou nést přes 10 km, koordinovat členy balení při lovu nebo obraně území."
+  },
+  "ursus_maritimus": {
+    "commonName": "Medvěd lední",
+    "size": "Tělo měří 2,4–3 m a samci váží 350–600 kg.",
+    "lifeExpectancy": "Ve volné přírodě se dožívají 20–25 let.",
+    "habitat": "Arktický mořský led, pobřežní fjordy a ostrovy obklopující severní pól.",
+    "funFact": "Dutá, průsvitná srst a silná vrstva s vrstvou izolují lední medvědy i v bouřích 40 ° C."
+  },
+  "phascolarctos_cinereus": {
+    "commonName": "Koala",
+    "size": "Délka: 60-85 cm; Hmotnost: 4-15 kg v závislosti na šířce.",
+    "lifeExpectancy": "10-12 let ve volné přírodě",
+    "habitat": "Eucalyptus Woodlands podél australského východního a jižního pobřeží.",
+    "funFact": "Koaly spí až 20 hodin denně, aby šetřily energii pro trávení vláknitých listů eukalyptu."
+  },
+  "osphranter_rufus": {
+    "commonName": "Červený klokan",
+    "size": "Délka těla: 1,3-1,6 m; Hmotnost: 55-90 kg pro muže.",
+    "lifeExpectancy": "8-12 let ve volné přírodě",
+    "habitat": "Otevřené pláně, travní porosty a pouště po střední Austrálii.",
+    "funFact": "Silné zadní nohy nechávají muže svázané 9 m v jednom skoku, zatímco ocas funguje jako vyrovnávací třetí noha."
+  },
+  "pongo_pygmaeus": {
+    "commonName": "Bornean Orangutan",
+    "size": "Rozpětí paže: až 2,0 m; Hmotnost: 35-80 kg.",
+    "lifeExpectancy": "30-40 let ve volné přírodě",
+    "habitat": "Tropické deštné pralesy Borneo.",
+    "funFact": "Orangutani staví čerstvé hnízdo větví a každý večer ponechává vysoko v baldachýnu."
+  },
+  "hippopotamus_amphibius": {
+    "commonName": "Hroch",
+    "size": "Délka: 3,3-5 m; Hmotnost: 1 400-3 200 kg.",
+    "lifeExpectancy": "40-50 let",
+    "habitat": "Pomalu se pohybující řeky, jezera a mokřady napříč subsaharskou Afrikou.",
+    "funFact": "Hrochy vylučují oranžový „krevní potem“, který působí jako opalovací i antibakteriální ochranu."
+  },
+  "panthera_leo": {
+    "commonName": "Africký lev",
+    "size": "Délka: 1,7-2,5 m vyloučení ocasu; Hmotnost: 150-250 kg pro muže.",
+    "lifeExpectancy": "10-14 let ve volné přírodě",
+    "habitat": "Savannas a otevřené lesy po východní a jižní Africe.",
+    "funFact": "Lvi jsou jediné skutečně společenské velké kočky, které žijí v hrdosti, které kooperativně zvyšují mláďata."
+  },
+  "acinonyx_jubatus": {
+    "commonName": "Gepard",
+    "size": "Délka: 1,1-1,5 m; Hmotnost: 35-65 kg.",
+    "lifeExpectancy": "10-12 let ve volné přírodě",
+    "habitat": "Otevřené pastviny a polosuché pláně subsaharské Afriky.",
+    "funFact": "Polopěťové drápy a flexibilní páteř nechávají gepards sprintu přes 100 km/h."
+  },
+  "gorilla_beringei_beringei": {
+    "commonName": "Mountain Gorilla",
+    "size": "Výška: 1,4-1,8 m stojící; Hmotnost: 120-195 kg pro dospělé muže.",
+    "lifeExpectancy": "35-40 let",
+    "habitat": "Montane Cloud Forests of Virunga Massif a Bwindi neproniknutelný les.",
+    "funFact": "Staví čerstvá hnízda listů na zemi každou noc po hledání potravy."
+  },
+  "panthera_uncia": {
+    "commonName": "Snow Leopard",
+    "size": "Délka těla: 1,0-1,3 m; Hmotnost: 32-55 kg.",
+    "lifeExpectancy": "12-15 let ve volné přírodě",
+    "habitat": "Útesy s vysokou výškou a alpské louky přes střední a jižní Asii.",
+    "funFact": "Ocas Snow Leopard může být tak dlouho, dokud jeho tělo a ovine se jako šátek pro teplo."
+  },
+  "vulpes_lagopus": {
+    "commonName": "Arktická liška",
+    "size": "Délka: 75-110 cm včetně ocasu; Hmotnost: 3-8 kg.",
+    "lifeExpectancy": "3-6 let ve volné přírodě",
+    "habitat": "Tundra a zabalte ledové oblasti přes cirkupolární Arktidu.",
+    "funFact": "Jeho hustý kabát se mění z hnědé v létě na bílou v zimě pro kamufláž."
+  },
+  "ornithorhynchus_anatinus": {
+    "commonName": "Ptakopysk",
+    "size": "Délka: 43-50 cm; Hmotnost: 0,7-2,4 kg.",
+    "lifeExpectancy": "15-20 let",
+    "habitat": "Sladkovodní potoky, Billabongs a řeky východní Austrálie a Tasmánie.",
+    "funFact": "Mužské platypusy nesou jedovaté kotníkové ostruhy dodávající silné obranné bodnutí."
+  },
+  "tursiops_truncatus": {
+    "commonName": "Bottlenose Dolphin",
+    "size": "Délka: 2,5-3,8 m; Hmotnost: 200-500 kg.",
+    "lifeExpectancy": "40-50 let",
+    "habitat": "Pobřežní a pobřežní vody mírného a tropického oceánu po celém světě.",
+    "funFact": "Každý delfín vyvíjí píšťalku podpisu, která se chová jako osobní jméno."
+  },
+  "bradypus_variegatus": {
+    "commonName": "Sloth s hnědým hrdlem",
+    "size": "Délka: 42-80 cm; Hmotnost: 3,5-6 kg.",
+    "lifeExpectancy": "20-30 let",
+    "habitat": "Nížinské deštné pralesy z Hondurasu přes severní Argentinu.",
+    "funFact": "Řasy rostou ve své chlupaté kožešině a poskytují maskování a další živiny, když jsou upraveny."
+  },
+  "myrmecophaga_tridactyla": {
+    "commonName": "Obří mravenec",
+    "size": "Délka: 1,8-2,4 m včetně ocasu; Hmotnost: 30-50 kg.",
+    "lifeExpectancy": "14-16 let ve volné přírodě",
+    "habitat": "Savannas, mokřady a tropické lesy střední a Jižní Ameriky.",
+    "funFact": "Jeho jazyk může švihnout 160krát za minutu, aby naklonil mravence a termity."
+  },
+  "vombatus_ursinus": {
+    "commonName": "Obyčejné wombat",
+    "size": "Délka: 70-110 cm; Hmotnost: 20-35 kg.",
+    "lifeExpectancy": "15 let ve volné přírodě a až 30 v péči",
+    "habitat": "Burrow Systems v lesích a vřesovinách jihovýchodní Austrálie.",
+    "funFact": "Wombats produkuje scat ve tvaru krychle, který úhledně hromadí na území."
+  },
+  "lycaon_pictus": {
+    "commonName": "Africký divoký pes",
+    "size": "Délka: 75-110 cm; Hmotnost: 20-30 kg.",
+    "lifeExpectancy": "9-11 let ve volné přírodě",
+    "habitat": "Savannas, Open Woodlands a Scrublands subsaharské Afriky.",
+    "funFact": "Balíčky sdílejí jídlo regurgitací jídel pro štěňata a zraněné členy."
+  },
+  "alces_alces": {
+    "commonName": "Moose",
+    "size": "Výška: až 2,1 m na rameni; Hmotnost: 380-700 kg.",
+    "lifeExpectancy": "15-20 let",
+    "habitat": "Borealské lesy, močály a tundra okraje severní Severní Ameriky a Eurasie.",
+    "funFact": "Býci každý rok dorůstají masivní parohy, které se mohou rozprostírat širší než 1,8 m."
+  },
+  "bison_bison": {
+    "commonName": "Americký bizon",
+    "size": "Délka: 2,1-3,5 m; Hmotnost: 318-1 000 kg.",
+    "lifeExpectancy": "15-20 let ve volné přírodě",
+    "habitat": "Prairies, Plains a River Valleys po Severní Americe.",
+    "funFact": "Navzdory svému objemnému se může Bison rychle otočit a sprintovat až 55 km/h."
+  },
+  "suricata_suricatta": {
+    "commonName": "Meerkat",
+    "size": "Délka: 25-35 cm; Hmotnost: 0,7-1 kg.",
+    "lifeExpectancy": "7-10 let ve volné přírodě",
+    "habitat": "Vyprahlé křoviny a savany jižní Afriky.",
+    "funFact": "Skupiny se střídají stálé stráž a používají odlišné poplachové volání pro různé predátory."
+  },
+  "vulpes_vulpes": {
+    "commonName": "Červená liška",
+    "size": "Délka: 90-105 cm včetně ocasu; Hmotnost: 3,5-8 kg.",
+    "lifeExpectancy": "3-5 let ve volné přírodě",
+    "habitat": "Lesy, zemědělské půdy, okraje tundry a městské okraje přes severní polokouli.",
+    "funFact": "Červené lišky určují kořist pod sněhem posloucháním vibrací před provedením vysokého nástrahy."
+  },
+  "okapia_johnstoni": {
+    "commonName": "Okapi",
+    "size": "Výška: 1,5-2 m u ramene; Hmotnost: 200-350 kg.",
+    "lifeExpectancy": "20-30 let",
+    "habitat": "Hustá podrostka Ituriho deštného pralesa v Kongo Demokratické republiky.",
+    "funFact": "Jeho prehensilní jazyk je tak dlouhý, že dokáže vyčistit jeho víčka a uši."
+  },
+  "trichechus_manatus": {
+    "commonName": "Západoindický manatee",
+    "size": "Délka: 2,7-4 m; Hmotnost: 400-1 300 kg.",
+    "lifeExpectancy": "40-60 let",
+    "habitat": "Teplé pobřežní mělčiny, ústí řek, řeky a sladkovodní prameny v Karibiku a jihovýchodních Spojených státech.",
+    "funFact": "Manatees se pasou až 10% své tělesné hmotnosti v mořské řasy denně, aby podporovali jejich pomalý metabolismus."
+  },
+  "manis_pentadactyla": {
+    "commonName": "Čínský pangolin",
+    "size": "Délka: 60-80 cm; Hmotnost: 2-7 kg.",
+    "lifeExpectancy": "13-20 let (divoký odhad)",
+    "habitat": "Lesy, bambusové háje a zemědělská půda po celé jižní Číně a jihovýchodní Asii.",
+    "funFact": "Překrývající se keratin stupnice zbrojí pangolin a nechte ho stočit do téměř nejednotného koule."
+  },
+  "sarcophilus_harrisii": {
+    "commonName": "Tasmánský ďábel",
+    "size": "Délka: 52-80 cm; Hmotnost: 6-8 kg.",
+    "lifeExpectancy": "5-6 let ve volné přírodě",
+    "habitat": "Pobřežní Heath, lesy a zemědělské oblasti na ostrově Tasmánie.",
+    "funFact": "Má nejsilnější kousnutí síly vzhledem k velikosti těla mezi živými savci."
+  },
+  "monodon_monoceros": {
+    "commonName": "Narwhal",
+    "size": "Délka: 4-5,5 m; Hmotnost: 800-1 600 kg.",
+    "lifeExpectancy": "Více než 50 let",
+    "habitat": "Studené arktické vody kolem Kanady, Grónska, Svalbard a Ruska.",
+    "funFact": "Samci pěstují spirálovitý psí zub až do 3 m dlouhých zabalených s senzorickým nervovým zakončením."
+  },
+  "amphiprion_ocellaris": {
+    "commonName": "Klawnfish",
+    "size": "Délka: Až 11 cm.",
+    "lifeExpectancy": "6-10 let ve volné přírodě",
+    "habitat": "Teplé mělké útesy Indo-Pacifiku, žijící symbioticky mezi mořskými sasankami.",
+    "funFact": "Všechny klauny poklop jako muži; Dominantní ryba může změnit sex, aby se stala chovnou ženou."
+  },
+  "carcharodon_carcharias": {
+    "commonName": "Skvělý bílý žralok",
+    "size": "Délka: 4-6 m; Hmotnost: 680-1 100 kg.",
+    "lifeExpectancy": "Až 70 let",
+    "habitat": "Mírné pobřežní a pobřežní vody po celém světě.",
+    "funFact": "Velké bílé smysl cítí slabá elektrická pole pomocí ampullae z Lorenzini k nalezení kořisti."
+  },
+  "rhincodon_typus": {
+    "commonName": "Žralok velryby",
+    "size": "Délka: obvykle 10-12 m; Hmotnost: až 20 tun.",
+    "lifeExpectancy": "80-130 let",
+    "habitat": "Tropické a teplé těsné oceány, navštěvující povrchové vody bohaté na plankton.",
+    "funFact": "Navzdory své velikosti filtruje krmení na planktonu přes ústa širší než 1,5 m."
+  },
+  "paracanthurus_hepatus": {
+    "commonName": "Blue Tang",
+    "size": "Délka: Až 30 cm.",
+    "lifeExpectancy": "8-20 let",
+    "habitat": "Korálové útesy Indo-Pacifiku z východní Afriky do Mikronésie.",
+    "funFact": "Páteř podobná skalpelu poblíž ocasu švihne, aby odradila predátory."
+  },
+  "salmo_salar": {
+    "commonName": "Atlantik losos",
+    "size": "Délka: 71-76 cm; Hmotnost: 3,6-5,4 kg, větší v severních řekách.",
+    "lifeExpectancy": "4-6 let, s některými přežívajícími po desetiletí",
+    "habitat": "Severní Atlantik Oceán a sladkovodní řeky používané pro migrace tření.",
+    "funFact": "Atlantik losos používá magnetické pole Země a vůně k návratu do svých natálních toků."
+  },
+  "pterois_volitans": {
+    "commonName": "Červený peruť",
+    "size": "Délka: 30-38 cm.",
+    "lifeExpectancy": "10-15 let",
+    "habitat": "Tropické indo-tichomořské útesy; představil populace v západním Atlantiku a Karibiku.",
+    "funFact": "Jedovaté hřbetní páteře poskytují bolestivé bodnutí a pruhované ploutve zmatují budoucí predátory."
+  },
+  "mobula_birostris": {
+    "commonName": "Obří oceánský paprsek Manta",
+    "size": "Wingspan: 4-7 m; Hmotnost: až 1 350 kg.",
+    "lifeExpectancy": "40-50 let",
+    "habitat": "Otevřené tropické a subtropické oceány, často na produktivních místech.",
+    "funFact": "Manta paprsky vydávají vysoké skoky z vody během společenských a párovacích displejů."
+  },
+  "hippocampus_kuda": {
+    "commonName": "Obyčejný mořský koň",
+    "size": "Délka: 12-17 cm.",
+    "lifeExpectancy": "1-5 let",
+    "habitat": "Postele mořských řas, mangrovy a chráněné pobřežní útesy přes Indo-Pacifik.",
+    "funFact": "Mužské mořské koně hnojení oplodněná vejce v pouzdře a porodí miniaturní mladá."
+  },
+  "takifugu_rubripes": {
+    "commonName": "Japonský nafouklý",
+    "size": "Délka: 30-40 cm.",
+    "lifeExpectancy": "Asi 10 let",
+    "habitat": "Pobřežní vody Japonska, Koreje a Číny.",
+    "funFact": "Orgány obsahují tetrodotoxin, neurotoxin stokrát silnější než kyanid."
+  },
+  "xiphias_gladius": {
+    "commonName": "Mečoun",
+    "size": "Délka: 3-4,5 m; Hmotnost: 90-650 kg.",
+    "lifeExpectancy": "Až 9 let",
+    "habitat": "Tropické a mírné oceány z povrchu do přes 650 m hluboko.",
+    "funFact": "Svaly ex-výměnné svaly zahřívají oči a mozek pro ostré vidění během hlubokých honiček."
+  },
+  "electrophorus_electricus": {
+    "commonName": "Elektrický úhoř",
+    "size": "Délka: 1,75-2,5 m; Hmotnost: až 20 kg.",
+    "lifeExpectancy": "Asi 15 let",
+    "habitat": "Pomalu se pohybující řeky, nivy a bažiny povodí Amazonu a Orinoco.",
+    "funFact": "Specializované elektrické orgány mohou vypouštět šoky přesahující 600 voltů, aby omráčily kořist."
+  },
+  "latimeria_chalumnae": {
+    "commonName": "Coelacanth",
+    "size": "Délka: 1,5-2 m; Hmotnost: 80-100 kg.",
+    "lifeExpectancy": "Až 60 let",
+    "habitat": "Hluboké sopečné svahy mimo ostrovy Coros v Jižní Africe a Indonésii.",
+    "funFact": "Myslel jsem zahynulý až do roku 1938, coelacanths mají ploutve podobné ploutve, které naznačují časný vývoj tetrapodu."
+  },
+  "mola_mola": {
+    "commonName": "Ocean Sunfish",
+    "size": "Délka: 1,8-2,5 m; Hmotnost: až 2 200 kg.",
+    "lifeExpectancy": "Nejméně 10 let ve volné přírodě",
+    "habitat": "Mírné a tropické oceány, vyhřívané poblíž povrchu a potápění pro medúzy.",
+    "funFact": "Ženská slunečnice může uvolnit více než 300 milionů vajec v jednom tření."
+  },
+  "arapaima_gigas": {
+    "commonName": "Arapaima",
+    "size": "Délka: 2-3 m; Hmotnost: Až 200 kg.",
+    "lifeExpectancy": "15-20 let",
+    "habitat": "Jezera a řeky Amazonské povodí chudí na kyslík.",
+    "funFact": "Arapaimas se povrchem vynořuje na vzduch pomocí plicního plaveckého močového měchýře a nechává je přežít ve stojaté vodě."
+  },
+  "betta_splendens": {
+    "commonName": "Betta Fish",
+    "size": "Délka: 6-8 cm.",
+    "lifeExpectancy": "2-5 let",
+    "habitat": "Mělké rýžové políky, kanály a záplavy Thajska a Kambodže.",
+    "funFact": "Samci staví hnízda bublin na vodní hladině a hlídají vejce uvnitř."
+  },
+  "thunnus_thynnus": {
+    "commonName": "Tuňák Atlantic Bluefin",
+    "size": "Délka: 2-3 m; Hmotnost: 225-450 kg.",
+    "lifeExpectancy": "35-40 let",
+    "habitat": "Severní Atlantik Oceán a Středozemní moře, provádějící migrace na dlouhé vzdálenosti.",
+    "funFact": "Protiproudový oběh umožňuje bluefinu udržovat tělesné teploty nad okolní mořskou vodou."
+  },
+  "mitsukurina_owstoni": {
+    "commonName": "Goblin Shark",
+    "size": "Délka: 3-4 m.",
+    "lifeExpectancy": "Odhaduje se na 40 let",
+    "habitat": "Hluboké kontinentální svahy po celém světě, obvykle pod 100 m.",
+    "funFact": "Katapultuje své vyprodané čelisti vpřed, aby v hlubokém moři pronikla rybami a chobotnicemi."
+  },
+  "melanocetus_johnsonii": {
+    "commonName": "Black Seadevil",
+    "size": "Délka: Až 20 cm pro ženy; Samci jsou trpasličí velikosti.",
+    "lifeExpectancy": "Neznámý, odhadovaný 15-30 let",
+    "habitat": "Bathypelagické zóny Atlantiku a Pacifik.",
+    "funFact": "Samice lákají kořist zářící návnadou, zatímco na ně se na ně spojují drobné muži."
+  },
+  "exocoetus_volitans": {
+    "commonName": "Létající ryby",
+    "size": "Délka: 20-25 cm.",
+    "lifeExpectancy": "Až 5 let",
+    "habitat": "Teplé tropické a subtropické oceány poblíž povrchu.",
+    "funFact": "Mohou klouzat přes 200 m pomocí zvětšených prsních ploutve k úniku predátorů."
+  },
+  "gadus_morhua": {
+    "commonName": "Atlantic Cod",
+    "size": "Délka: obvykle 61–76 cm; Hmotnost: U starších jedinců až 40 kg.",
+    "lifeExpectancy": "Až 25 let ve studených severních vodách",
+    "habitat": "Severo Atlantické kontinentální police, z Grónska a Barents Sea po Cape Hatteras.",
+    "funFact": "Atlantická treska tvoří nesmírné agregace zimních tření, které historicky přitahovaly flotily do Newfoundlandu a Islandu."
+  },
+  "oncorhynchus_mykiss": {
+    "commonName": "Pstruh duhový",
+    "size": "Délka: 50-76 cm; Hmotnost: 2-7 kg.",
+    "lifeExpectancy": "6-11 let",
+    "habitat": "Studené sladkovodní řeky, jezera a pobřežní potoky v Severní Americe; široce představeno jinde.",
+    "funFact": "Některé populace jdou na moře jako Steelhead, než se vrátí na své rodné řeky, aby se vynořily."
+  },
+  "somniosus_microcephalus": {
+    "commonName": "Grónsko žralok",
+    "size": "Délka: 4-7 m; Hmotnost: až 1 000 kg.",
+    "lifeExpectancy": "Odhaduje se 250–400 let",
+    "habitat": "Hluboké, studené vody severního Atlantiku a polárních oceánů.",
+    "funFact": "Žraloci Grónska rostou méně než 1 cm ročně a patří mezi nejdéle žijící obratlovce."
+  },
+  "epinephelus_itajara": {
+    "commonName": "Goliath Grouper",
+    "size": "Délka: až 2,5 m; Hmotnost: 360 kg.",
+    "lifeExpectancy": "Nejméně 35 let",
+    "habitat": "Útesy, mangrovy a lodi v tropických Atlantických vodách.",
+    "funFact": "Vytváří hluboko vzkvétající zvuky, aby bránilo území před soupeři."
+  },
+  "silurus_glanis": {
+    "commonName": "Wels Catfish",
+    "size": "Délka: 2-3 m; Hmotnost: až 150 kg.",
+    "lifeExpectancy": "30-50 let",
+    "habitat": "Pomalu se pohybující řeky a velká jezera po celé Evropě a západní Asii.",
+    "funFact": "Wels Catfish si potuluje vzduch na povrchu, aby přežil ve vodách chudých na kyslík a příležitostně přepadený ptáky."
+  },
+  "synchiropus_splendidus": {
+    "commonName": "Mandarin Dragonnet",
+    "size": "Délka: 6-7 cm.",
+    "lifeExpectancy": "Až 10 let",
+    "habitat": "Lagunové útesy v západním Tichém oceánu.",
+    "funFact": "Její živé buňky vylučují škodlivý hlen, který odrazuje predátory."
+  },
+  "lates_niloticus": {
+    "commonName": "Nile okoun",
+    "size": "Délka: 1-2 m; Hmotnost: Až 200 kg.",
+    "lifeExpectancy": "16-20 let",
+    "habitat": "Velká sladkovodní jezera a řeky napříč subsaharskou Afrikou, zejména Lake Victoria.",
+    "funFact": "Škola mladistvých v mělkých zátokách, zatímco dospělí se stanou osamělými predátory přepadení."
+  },
+  "istiophorus_platypterus": {
+    "commonName": "Indo-Pacific Sailfish",
+    "size": "Délka: 1,8-3,4 m; Hmotnost: 58-100 kg.",
+    "lifeExpectancy": "13-15 let",
+    "habitat": "Teplé a mírné části Atlantiku a Indo-Pacifik.",
+    "funFact": "Sailfish může prudce narůstat přes 100 km/h, skládat jejich hřbetní ploutev, aby snížil odpor."
+  },
+  "cetorhinus_maximus": {
+    "commonName": "Vyhřívání žraloka",
+    "size": "Délka: 7-9 m; Hmotnost: až 5 200 kg.",
+    "lifeExpectancy": "Asi 50 let",
+    "habitat": "Mírné pobřežní vody, často sklíčené krmení na povrchu pro plankton.",
+    "funFact": "Filtruje asi 2 000 litrů mořské vody za hodinu prostřednictvím Gill Rakers."
+  },
+  "cheilinus_undulatus": {
+    "commonName": "HUMPHEAD WRASSE",
+    "size": "Délka: až 2,3 m; Hmotnost: 190 kg.",
+    "lifeExpectancy": "Více než 30 let",
+    "habitat": "Svahy vnějšího útesu a kanály přes Indo-Pacifik.",
+    "funFact": "Druh je protogynní: jednotlivci začínají ženu a mnoho pozdějších přechodů na muže."
+  },
+  "salvelinus_alpinus": {
+    "commonName": "Arctic Char",
+    "size": "Délka: 60-80 cm; Hmotnost: 2-9 kg.",
+    "lifeExpectancy": "20 nebo více let",
+    "habitat": "Studená ledová jezera a pobřežní voda po arktických vodách kolem cirkumpolárního sever.",
+    "funFact": "Arktická char může přezimovat pod ledem měsíce a krmit se jen málo, dokud se roztaví na jaře."
+  },
+  "ambystoma_mexicanum": {
+    "commonName": "Axolotl",
+    "size": "Délka: 23-28 cm.",
+    "lifeExpectancy": "10-15 let",
+    "habitat": "Chladné kanály a zbytky systému Xochimilco Lake poblíž Mexico City.",
+    "funFact": "Axolotls zůstávají v larválním stavu a mohou opětovné opětovné končetiny, míchu a dokonce i části jejich srdce."
+  },
+  "dendrobates_tinctorius": {
+    "commonName": "Žába modré jedové",
+    "size": "Délka: 3-5 cm.",
+    "lifeExpectancy": "4-6 let ve volné přírodě; déle v péči",
+    "habitat": "Vlhké deštné pralesy Surinamu a severní Brazílie.",
+    "funFact": "Alkaloidní toxiny z jejich mravence mohou paralyzovat nebo zabíjet predátory mnohokrát jejich velikosti."
+  },
+  "agalychnis_callidryas": {
+    "commonName": "Žába červenooký strom",
+    "size": "Délka: 4-7 cm.",
+    "lifeExpectancy": "Asi 5 let",
+    "habitat": "Vlhké nížinné lesy z jižního Mexika do Kolumbie.",
+    "funFact": "Když vyděsí, bliká červené oči a jasné boční pruhy, aby demorientovali predátory, než vyskočí."
+  },
+  "salamandra_salamandra": {
+    "commonName": "Oheň Salamander",
+    "size": "Délka: 20-30 cm.",
+    "lifeExpectancy": "20 nebo více let",
+    "habitat": "Vlhké listnaté lesy a horské potoky napříč střední a jižní Evropou.",
+    "funFact": "Když je ohrožen mlok, žlázy za očima vytékají silné alkaloidní toxiny."
+  },
+  "rhinella_marina": {
+    "commonName": "Cane ropucha",
+    "size": "Délka: 10-15 cm; Velké ženy mohou překročit 20 cm.",
+    "lifeExpectancy": "10-15 let",
+    "habitat": "Tropické lesy, mokřady a městské hrany - poprvé do střední/Jižní Ameriky a invazivní v Austrálii.",
+    "funFact": "Obrovské parotoidní žlázy vyzařují bufotoxiny, které mohou smrtelně otrávit predátory."
+  },
+  "notophthalmus_viridescens": {
+    "commonName": "Východní Newt",
+    "size": "Délka: 7-12 cm.",
+    "lifeExpectancy": "10-15 let",
+    "habitat": "Lesní rybníky a mokřady ve východní Severní Americe.",
+    "funFact": "Cykluje přes vodní larvu, pozemský jasně oranžový EFT, poté vodní fáze dospělých."
+  },
+  "cryptobranchus_alleganiensis": {
+    "commonName": "Hellbender",
+    "size": "Délka: 30-74 cm.",
+    "lifeExpectancy": "25-30 let",
+    "habitat": "Jasné, rychle tekoucí proudy regionů Appalachian a Ozark ve Spojených státech.",
+    "funFact": "Uvolněná, vrásčitá kůže zvyšuje povrchovou plochu, aby mohla absorbovat kyslík přímo z vody."
+  },
+  "andrias_davidianus": {
+    "commonName": "Čínský obří mlok",
+    "size": "Délka: 1,2-1,8 m; Hmotnost: až 50 kg.",
+    "lifeExpectancy": "Více než 50 let",
+    "habitat": "Chladné, rychlé horské potoky ve střední a jižní Číně.",
+    "funFact": "Vocalizuje se kůry a syčením a vylučuje mléčnou látku, která voní jako pepř."
+  },
+  "hyalinobatrachium_valerioi": {
+    "commonName": "Skleněná žába",
+    "size": "Délka: 2-3 cm.",
+    "lifeExpectancy": "10-14 let",
+    "habitat": "Vlhké tropické lesy z Kostariky do Ekvádoru, obvykle posazené na listech nad potoky.",
+    "funFact": "Jeho průsvitná břišní kůže odhaluje orgány a vejce a mísí se sluncem."
+  },
+  "ambystoma_tigrinum": {
+    "commonName": "Tiger Salamander",
+    "size": "Délka: 18-33 cm.",
+    "lifeExpectancy": "12-15 let",
+    "habitat": "Prairies, lesy a pomíjivé rybníky po celé Severní Americe.",
+    "funFact": "Larvy mohou vyvinout zvětšené hlavy a zuby, aby se staly kanibalskými morfy, když se zmenšují rybníky."
+  },
+  "necturus_maculosus": {
+    "commonName": "Mudpuppy",
+    "size": "Délka: 20-45 cm.",
+    "lifeExpectancy": "18-25 let",
+    "habitat": "Pomalé řeky a jezera s hojným krytem ve východní Severní Americe.",
+    "funFact": "Mudpuppies si zachovávají svěží vnější žábry po celý život a zůstávají plně vodní."
+  },
+  "proteus_anguinus": {
+    "commonName": "Olm",
+    "size": "Délka: 23-30 cm.",
+    "lifeExpectancy": "70 let nebo více",
+    "habitat": "Karst jeskyně a podzemní proudy dinarických Alp v Evropě.",
+    "funFact": "Slepé OLMS může jít více než 8 let bez jídla díky pomalému metabolismu."
+  },
+  "pipa_pipa": {
+    "commonName": "Surinam ropucha",
+    "size": "Délka: 10-20 cm.",
+    "lifeExpectancy": "10-15 let",
+    "habitat": "Pomalé, temné řeky a bažiny severní Jižní Ameriky.",
+    "funFact": "Samice inkubují vejce zabudovaná do kůže jejich zády, dokud se neobjeví žaby."
+  },
+  "xenopus_laevis": {
+    "commonName": "Africká žába",
+    "size": "Délka: 7-12 cm.",
+    "lifeExpectancy": "Až 15 let",
+    "habitat": "Permanentní rybníky a jezera v celé subsaharské Africe.",
+    "funFact": "Tento druh byl kdysi použit pro těhotenské testy člověka - zahrnující moč způsobil, že ženy položily vejce."
+  },
+  "trichobatrachus_robustus": {
+    "commonName": "Chlupatá žába",
+    "size": "Délka: 11-13 cm.",
+    "lifeExpectancy": "Asi 10 let",
+    "habitat": "Rychle tekoucí lesní proudy v Kamerunu a Rovníkové Guineji.",
+    "funFact": "Samci lámají vlastní kosti na špičce, aby při obraně hnízd vytvořili kostnaté drápy."
+  },
+  "oophaga_pumilio": {
+    "commonName": "Jahodová jedovatá žába",
+    "size": "Délka: 17-24 mm.",
+    "lifeExpectancy": "6-8 let",
+    "habitat": "Vlhké nížinné lesy Nikaragua, Kostariky a Panamy.",
+    "funFact": "Samice vytáhnou každý tadpole na vlastní bromeliad a nakrmí ji nefertilizovaná vejce."
+  },
+  "rhinoderma_darwinii": {
+    "commonName": "Darwinova žába",
+    "size": "Délka: 2,5-3,5 cm.",
+    "lifeExpectancy": "8-10 let",
+    "habitat": "Mírné Nothofagusské lesy v Chile a Argentině.",
+    "funFact": "Samci se potýkají se svými vokálními vaky, dokud žabí vyskočí."
+  },
+  "rhacophorus_nigropalmatus": {
+    "commonName": "Wallaceova létající žába",
+    "size": "Délka: 8–10 cm, s výjimkou dlouhých prstů.",
+    "lifeExpectancy": "Odhaduje se asi 6–8 let ve volné přírodě",
+    "habitat": "Deštné pralesy Malajského poloostrova, Sumatra a Borneo, klouzající mezi stromy baldachýnu.",
+    "funFact": "Rozsáhlé popruhy mezi prsty nechají žábu klouzat více než 15 metrů od stromu ke stromu."
+  },
+  "conraua_goliath": {
+    "commonName": "Goliath Frog",
+    "size": "Délka těla: až 32 cm; Hmotnost: 3,3 kg.",
+    "lifeExpectancy": "15 let",
+    "habitat": "Velké, rychlé řeky v Kamerunu a Rovníkové Guineji.",
+    "funFact": "Pohybují skály a rostliny, aby stavěli bazény břehu řeky pro jejich vejce."
+  },
+  "phyllobates_terribilis": {
+    "commonName": "Golden Poison Frog",
+    "size": "Délka: 4,7-5 cm.",
+    "lifeExpectancy": "Až 10 let",
+    "habitat": "Střech na deštném pralese podél Kolumbijského tichomořského pobřeží.",
+    "funFact": "Skin jedné žáby produkuje dostatek batrachotoxinu, aby zastavil srdce 10 lidí."
+  },
+  "ambystoma_maculatum": {
+    "commonName": "SPOTNET MALAMANDER",
+    "size": "Délka: 15-25 cm.",
+    "lifeExpectancy": "Až 20 let",
+    "habitat": "Listnaté lesy a lidové bazény ve východní Severní Americe.",
+    "funFact": "Embrya hostí symbiotické řasy, které dodávají kyslík uvnitř vaječných hmot."
+  },
+  "pseudacris_crucifer": {
+    "commonName": "Jarní peeper",
+    "size": "Délka: 2,5-3,5 cm.",
+    "lifeExpectancy": "3-4 roky",
+    "habitat": "Zalesněné bažiny, močály a listové bazény po východní Severní Americe.",
+    "funFact": "Mužské sbory dosáhly během časných jarních nocí přes 90 decibelů."
+  },
+  "taricha_torosa": {
+    "commonName": "Kalifornie Newt",
+    "size": "Délka: 12-20 cm.",
+    "lifeExpectancy": "10-15 let",
+    "habitat": "Pobřežní a podhůří lesy s pomalu se pohybujícími potoky v Kalifornii.",
+    "funFact": "Skin žlázy vylučují tetrodotoxin mocný, aby odradili většinu predátorů."
+  },
+  "siphonops_annulatus": {
+    "commonName": "Prsten Caecilian",
+    "size": "Délka: 30-60 cm.",
+    "lifeExpectancy": "Odhaduje se 13-15 let",
+    "habitat": "Vlhký listový vrh a půdy jihoamerických tropických lesů.",
+    "funFact": "Matky pěstují pokožku bohaté na živiny, kterou ježdí líhní v rotujících směnách."
+  },
+  "nasikabatrachus_sahyadrensis": {
+    "commonName": "Fialová žába",
+    "size": "Délka: asi 7 cm.",
+    "lifeExpectancy": "Pravděpodobně více než 10 let",
+    "habitat": "Underground Burrows v západních Ghats Indie, vynoření během monzunových dešťů.",
+    "funFact": "Většinu svého života tráví podzemními krmením termitů se specializovaným čenichem."
+  },
+  "atelopus_zeteki": {
+    "commonName": "Panamanian Golden Frog",
+    "size": "Délka: 4-6 cm.",
+    "lifeExpectancy": "Asi 10 let",
+    "habitat": "Mountain Cloud Forests of Central Panama podél rychlých proudů.",
+    "funFact": "Kromě hovorů komunikují s ručními vlnami podobnými semaforu v hlučných proudech."
+  },
+  "bufo_bufo": {
+    "commonName": "Obyčejná ropucha",
+    "size": "Délka: 6-13 cm.",
+    "lifeExpectancy": "10-12 let ve volné přírodě",
+    "habitat": "Zahrady, lesy a mokřady po celé Evropě a části Asie.",
+    "funFact": "Parotoidní žlázy vyzařují bufotoxin a ropucha nafoukne jeho tělo, aby vypadalo větší."
+  },
+  "dryophytes_versicolor": {
+    "commonName": "Šedý strom",
+    "size": "Délka: 3-5 cm.",
+    "lifeExpectancy": "7-9 let",
+    "habitat": "Lesy, bažiny a zahrady ve východní Severní Americe.",
+    "funFact": "Může přežít zmrazenou pevnou látku produkcí nemrznoucí směsi na bázi glycerolu ve svých tkáních."
+  },
+  "lithobates_sylvaticus": {
+    "commonName": "Dřevo žába",
+    "size": "Délka: 5-8 cm.",
+    "lifeExpectancy": "3-4 roky",
+    "habitat": "Borealské lesy, bažiny a tundra okraje po celé Severní Americe.",
+    "funFact": "Žáby dřeva mohou zamrznout až 65% jejich tělesné vody a obnovit aktivitu po rozmrazení."
+  },
+  "lissotriton_vulgaris": {
+    "commonName": "Smooth Newt",
+    "size": "Délka: 7-11 cm.",
+    "lifeExpectancy": "6-14 let",
+    "habitat": "Rybníky, močály a vlhké pastviny po celé Evropě.",
+    "funFact": "Muži během období rozmnožování vyvíjejí dramatický vlnitý hřeben a ocasní vlákno."
+  },
+  "varanus_komodoensis": {
+    "commonName": "Komodo Dragon",
+    "size": "Délka: 2-3 m; Hmotnost: 70-90 kg.",
+    "lifeExpectancy": "Asi 30 let",
+    "habitat": "Suché lesy a savany na indonéských ostrovech Komodo, Rinca, Flores a Gili Motang.",
+    "funFact": "Komodo draci mají mírně jedovaté sliny, které snižují krevní tlak."
+  },
+  "chelonia_mydas": {
+    "commonName": "Zelená mořská želva",
+    "size": "Délka skořepiny: 83-114 cm; Hmotnost: 110-190 kg.",
+    "lifeExpectancy": "60-70 let",
+    "habitat": "Tropická a subtropická moře po celém světě, hnízdící na písečných plážích.",
+    "funFact": "Dospělí pasou mořská řasa a oříznou je jako trávníky, aby byli louky zdravé."
+  },
+  "ophiophagus_hannah": {
+    "commonName": "Král Cobra",
+    "size": "Délka: 3-4,5 m.",
+    "lifeExpectancy": "Asi 20 let",
+    "habitat": "Vlhké lesy Indie, jihovýchodní Asie a jižní Číny.",
+    "funFact": "Je to nejdelší jedovatý had na světě a konstruuje hnízdo listů, aby chránilo jeho vejce."
+  },
+  "heloderma_suspectum": {
+    "commonName": "Gila Monster",
+    "size": "Délka: 55-62 cm; Hmotnost: 1,3-2,3 kg.",
+    "lifeExpectancy": "20-30 let",
+    "habitat": "Pouštní peeling a skalnaté podhůří v jihozápadních Spojených státech a severozápadním Mexiku.",
+    "funFact": "Venom teče podél drážkovaných zubů a pomáhá podmanit kořist po rozdrceném kousnutí."
+  },
+  "crocodylus_niloticus": {
+    "commonName": "Nile krokodýl",
+    "size": "Délka: 3,5-5 m; Hmotnost: 225-750 kg.",
+    "lifeExpectancy": "70-100 let",
+    "habitat": "Řeky, jezera a mokřady po celé subsaharské Africe.",
+    "funFact": "Hatchlings cvrklí uvnitř vajec, přimějí matky, aby vykopávaly hnízdo a přenesly je do vody."
+  },
+  "chelonoidis_niger": {
+    "commonName": "Galápagos obří želva",
+    "size": "Délka skořepiny: 1-1,3 m; Hmotnost: 180-400 kg.",
+    "lifeExpectancy": "Více než 100 let",
+    "habitat": "Sopečné vysočiny a vyprahlé nížiny na ostrovech Galápagos.",
+    "funFact": "Jednotlivci pomáhají rozptylovat semena přes kilometry a přeměňují ostrovní rostlinné komunity."
+  },
+  "pogona_vitticeps": {
+    "commonName": "Vousatý drak",
+    "size": "Délka: 45-60 cm.",
+    "lifeExpectancy": "8-12 let",
+    "habitat": "Vyprahlé lesy, savana a pouště střední Austrálie.",
+    "funFact": "Ztmavňují a vzplanují své špinavé vousy, aby signalizovaly dominanci nebo absorbovaly teplo."
+  },
+  "dermochelys_coriacea": {
+    "commonName": "Kožená mořská želva",
+    "size": "Délka: 1,5-2 m; Hmotnost: 250-700 kg.",
+    "lifeExpectancy": "Více než 45 let",
+    "habitat": "Otevřené oceány po celém světě, hnízdící na tropických plážích.",
+    "funFact": "Flexibilní skořápka a izolační tuk nechal kožené backingy ponořit se nad 1 000 m do hloubky chladu."
+  },
+  "alligator_mississippiensis": {
+    "commonName": "Americký aligátor",
+    "size": "Délka: 3-4,5 m; Hmotnost: 230-360 kg.",
+    "lifeExpectancy": "35-50 let ve volné přírodě",
+    "habitat": "Sladkovodní bažiny, močály a pomalé řeky jihovýchodních Spojených států.",
+    "funFact": "Aligátoři staví „gator díry“, které poskytují útočiště pro jiná zvířata během sucha."
+  },
+  "chlamydosaurus_kingii": {
+    "commonName": "Frilled Lizard",
+    "size": "Délka: 70-90 cm.",
+    "lifeExpectancy": "10-15 let",
+    "habitat": "Tropické lesy severní Austrálie a jižní Nové Guineje.",
+    "funFact": "Když vyhrožuje, rozvine to 30 cm ozdob, zasyčel a stojí vzpřímeně, aby vypadal větší."
+  },
+  "furcifer_pardalis": {
+    "commonName": "Panther Chameleon",
+    "size": "Délka: 40-52 cm.",
+    "lifeExpectancy": "5-7 let",
+    "habitat": "Pobřežní deštné pralesy a plantáže Madagaskaru.",
+    "funFact": "Posouvají barvy během několika sekund, aby signalizovaly náladu, teplotu nebo dominanci."
+  },
+  "python_regius": {
+    "commonName": "Ball Python",
+    "size": "Délka: 1-1,5 m.",
+    "lifeExpectancy": "20-30 let",
+    "habitat": "Savannas, pastviny a lesní hrany západní a střední Afriky.",
+    "funFact": "Když jsou vystrašeni, spojují se na těsnou kouli s hlavou bezpečně dovnitř."
+  },
+  "crotalus_atrox": {
+    "commonName": "Western Diamondback Rattlesnake",
+    "size": "Délka: 1-1,5 m.",
+    "lifeExpectancy": "15-20 let",
+    "habitat": "Pouště, pastviny a skalnaté kaňony jihozápadních Spojených států a severního Mexika.",
+    "funFact": "Spojené segmenty keratinu na ocasu vibrují až 90krát za sekundu, aby vydali varovné bzučení."
+  },
+  "cyclura_lewisi": {
+    "commonName": "Blue Iguana",
+    "size": "Délka: 1,2-1,5 m.",
+    "lifeExpectancy": "25-40 let",
+    "habitat": "Suché křoví a pobřežní lesy na ostrově Grand Cayman.",
+    "funFact": "Jakmile se blížil vyhynutí, intenzivní ochrana chovala stovky pro uvolnění zpět do přírody."
+  },
+  "moloch_horridus": {
+    "commonName": "Thorny ďábel",
+    "size": "Délka: 15-20 cm.",
+    "lifeExpectancy": "15-20 let",
+    "habitat": "Pandy pouště a drhnutí střední Austrálie.",
+    "funFact": "Kapilární kanály mezi váhami knot rosy a déšť přímo k ústům."
+  },
+  "boa_constrictor": {
+    "commonName": "Hroznýš",
+    "size": "Délka: 2-3,5 m.",
+    "lifeExpectancy": "20-30 let",
+    "habitat": "Tropické lesy, savany a polosuché oblasti z Mexika do Argentiny.",
+    "funFact": "Jápy pro snímání tepla podél rtů pomáhají v noci lokalizovat teplokrevnou kořist."
+  },
+  "eunectes_murinus": {
+    "commonName": "Zelená Anaconda",
+    "size": "Délka: 5-6 m; Hmotnost: až 250 kg.",
+    "lifeExpectancy": "10-30 let",
+    "habitat": "Bažiny, pomalé řeky a zaplavené lesy povodí Amazonu a Orinoco.",
+    "funFact": "Samice mohou porodit vrhy živých mladých, které každý měří téměř metr dlouhý."
+  },
+  "amblyrhynchus_cristatus": {
+    "commonName": "Marine Iguana",
+    "size": "Délka: 70-120 cm; Hmotnost: až 12 kg.",
+    "lifeExpectancy": "30-40 let",
+    "habitat": "Skalnaté pobřeží ostrovů Galápagos.",
+    "funFact": "Ponoří se do chladného surfování, aby se pasou řasy, a poté vyloučili sůl kýchání krystalů z nosních žláz."
+  },
+  "gekko_gecko": {
+    "commonName": "Tokay Gecko",
+    "size": "Délka: 30-35 cm.",
+    "lifeExpectancy": "Asi 10 let",
+    "habitat": "Deštné pralesy, útesy a městské budovy v jihovýchodní Asii.",
+    "funFact": "Poskytuje silné kousnutí a volá „To-Kay!“ Hlasitě každou noc."
+  },
+  "trachemys_scripta_elegans": {
+    "commonName": "Slider s červeným uši",
+    "size": "Délka skořápky: 12-28 cm.",
+    "lifeExpectancy": "20-40 let",
+    "habitat": "Pomalu se pohybující řeky, rybníky a mokřady v jižních Spojených státech a představeny po celém světě.",
+    "funFact": "Společeně se vyhřívají na protokolech a vklouznou do vody při nejmenším narušení."
+  },
+  "macrochelys_temminckii": {
+    "commonName": "Aligátor Snapping Turtle",
+    "size": "Délka skořepiny: 40-80 cm; Hmotnost: až 80 kg.",
+    "lifeExpectancy": "70-100 let",
+    "habitat": "Hluboké řeky, bažiny a oxbow jezera jihovýchodních Spojených států.",
+    "funFact": "Na jeho jazyk se vrhá červ podobná návnada, aby nalákala ryby do svých silných čelistí."
+  },
+  "dendroaspis_polylepis": {
+    "commonName": "Black Mamba",
+    "size": "Délka: 2,5-4,5 m.",
+    "lifeExpectancy": "11-20 let",
+    "habitat": "Savannas, Scrub a Rocky výchozy napříč subsaharskou Afrikou.",
+    "funFact": "Černá mamba může zvýšit třetinu svého těla a opakovaně udeřit s rychle působícím neurotoxickým jedem."
+  },
+  "terrapene_carolina": {
+    "commonName": "Eastern Box Turtle",
+    "size": "Délka skořápky: 12-19 cm.",
+    "lifeExpectancy": "40-60 let",
+    "habitat": "Vlhké lesy, pole a louky ve východní Severní Americe.",
+    "funFact": "Položený plastron nechává box želv utěsnit se zcela uvnitř jejich skořápky."
+  },
+  "phrynosoma_cornutum": {
+    "commonName": "Lizard Texas rohatý",
+    "size": "Délka: 6-12 cm.",
+    "lifeExpectancy": "5-8 let",
+    "habitat": "Sandy pouště a keře z jihozápadních Spojených států a severního Mexika.",
+    "funFact": "Může stříkat krev z rohů jeho očí, aby zabránil predátorům canid."
+  },
+  "varanus_salvadorii": {
+    "commonName": "Krokodýlí monitor",
+    "size": "Délka: 2,4-2,7 m.",
+    "lifeExpectancy": "15-20 let",
+    "habitat": "Nížinské deštné pralesy z Nové Guineje.",
+    "funFact": "Jeho prehensilní ocas a dlouhé drápy z něj činí agilní horolezec v hustém baldachýnu."
+  },
+  "bitis_gabonica": {
+    "commonName": "Gaboon Viper",
+    "size": "Délka: 1-2 m; Hmotnost: až 10 kg.",
+    "lifeExpectancy": "Asi 20 let",
+    "habitat": "Vlhké lesy a savany střední a západní Afriky.",
+    "funFact": "Má nejdelší tesáky jakéhokoli jedovatého hada, měřící až 5 cm."
+  },
+  "gopherus_agassizii": {
+    "commonName": "Pouštní želva",
+    "size": "Délka skořápky: 25-36 cm; Hmotnost: 4-7 kg.",
+    "lifeExpectancy": "50-80 let",
+    "habitat": "Pouště a vyprahlé křoví oblastí Mojave a Sonoran ve Spojených státech a Mexiku.",
+    "funFact": "Může recyklovat vodu uloženou v močovém měchýři, aby přežila dlouhá sucha."
+  },
+  "varanus_varius": {
+    "commonName": "Krajkový monitor",
+    "size": "Délka: 1,5-2,1 m.",
+    "lifeExpectancy": "Asi 20 let",
+    "habitat": "Eukalypt lesy a lesy ve východní Austrálii.",
+    "funFact": "Pronásledují stromové dutiny pro ptačí vejce a termity těsnění znovu otevřely hnízda používaná jako teplé inkubátory."
+  },
+  "python_bivittatus": {
+    "commonName": "Barmský python",
+    "size": "Délka: 3-5 m; Hmotnost: až 90 kg.",
+    "lifeExpectancy": "20-25 let",
+    "habitat": "Marshes, pastviny a říční údolí jihovýchodní Asie; Invazivní v Everglades na Floridě.",
+    "funFact": "Rozšiřitelné čelisti a flexibilní žebra umožňují polykat kořist širší než jeho vlastní tělo."
+  },
+  "lepidochelys_olivacea": {
+    "commonName": "Olive Ridley Sea Turtle",
+    "size": "Délka skořápky: 60-70 cm; Hmotnost: 35-45 kg.",
+    "lifeExpectancy": "Asi 50 let",
+    "habitat": "Tropické a subtropické oceány, hnízdící v masivních akcích Arribada na písečných plážích.",
+    "funFact": "Tisíce žen synchronizují hnízdění během Arribadas, koberce na několik nocí."
+  },
+  "haliaeetus_leucocephalus": {
+    "commonName": "Bělohlavý orel",
+    "size": "Rozpětí křídla: 1,8-2,3 m; Hmotnost: 3-6,3 kg.",
+    "lifeExpectancy": "20-30 let ve volné přírodě",
+    "habitat": "V blízkosti velkých jezer, nádrží a pobřeží po celé Severní Americe.",
+    "funFact": "Páry vytvářejí hnízda stromů, která mohou po letech opětovného použití vážit přes metrickou tunu."
+  },
+  "falco_peregrinus": {
+    "commonName": "Peregrine Falcon",
+    "size": "Wingspan: 74-120 cm; Hmotnost: 0,6-1,5 kg.",
+    "lifeExpectancy": "13-20 let",
+    "habitat": "Útesy, hory a městské mrakodrapy na každém kontinentu kromě Antarktidy.",
+    "funFact": "Peregrines se sklopí na kořist rychlostí přesahující 320 km/h, což z nich činí nejrychlejší zvířata naživu."
+  },
+  "aptenodytes_forsteri": {
+    "commonName": "Císař Penguin",
+    "size": "Výška: 1,1-1,3 m; Hmotnost: 23-45 kg.",
+    "lifeExpectancy": "15-20 let",
+    "habitat": "Mořský led a mrazivé antarktické vody.",
+    "funFact": "Samci inkubují vejce na nohou po dobu dvou měsíců, zatímco se polící polární noc."
+  },
+  "ara_macao": {
+    "commonName": "Scarlet Macaw",
+    "size": "Délka: 81-96 cm; Hmotnost: 0,9-1,5 kg.",
+    "lifeExpectancy": "40-50 let",
+    "habitat": "Tropické deštné pralesy a okraje řeky střední a severní Jižní Ameriky.",
+    "funFact": "Páry Mate for Life a Scream hlasité kontaktní hovory, aby zůstali spolu nad baldachýnem."
+  },
+  "cyanocitta_cristata": {
+    "commonName": "Blue Jay",
+    "size": "Délka: 25-30 cm; Wingspan: 34-43 cm.",
+    "lifeExpectancy": "7 let ve volné přírodě; déle v zajetí",
+    "habitat": "Listnaté lesy, parky a příměstské čtvrti ve východní Severní Americe.",
+    "funFact": "Blue Jays napodobuje Hawk volání, aby varovali hedvábí hedvábí nebo vyděsili konkurenty pryč od jídla."
+  },
+  "grus_japonensis": {
+    "commonName": "Jeřáb s červeným koruné",
+    "size": "Výška: až 1,5 m; Rozpětí křídla: 2,2-2,5 m.",
+    "lifeExpectancy": "40 let nebo více",
+    "habitat": "Mokřady a říční močály v severovýchodní Asii.",
+    "funFact": "Propracované tance námluvy posilují celoživotní párové pouta."
+  },
+  "bubo_virginianus": {
+    "commonName": "Skvělá rohatá sova",
+    "size": "Rozpětí křídla: 1-1,5 m; Hmotnost: 1-2,5 kg.",
+    "lifeExpectancy": "13 let ve volné přírodě",
+    "habitat": "Lesy, pouště, parky a městské čtvrti po celé Americe.",
+    "funFact": "Feather třásně podél jeho okrajů křídla umožňují téměř tichý let, když přepadne kořist."
+  },
+  "apteryx_mantelli": {
+    "commonName": "North Island Brown Kiwi",
+    "size": "Výška: 40-45 cm; Hmotnost: 2-3,5 kg.",
+    "lifeExpectancy": "25-30 let",
+    "habitat": "Husté mírné lesy na Novém Zélandu na severním ostrově.",
+    "funFact": "Vejce Kiwi mohou zvážit pětinu tělesné hmoty matky - největší poměr vajec jakéhokoli ptáka."
+  },
+  "balaeniceps_rex": {
+    "commonName": "Shoebill",
+    "size": "Výška: 1,2-1,4 m; Rozpětí křídla: 2,3-2,6 m.",
+    "lifeExpectancy": "35 let",
+    "habitat": "Papyrus bažiny a sladkovodní bažiny východní Afriky.",
+    "funFact": "Masivní zákony ve tvaru obuvi zavřené s dostatečnou silou pro zachycení lungfisků a dětských krokodýlů."
+  },
+  "sagittarius_serpentarius": {
+    "commonName": "Tajemník Bird",
+    "size": "Výška: 1,2-1,5 m; Wingspan: Asi 2 m.",
+    "lifeExpectancy": "15-19 let",
+    "habitat": "Otevřené pastviny a savany subsaharské Afriky.",
+    "funFact": "Dlouhé nohy dodávají rychlé a drtivé kopy podmanění hadů na zemi."
+  },
+  "ramphastos_toco": {
+    "commonName": "Toco Toucan",
+    "size": "Délka: 55-65 cm; Hmotnost: 0,6-0,9 kg.",
+    "lifeExpectancy": "Až 20 let",
+    "habitat": "Tropické lesy, Savannas a Gallery Woodlands ve střední Jižní Americe.",
+    "funFact": "Jeho nadměrný účet pomáhá vrhat teplo a působí jako vestavěný chladič."
+  },
+  "archilochus_colubris": {
+    "commonName": "Ruby-hrdla kolibřík",
+    "size": "Délka: 7-9 cm; Hmotnost: 2-6 g.",
+    "lifeExpectancy": "3-5 let ve volné přírodě",
+    "habitat": "Lesy a zahrady východní Severní Ameriky; Winters ve Střední Americe.",
+    "funFact": "Vznášejí se Wingbeats asi 55krát za sekundu a mohou létat dozadu."
+  },
+  "struthio_camelus": {
+    "commonName": "Pštros",
+    "size": "Výška: 2,1-2,8 m; Hmotnost: 90-130 kg.",
+    "lifeExpectancy": "40-45 let",
+    "habitat": "Otevřené savany a pouště po celé Africe.",
+    "funFact": "Pštrosice sprintují až 70 km/h za použití 4 m kroků."
+  },
+  "casuarius_casuarius": {
+    "commonName": "Southern Cassowary",
+    "size": "Výška: 1,5-1,8 m; Hmotnost: 45-70 kg.",
+    "lifeExpectancy": "Až 40 let",
+    "habitat": "Husté deštné pralesy z Nové Guineje a severní Austrálie.",
+    "funFact": "Vnitřní dráp podobný dýce může přinést silné kopy, když se pták cítí ohrožen."
+  },
+  "pavo_cristatus": {
+    "commonName": "Indian Peafowl",
+    "size": "Délka těla: 95-115 cm; Trénujte až 1,5 m; Hmotnost: 4-6 kg.",
+    "lifeExpectancy": "15-20 let",
+    "habitat": "Lesy, farmy a vesnice na indickém subkontinentu.",
+    "funFact": "Muži fanoušci duhové ocasní vlaky pokryté „očima“ soudu Peahens."
+  },
+  "diomedea_exulans": {
+    "commonName": "Putování Albatross",
+    "size": "Rozpětí křídla: 2,5-3,5 m; Hmotnost: 6-12 kg.",
+    "lifeExpectancy": "Často více než 50 let",
+    "habitat": "Jižní oceán, opakující se obrovské vzdálenosti mezi subantarktickými ostrovy.",
+    "funFact": "Jejich rekordní rozpětí křídla jim umožňuje klouzat celé hodiny bez mávání."
+  },
+  "fratercula_arctica": {
+    "commonName": "Atlantic Puffin",
+    "size": "Délka: 26-29 cm; Wingspan: 47-63 cm.",
+    "lifeExpectancy": "20-30 let",
+    "habitat": "Kolonie útesu na ostrovech a pobřeží severního Atlantiku.",
+    "funFact": "Specializované páteře jazyka drží tucet ryb napříč v zobáku pro kuřata."
+  },
+  "phoenicopterus_roseus": {
+    "commonName": "Větší plameňák",
+    "size": "Výška: 1,1-1,5 m; Hmotnost: 2-4 kg.",
+    "lifeExpectancy": "30-40 let",
+    "habitat": "Solné laguny, bláta a pobřežní mokřady v Africe, Evropě a Asii.",
+    "funFact": "Filtrují krmení vzhůru nohama a jejich růžová barva pochází z karotenoidních pigmentů v jejich stravě."
+  },
+  "bubo_scandiacus": {
+    "commonName": "Snowy Owl",
+    "size": "Rozpětí křídla: 1,3-1,6 m; Hmotnost: 1,6-2,9 kg.",
+    "lifeExpectancy": "Asi 10 let ve volné přírodě",
+    "habitat": "Arktická tundra po Severní Americe, Evropě a Asii.",
+    "funFact": "Feathered nohy a prsty na nohou chrání před nulovým větrem na tundře."
+  },
+  "buceros_bicornis": {
+    "commonName": "Skvělý Hornbill",
+    "size": "Délka: 95-120 cm; Wingspan: asi 1,5 m; Hmotnost: 2-4 kg.",
+    "lifeExpectancy": "35-40 let",
+    "habitat": "Tropické stálezelené lesy z Indie do Indonésie.",
+    "funFact": "Během hnízda se samice utěsňuje v dutině stromu bahnem a zanechává slot pro dodávky potravin."
+  },
+  "menura_novaehollandiae": {
+    "commonName": "Vynikající Lyrebird",
+    "size": "Délka: 80-100 cm; Hmotnost: 0,8-1,2 kg.",
+    "lifeExpectancy": "20-30 let",
+    "habitat": "Vlhké lesy jihovýchodní Austrálie.",
+    "funFact": "Během displejů napodobují muži napodobují uzávěry kamery, autoalarmy a řetězové pily."
+  },
+  "corvus_corax": {
+    "commonName": "Obyčejný havran",
+    "size": "Délka: 56-69 cm; Wingspan: 115-150 cm.",
+    "lifeExpectancy": "10-15 let ve volné přírodě",
+    "habitat": "Hory, lesy, tundra a pouště přes severní polokouli.",
+    "funFact": "Ravens řeší hádanky, používají nástroje a zapojují se do letecké akrobacie pro hru."
+  },
+  "dacelo_novaeguineae": {
+    "commonName": "Směje se Kookaburra",
+    "size": "Délka: 39-42 cm; Hmotnost: 0,3-0,5 kg.",
+    "lifeExpectancy": "15-20 let",
+    "habitat": "Eukalyptové lesy a příměstské parky východní Austrálie.",
+    "funFact": "Rodinné skupiny provádějí hlasité, směje se sbory za úsvitu a soumraku."
+  },
+  "harpia_harpyja": {
+    "commonName": "Harpy Eagle",
+    "size": "Rozpětí křídla: 1,8-2,2 m; Hmotnost: 6-9 kg.",
+    "lifeExpectancy": "25-35 let",
+    "habitat": "Tropické deštné pralesy z jižního Mexika do severní Argentiny.",
+    "funFact": "Harpy Talons soupeří s drápy grizzly medvěda a mohou odpadit opice ze stromů."
+  },
+  "cygnus_olor": {
+    "commonName": "Mute Swan",
+    "size": "Rozpětí křídla: 2-2,4 m; Hmotnost: 9-14 kg.",
+    "lifeExpectancy": "25-30 let",
+    "habitat": "Jezera, pomalé řeky a okrasné rybníky v celé Evropě a představovaly regiony po celém světě.",
+    "funFact": "Dvojice tvoří celoživotní pouta a obloukují krky, aby zobrazovaly pózy ve tvaru srdce."
+  },
+  "alcedo_atthis": {
+    "commonName": "Common Kingfisher",
+    "size": "Délka: 16-17 cm; Wingspan: 24-26 cm.",
+    "lifeExpectancy": "2-4 roky",
+    "habitat": "Čisté potoky, rybníky a řeky po celé Evropě, Africe a Asii.",
+    "funFact": "Zavřou transparentní třetí víčko, aby viděli jasně pod vodou, když se potápějí."
+  },
+  "platalea_ajaja": {
+    "commonName": "Roseate Spoonbill",
+    "size": "Délka: 71-86 cm; Wingspan: 120-127 cm.",
+    "lifeExpectancy": "Asi 15 let",
+    "habitat": "Mangrovy, ústí a pobřežní močály z pobřeží Mexického zálivu do Jižní Ameriky.",
+    "funFact": "Jeho lžička ve tvaru lžíce zametá vodu a namáhá krevety, které zabarví ptačí růžovou."
+  },
+  "upupa_epops": {
+    "commonName": "Euroasian Hoopoe",
+    "size": "Délka: 25-32 cm; Wingspan: 44-48 cm.",
+    "lifeExpectancy": "Asi 10 let",
+    "habitat": "Otevřené lesy, sady a pastviny po celé Evropě, Asii a Africe.",
+    "funFact": "Zvednou odvážný hřeben a při vystrašení vylučují pižmový olej z uropygiální žlázy."
+  },
+  "nestor_notabilis": {
+    "commonName": "Kea",
+    "size": "Délka: 46-55 cm; Hmotnost: 0,8-1 kg.",
+    "lifeExpectancy": "15-20 let",
+    "habitat": "Alpské lesy a subalpinové údolí na jižní ostrově Nového Zélandu.",
+    "funFact": "KEA jsou notoricky známé za to, že zvědaví otevřené batohy a těsnění automobilů se svými silnými účty."
+  },
+  "tyto_alba": {
+    "commonName": "Barn Owl",
+    "size": "Wingspan: 80-95 cm; Hmotnost: 0,4-0,7 kg.",
+    "lifeExpectancy": "4-6 let ve volné přírodě",
+    "habitat": "Travní porosty, zemědělské půdy a otevřené lesy po celém světě.",
+    "funFact": "Disk obličeje ve tvaru srdce se zní na jeho asymetrické uši pro přenesení lovu."
+  }
+}

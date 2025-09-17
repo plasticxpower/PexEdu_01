@@ -1,7 +1,7 @@
 {
   "app": {
     "title": "PexEdu",
-    "description": "Spojujte dvojice zvířat, poznejte jejich vlastnosti a sbírejte karty do balíčku."
+    "description": "Spojujte páry zvířat, poznávejte jejich vlastnosti a rozšiřujte svou sbírku."
   },
   "controls": {
     "groupLabel": "Skupina zvířat",
@@ -10,24 +10,24 @@
     "start": "Spustit novou hru",
     "changeSetup": "Použít nastavení",
     "restart": "Restartovat",
-    "availableCount": "{{count}} zvířat připraveno",
+    "availableCount": "K dispozici {{count}} zvířat",
     "language": "Jazyk"
   },
   "status": {
-    "idle": "Vyberte skupinu a začněte dobrodružství.",
+    "idle": "Vyberte skupinu a vydejte se za dobrodružstvím.",
     "inProgress": "Hra právě probíhá",
-    "completed": "Hra je dokončena"
+    "completed": "Hra dokončena"
   },
   "stats": {
-    "moves": "Tahů",
+    "moves": "Tahy",
     "time": "Čas",
-    "completed": "Všechny dvojice odhalené!"
+    "completed": "Všechny dvojice odhaleny!"
   },
   "game": {
-    "waitingForStart": "Vyberte skupinu a velikost pole, abyste mohli začít.",
+    "waitingForStart": "Zvolte skupinu a velikost mřížky pro zahájení hry.",
     "tapToReveal": "Otoč kartu",
-    "returnToMenu": "Zp?t do menu",
-    "continue": "Pokra?ovat ve h?e",
+    "returnToMenu": "Zpět do menu",
+    "continue": "Pokračovat ve hře",
     "attributes": {
       "size": "Velikost",
       "lifespan": "Délka života",
@@ -36,11 +36,11 @@
     }
   },
   "deck": {
-    "title": "Sbírka karet",
+    "title": "Sbírka",
     "counter": "{{current}} / {{total}}",
     "prev": "Předchozí",
     "next": "Další",
-    "empty": "Najděte dvojice a plňte balíček."
+    "empty": "Hledejte shody a zaplňte svou sbírku."
   },
   "completion": {
     "title": "Skvělá paměť!",
@@ -49,7 +49,7 @@
   "groups": {
     "mammals": "Savci",
     "fish": "Ryby",
-    "amphibians": "Obojživelníci",
+    "amphibians": "Obojživelíci",
     "reptiles": "Plazi",
     "birds": "Ptáci"
   }
