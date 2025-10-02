@@ -244,12 +244,12 @@
   },
   {
     "group": "mammals",
-    "commonName": "Chinese pangolin",
-    "scientificName": "Manis pentadactyla",
-    "size": "Length: 60-80 cm; Weight: 2-7 kg.",
-    "lifeExpectancy": "13-20 years (wild estimate).",
-    "habitat": "Forests, bamboo groves, and farmlands across southern China and Southeast Asia.",
-    "funFact": "Overlapping keratin scales armor the pangolin, letting it curl into a near-impenetrable ball."
+    "commonName": "Alpine ibex",
+    "scientificName": "Capra ibex",
+    "size": "Length: 1.3-1.7 m; Weight: 65-100 kg for males.",
+    "lifeExpectancy": "10-14 years in the wild.",
+    "habitat": "Steep, rocky slopes above the treeline throughout the European Alps.",
+    "funFact": "Males use their meter-long, ridged horns to spar on cliff edges during the rut."
   },
   {
     "group": "mammals",
@@ -298,12 +298,17 @@
   },
   {
     "group": "fish",
-    "commonName": "Blue tang",
-    "scientificName": "Paracanthurus hepatus",
-    "size": "Length: up to 30 cm.",
-    "lifeExpectancy": "8-20 years.",
-    "habitat": "Coral reefs of the Indo-Pacific from East Africa to Micronesia.",
-    "funFact": "A scalpel-like spine near its tail flicks out to deter predators."
+    "commonName": "Red-bellied piranha",
+    "scientificName": "Pygocentrus nattereri",
+    "size": "Length: up to 50 cm (20 in); Weight: around 3.5 kg (7.7 lb).",
+    "lifeExpectancy": "About 10 years in the wild.",
+    "habitat": "Slow rivers, floodplain lakes, and oxbow lagoons of the Amazon and Orinoco basins.",
+    "funFact": "Schools shear chunks from prey with razor-edged, interlocking teeth, often attacking in coordinated bursts.",
+    "imageUrl": "https://cdn.britannica.com/70/146370-004-BAADE3F7/piranha-Amazon-River.jpg",
+    "imageSearch": [
+      "red-bellied piranha",
+      "piranha fish"
+    ]
   },
   {
     "group": "fish",
@@ -343,21 +348,26 @@
   },
   {
     "group": "fish",
-    "commonName": "Japanese pufferfish",
-    "scientificName": "Takifugu rubripes",
-    "size": "Length: 30-40 cm.",
-    "lifeExpectancy": "About 10 years.",
-    "habitat": "Coastal waters of Japan, Korea, and China.",
-    "funFact": "Organs contain tetrodotoxin, a neurotoxin hundreds of times stronger than cyanide."
+    "commonName": "Great hammerhead shark",
+    "scientificName": "Sphyrna mokarran",
+    "size": "Length: 3.5-6 m; Weight: up to 450 kg.",
+    "lifeExpectancy": "20-30 years.",
+    "habitat": "Warm coastal waters, continental shelves, and coral reefs in tropical and subtropical seas worldwide.",
+    "funFact": "The wide cephalofoil acts like a wing, helping the shark pin stingrays to the seafloor before striking."
   },
   {
     "group": "fish",
-    "commonName": "Swordfish",
-    "scientificName": "Xiphias gladius",
-    "size": "Length: 3-4.5 m; Weight: 90-650 kg.",
-    "lifeExpectancy": "Up to 9 years.",
-    "habitat": "Tropical and temperate oceans from the surface to over 650 m deep.",
-    "funFact": "Heat-exchanging muscles warm its eyes and brain for sharp vision during deep chases."
+    "commonName": "Blue shark",
+    "scientificName": "Prionace glauca",
+    "size": "Length: typically 1.7-2.2 m (5.6-7.2 ft), reaching 4 m; Weight: up to 180 kg (400 lb).",
+    "lifeExpectancy": "15-16 years in the wild.",
+    "habitat": "Pelagic waters of temperate and tropical oceans, often following cool currents across entire basins.",
+    "funFact": "Long, scythe-like pectoral fins and a streamlined body let blue sharks migrate thousands of kilometres between feeding and pupping grounds.",
+    "imageUrl": "https://cdn.britannica.com/72/128372-004-071EF060/Blue-shark.jpg",
+    "imageSearch": [
+      "blue shark",
+      "Prionace glauca"
+    ]
   },
   {
     "group": "fish",
@@ -388,12 +398,17 @@
   },
   {
     "group": "fish",
-    "commonName": "Arapaima",
-    "scientificName": "Arapaima gigas",
-    "size": "Length: 2-3 m; Weight: up to 200 kg.",
-    "lifeExpectancy": "15-20 years.",
-    "habitat": "Oxygen-poor floodplain lakes and rivers of the Amazon Basin.",
-    "funFact": "Arapaimas surface to gulp air using a lung-like swim bladder, letting them survive in stagnant water."
+    "commonName": "Atlantic halibut",
+    "scientificName": "Hippoglossus hippoglossus",
+    "size": "Length: up to 2.5 m (8.2 ft); Weight: can exceed 300 kg (660 lb).",
+    "lifeExpectancy": "Up to 40 years.",
+    "habitat": "Cold, deep waters of the North Atlantic continental shelf and slope.",
+    "funFact": "Juveniles swim upright, but as they mature both eyes migrate to the right side and the fish lies flat on dark seafloors waiting for prey.",
+    "imageUrl": "https://cdn.britannica.com/64/88664-004-A3B2BA13/Atlantic-halibut.jpg",
+    "imageSearch": [
+      "Atlantic halibut",
+      "Hippoglossus hippoglossus"
+    ]
   },
   {
     "group": "fish",
@@ -469,12 +484,17 @@
   },
   {
     "group": "fish",
-    "commonName": "Goliath grouper",
-    "scientificName": "Epinephelus itajara",
-    "size": "Length: up to 2.5 m; Weight: 360 kg.",
-    "lifeExpectancy": "At least 35 years.",
-    "habitat": "Reefs, mangroves, and shipwrecks in tropical Atlantic waters.",
-    "funFact": "It produces deep booming sounds to defend territory from rivals."
+    "commonName": "Emperor angelfish",
+    "scientificName": "Pomacanthus imperator",
+    "size": "Length: up to 40 cm (16 in).",
+    "lifeExpectancy": "Around 15 years in the wild and decades in captivity.",
+    "habitat": "Coral reefs and lagoon drop-offs throughout the Indo-Pacific from East Africa to Polynesia.",
+    "funFact": "Juveniles wear concentric blue-and-white rings that transform into bold yellow and sapphire stripes as adults.",
+    "imageUrl": "https://cdn.britannica.com/54/13454-004-D8141F68/Emperor-angelfish.jpg",
+    "imageSearch": [
+      "emperor angelfish",
+      "Pomacanthus imperator"
+    ]
   },
   {
     "group": "fish",
@@ -487,12 +507,17 @@
   },
   {
     "group": "fish",
-    "commonName": "Mandarin dragonet",
-    "scientificName": "Synchiropus splendidus",
-    "size": "Length: 6-7 cm.",
-    "lifeExpectancy": "Up to 10 years.",
-    "habitat": "Lagoon reefs in the western Pacific Ocean.",
-    "funFact": "Its vivid cells secrete a noxious mucus that discourages predators."
+    "commonName": "Zebra danio",
+    "scientificName": "Danio rerio",
+    "size": "Length: 4-5 cm (1.5-2 in).",
+    "lifeExpectancy": "3-5 years.",
+    "habitat": "Shallow, slow-moving streams and rice paddies across the Ganges-Brahmaputra basin of South Asia.",
+    "funFact": "Transparent embryos and rapid development make the zebra danio a cornerstone of vertebrate genetics and regenerative research.",
+    "imageUrl": "https://cdn.britannica.com/11/117211-004-E1BA778C/Zebra-danio.jpg",
+    "imageSearch": [
+      "zebra danio",
+      "Danio rerio"
+    ]
   },
   {
     "group": "fish",
@@ -631,12 +656,17 @@
   },
   {
     "group": "amphibians",
-    "commonName": "Mudpuppy",
-    "scientificName": "Necturus maculosus",
-    "size": "Length: 20-45 cm.",
-    "lifeExpectancy": "18-25 years.",
-    "habitat": "Slow rivers and lakes with abundant cover in eastern North America.",
-    "funFact": "Mudpuppies retain feathery external gills for life and remain fully aquatic."
+    "commonName": "Oriental fire-bellied toad",
+    "scientificName": "Bombina orientalis",
+    "size": "Length: 4-5 cm (about 2 in).",
+    "lifeExpectancy": "10-15 years.",
+    "habitat": "Shallow ponds, rice paddies, and forest pools across northeastern China, Korea, and adjacent Russia.",
+    "funFact": "When threatened it arches into an unken reflex, flashing a scarlet belly that warns of the mild toxins in its skin.",
+    "imageUrl": "https://cdn.britannica.com/61/11861-004-13C9D31D/toad.jpg",
+    "imageSearch": [
+      "fire-bellied toad",
+      "Bombina orientalis"
+    ]
   },
   {
     "group": "amphibians",
@@ -667,12 +697,17 @@
   },
   {
     "group": "amphibians",
-    "commonName": "Hairy frog",
-    "scientificName": "Trichobatrachus robustus",
-    "size": "Length: 11-13 cm.",
-    "lifeExpectancy": "About 10 years.",
-    "habitat": "Fast-flowing forest streams in Cameroon and Equatorial Guinea.",
-    "funFact": "Males break their own toe bones to create bony claws when defending nests."
+    "commonName": "African bullfrog",
+    "scientificName": "Pyxicephalus adspersus",
+    "size": "Length: up to 24 cm (9.5 in); Weight: can reach 1.4 kg (3 lb).",
+    "lifeExpectancy": "Up to 20 years.",
+    "habitat": "Seasonal pans, savannas, and grasslands across southern and central Africa.",
+    "funFact": "Males guard their tadpoles and even dig drainage channels to keep shrinking pools from drying out.",
+    "imageUrl": "https://cdn.britannica.com/45/179145-004-39BBC786/African-bullfrog-South-Africa.jpg",
+    "imageSearch": [
+      "African bullfrog",
+      "Pyxicephalus adspersus"
+    ]
   },
   {
     "group": "amphibians",
@@ -685,12 +720,17 @@
   },
   {
     "group": "amphibians",
-    "commonName": "Darwin's frog",
-    "scientificName": "Rhinoderma darwinii",
-    "size": "Length: 2.5-3.5 cm.",
-    "lifeExpectancy": "8-10 years.",
-    "habitat": "Temperate Nothofagus forests of Chile and Argentina.",
-    "funFact": "Males brood tadpoles inside their vocal sacs until the froglets hop out."
+    "commonName": "Spanish ribbed newt",
+    "scientificName": "Pleurodeles waltl",
+    "size": "Length: up to 30 cm (12 in).",
+    "lifeExpectancy": "10-15 years.",
+    "habitat": "Still ponds, irrigation canals, and slow streams on the Iberian Peninsula and in Morocco.",
+    "funFact": "When attacked it arches its back so sharpened ribs pierce the skin and deliver toxins to a would-be predator.",
+    "imageUrl": "https://cdn.britannica.com/24/151924-004-DD51AD68/Spanish-newt.jpg",
+    "imageSearch": [
+      "Spanish ribbed newt",
+      "Pleurodeles waltl"
+    ]
   },
   {
     "group": "amphibians",
@@ -757,12 +797,12 @@
   },
   {
     "group": "amphibians",
-    "commonName": "Purple frog",
-    "scientificName": "Nasikabatrachus sahyadrensis",
-    "size": "Length: about 7 cm.",
-    "lifeExpectancy": "Likely over 10 years.",
-    "habitat": "Underground burrows in the Western Ghats of India, surfacing during monsoon rains.",
-    "funFact": "It spends most of its life underground feeding on termites with a specialized snout."
+    "commonName": "American bullfrog",
+    "scientificName": "Lithobates catesbeianus",
+    "size": "Body length: 9-20 cm; Weight: up to 0.5 kg.",
+    "lifeExpectancy": "7-9 years in the wild.",
+    "habitat": "Ponds, marshes, and slow-moving waters across eastern North America and introduced regions worldwide.",
+    "funFact": "Its deep \"jug-o-rum\" call can be heard over a kilometer across summer wetlands."
   },
   {
     "group": "amphibians",
@@ -784,12 +824,17 @@
   },
   {
     "group": "amphibians",
-    "commonName": "Gray treefrog",
-    "scientificName": "Dryophytes versicolor",
-    "size": "Length: 3-5 cm.",
-    "lifeExpectancy": "7-9 years.",
-    "habitat": "Woodlands, swamps, and backyard trees in eastern North America.",
-    "funFact": "It can survive being frozen solid by producing glycerol-based antifreeze in its tissues."
+    "commonName": "Western spadefoot",
+    "scientificName": "Spea hammondii",
+    "size": "Length: 4-7 cm (1.6-2.8 in).",
+    "lifeExpectancy": "Around 10 years.",
+    "habitat": "Arid grasslands, oak savannas, and temporary rain pools of California and Baja California.",
+    "funFact": "A hardened black spur on each hind foot lets it burrow backward into the soil, where it waits out drought until desert rains arrive.",
+    "imageUrl": "https://cdn.britannica.com/09/122909-004-29B34234/western-spadefoot-toad.jpg",
+    "imageSearch": [
+      "western spadefoot toad",
+      "Spea hammondii"
+    ]
   },
   {
     "group": "amphibians",
@@ -802,12 +847,17 @@
   },
   {
     "group": "amphibians",
-    "commonName": "Smooth newt",
-    "scientificName": "Lissotriton vulgaris",
-    "size": "Length: 7-11 cm.",
-    "lifeExpectancy": "6-14 years.",
-    "habitat": "Ponds, marshes, and damp grasslands throughout Europe.",
-    "funFact": "Males develop a dramatic wavy crest and tail filament during the breeding season."
+    "commonName": "Common frog",
+    "scientificName": "Rana temporaria",
+    "size": "Length: up to 10 cm (4 in).",
+    "lifeExpectancy": "7-9 years.",
+    "habitat": "Moist meadows, woodlands, and garden ponds across Europe and parts of Asia.",
+    "funFact": "These adaptable frogs hibernate buried in mud or leaf litter and can reabsorb oxygen through their skin while dormant underwater.",
+    "imageUrl": "https://cdn.britannica.com/70/12770-004-A817B0EB/Common-frog.jpg",
+    "imageSearch": [
+      "common frog",
+      "Rana temporaria"
+    ]
   },
   {
     "group": "reptiles",
@@ -982,12 +1032,17 @@
   },
   {
     "group": "reptiles",
-    "commonName": "Red-eared slider",
-    "scientificName": "Trachemys scripta elegans",
-    "size": "Shell length: 12-28 cm.",
-    "lifeExpectancy": "20-40 years.",
-    "habitat": "Slow-moving rivers, ponds, and wetlands in the southern United States and introduced worldwide.",
-    "funFact": "They bask communally on logs and slip into the water at the slightest disturbance."
+    "commonName": "Loggerhead sea turtle",
+    "scientificName": "Caretta caretta",
+    "size": "Carapace length: 0.9-1.1 m (3-3.5 ft); Weight: 135-180 kg (300-400 lb).",
+    "lifeExpectancy": "Around 50 years.",
+    "habitat": "Warm temperate and subtropical oceans, nesting on sandy beaches worldwide.",
+    "funFact": "Adults migrate thousands of kilometres between feeding grounds and the natal beaches where females return to lay eggs.",
+    "imageUrl": "https://cdn.britannica.com/84/92684-004-12923086/Loggerhead-sea-turtle-swimming-surface-ocean-hatchlings.jpg",
+    "imageSearch": [
+      "loggerhead sea turtle",
+      "Caretta caretta"
+    ]
   },
   {
     "group": "reptiles",
@@ -1045,12 +1100,17 @@
   },
   {
     "group": "reptiles",
-    "commonName": "Desert tortoise",
-    "scientificName": "Gopherus agassizii",
-    "size": "Shell length: 25-36 cm; Weight: 4-7 kg.",
-    "lifeExpectancy": "50-80 years.",
-    "habitat": "Deserts and arid scrub of the Mojave and Sonoran regions in the United States and Mexico.",
-    "funFact": "It can recycle water stored in its bladder to survive long droughts."
+    "commonName": "Spectacled caiman",
+    "scientificName": "Caiman crocodilus",
+    "size": "Length: 1.5-2.5 m (5-8 ft).",
+    "lifeExpectancy": "30-40 years.",
+    "habitat": "Slow rivers, oxbow lakes, and flooded wetlands from Mexico to Brazil.",
+    "funFact": "A bony ridge between the eyes forms the 'spectacles' that inspire its name, helping shade the eyes while it waits for fish.",
+    "imageUrl": "https://cdn.britannica.com/64/255864-004-1E2EA57D/adult-spectacled-caiman-bril-kaaiman-caiman-crocodilus.jpg",
+    "imageSearch": [
+      "spectacled caiman",
+      "Caiman crocodilus"
+    ]
   },
   {
     "group": "reptiles",
@@ -1072,12 +1132,17 @@
   },
   {
     "group": "reptiles",
-    "commonName": "Olive ridley sea turtle",
-    "scientificName": "Lepidochelys olivacea",
-    "size": "Shell length: 60-70 cm; Weight: 35-45 kg.",
-    "lifeExpectancy": "Around 50 years.",
-    "habitat": "Tropical and subtropical oceans, nesting in massive arribada events on sandy beaches.",
-    "funFact": "Thousands of females synchronize nesting during arribadas, carpeting beaches for a few nights."
+    "commonName": "Green anole",
+    "scientificName": "Anolis carolinensis",
+    "size": "Length: 12-20 cm (5-8 in) including the tail.",
+    "lifeExpectancy": "5-7 years in the wild.",
+    "habitat": "Shrubs, tree trunks, and garden fences across the southeastern United States and Caribbean islands.",
+    "funFact": "Males flash a vivid red dewlap and can shift from bright green to brown as they defend territories and communicate.",
+    "imageUrl": "https://cdn.britannica.com/44/124544-004-42D0F054/green-anole.jpg",
+    "imageSearch": [
+      "green anole",
+      "Anolis carolinensis"
+    ]
   },
   {
     "group": "birds",
@@ -1144,12 +1209,17 @@
   },
   {
     "group": "birds",
-    "commonName": "North Island brown kiwi",
-    "scientificName": "Apteryx mantelli",
-    "size": "Height: 40-45 cm; Weight: 2-3.5 kg.",
-    "lifeExpectancy": "25-30 years.",
-    "habitat": "Dense temperate forests of New Zealand's North Island.",
-    "funFact": "Kiwi eggs can weigh a fifth of the mother's body mass—the largest egg ratio of any bird."
+    "commonName": "Brown pelican",
+    "scientificName": "Pelecanus occidentalis",
+    "size": "Wingspan: about 2 m (6.5 ft); Weight: 3-5 kg (6.6-11 lb).",
+    "lifeExpectancy": "20-25 years in the wild.",
+    "habitat": "Coastal shorelines, estuaries, and barrier islands throughout the Americas.",
+    "funFact": "It is the only pelican that plunge-dives from height, folding its wings to spear into the water after schooling fish.",
+    "imageUrl": "https://cdn.britannica.com/16/3416-004-CCA13D4B/Brown-pelican-Pelecanus-occidentalis.jpg",
+    "imageSearch": [
+      "brown pelican",
+      "Pelecanus occidentalis"
+    ]
   },
   {
     "group": "birds",
@@ -1171,12 +1241,12 @@
   },
   {
     "group": "birds",
-    "commonName": "Toco toucan",
-    "scientificName": "Ramphastos toco",
-    "size": "Length: 55-65 cm; Weight: 0.6-0.9 kg.",
-    "lifeExpectancy": "Up to 20 years.",
-    "habitat": "Tropical forests, savannas, and gallery woodlands of central South America.",
-    "funFact": "Its oversized bill helps shed heat, acting like a built-in radiator."
+    "commonName": "Keel-billed toucan",
+    "scientificName": "Ramphastos sulfuratus",
+    "size": "Length: 42-55 cm; Weight: 0.4-0.6 kg.",
+    "lifeExpectancy": "15-20 years.",
+    "habitat": "Humid lowland and foothill forests from southern Mexico to northern Colombia.",
+    "funFact": "Despite its rainbow bill, the toucan's beak is a lightweight honeycomb of keratin that allows agile tree-hopping."
   },
   {
     "group": "birds",
@@ -1234,12 +1304,12 @@
   },
   {
     "group": "birds",
-    "commonName": "Greater flamingo",
-    "scientificName": "Phoenicopterus roseus",
-    "size": "Height: 1.1-1.5 m; Weight: 2-4 kg.",
-    "lifeExpectancy": "30-40 years.",
-    "habitat": "Saline lagoons, mudflats, and coastal wetlands of Africa, Europe, and Asia.",
-    "funFact": "They filter-feed upside down, and their pink color comes from carotenoid pigments in their diet."
+    "commonName": "Scarlet ibis",
+    "scientificName": "Eudocimus ruber",
+    "size": "Height: about 60 cm; Wingspan: 1 m; Weight: 1.4-1.7 kg.",
+    "lifeExpectancy": "16-20 years.",
+    "habitat": "Coastal mangroves, mudflats, and estuaries from northern South America to the Caribbean.",
+    "funFact": "They fly in V-shaped flocks that flash crimson in the sunset as they return to communal roosts."
   },
   {
     "group": "birds",
@@ -1279,12 +1349,17 @@
   },
   {
     "group": "birds",
-    "commonName": "Laughing kookaburra",
-    "scientificName": "Dacelo novaeguineae",
-    "size": "Length: 39-42 cm; Weight: 0.3-0.5 kg.",
-    "lifeExpectancy": "15-20 years.",
-    "habitat": "Eucalypt forests and suburban parks of eastern Australia.",
-    "funFact": "Family groups perform loud, laughing choruses at dawn and dusk."
+    "commonName": "Golden eagle",
+    "scientificName": "Aquila chrysaetos",
+    "size": "Wingspan: 2.0-2.3 m (6.6-7.5 ft); Weight: 3-6.7 kg (6.6-15 lb).",
+    "lifeExpectancy": "Around 30 years in the wild, longer in captivity.",
+    "habitat": "Mountains, cliffs, and open uplands across Eurasia, North America, and North Africa.",
+    "funFact": "Monogamous pairs reuse massive cliffside eyries for generations, adding new branches each breeding season.",
+    "imageUrl": "https://cdn.britannica.com/71/971-004-547E659A/Golden-eagle.jpg",
+    "imageSearch": [
+      "golden eagle",
+      "Aquila chrysaetos"
+    ]
   },
   {
     "group": "birds",
@@ -1315,30 +1390,40 @@
   },
   {
     "group": "birds",
-    "commonName": "Roseate spoonbill",
-    "scientificName": "Platalea ajaja",
-    "size": "Length: 71-86 cm; Wingspan: 120-127 cm.",
-    "lifeExpectancy": "Around 15 years.",
-    "habitat": "Mangroves, estuaries, and coastal marshes from the Gulf Coast to South America.",
-    "funFact": "Its spoon-shaped bill sweeps through water to strain shrimp that tint the bird pink."
+    "commonName": "Wood stork",
+    "scientificName": "Mycteria americana",
+    "size": "Height: 85-115 cm; Wingspan: up to 1.8 m.",
+    "lifeExpectancy": "11-18 years in the wild.",
+    "habitat": "Tree-lined wetlands and marshes of the southeastern United States, Central America, and northern South America.",
+    "funFact": "They feed by touch, snapping their half-open bills shut in milliseconds when fish brush past."
   },
   {
     "group": "birds",
-    "commonName": "Eurasian hoopoe",
-    "scientificName": "Upupa epops",
-    "size": "Length: 25-32 cm; Wingspan: 44-48 cm.",
-    "lifeExpectancy": "Around 10 years.",
-    "habitat": "Open woodlands, orchards, and grasslands across Europe, Asia, and Africa.",
-    "funFact": "They raise a bold crest and secrete a musky oil from the uropygial gland when alarmed."
+    "commonName": "American robin",
+    "scientificName": "Turdus migratorius",
+    "size": "Length: about 25 cm (10 in); Weight: 77-85 g (2.7-3 oz).",
+    "lifeExpectancy": "Typically 6 years in the wild, with records over a decade.",
+    "habitat": "Forest edges, suburban lawns, and parklands across most of North America.",
+    "funFact": "Robins run, stop, and tilt their heads to locate earthworms, and their dawn chorus is one of the earliest songs of spring.",
+    "imageUrl": "https://cdn.britannica.com/11/225111-004-13349A2F/American-robin-Turdus-migratorius.jpg",
+    "imageSearch": [
+      "American robin",
+      "Turdus migratorius"
+    ]
   },
   {
     "group": "birds",
-    "commonName": "Kea",
-    "scientificName": "Nestor notabilis",
-    "size": "Length: 46-55 cm; Weight: 0.8-1 kg.",
-    "lifeExpectancy": "15-20 years.",
-    "habitat": "Alpine forests and subalpine valleys of New Zealand's South Island.",
-    "funFact": "Kea are notorious for prying open backpacks and car seals with their strong bills."
+    "commonName": "Snowy egret",
+    "scientificName": "Egretta thula",
+    "size": "Height: about 60 cm (24 in); Wingspan: roughly 1 m (3 ft).",
+    "lifeExpectancy": "Up to 16 years in the wild.",
+    "habitat": "Coastal marshes, estuaries, mangroves, and freshwater wetlands throughout the Americas.",
+    "funFact": "It stirs prey with bright yellow feet, shuffling through the shallows before stabbing fish and crustaceans.",
+    "imageUrl": "https://cdn.britannica.com/80/173480-004-6326CF1D/egret.jpg",
+    "imageSearch": [
+      "snowy egret",
+      "Egretta thula"
+    ]
   },
   {
     "group": "birds",

@@ -4,9 +4,6 @@ interface SettingsPanelProps {
   settings: GameSettings;
   onChange: (settings: GameSettings) => void;
   onStart: () => void;
-  onRestart: () => void;
-  isRunning: boolean;
-  isComplete: boolean;
   hasActiveGame: boolean;
   availableGroups: Array<{ group: AnimalGroup; count: number }>;
   translate: (key: string, options?: Record<string, unknown>) => string;
@@ -18,9 +15,6 @@ export function SettingsPanel({
   settings,
   onChange,
   onStart,
-  onRestart,
-  isRunning,
-  isComplete,
   hasActiveGame,
   availableGroups,
   translate,
@@ -43,6 +37,8 @@ export function SettingsPanel({
     (option) => option.group === settings.group && option.count >= settings.gridSize / 2
   );
 
+  const buttonClass = 'primary primary--wild start-button' + (hasActiveGame ? ' start-button--active' : '');
+
   return (
     <section className="settings">
       <div className="settings__group">
@@ -51,19 +47,21 @@ export function SettingsPanel({
           {availableGroups.map((option) => {
             const disabled = option.count < settings.gridSize / 2;
             const selected = settings.group === option.group;
+            const label = translate('groups.' + option.group);
+            const iconSrc = '/assets/icons/' + option.group + '.png';
             return (
               <button
                 key={option.group}
                 type="button"
-                className={'pill' + (selected ? ' selected' : '')}
+                className={'pill pill--' + option.group + (selected ? ' selected' : '')}
                 onClick={() => handleGroupChange(option.group)}
                 disabled={!canStart && disabled}
                 aria-pressed={selected}
               >
-                <span>{translate('groups.' + option.group)}</span>
-                <span className="pill__meta">
-                  {translate('controls.availableCount', { count: option.count })}
+                <span className="pill__icon" aria-hidden="true">
+                  <img src={iconSrc} alt="" loading="lazy" />
                 </span>
+                <span className="pill__label">{label}</span>
               </button>
             );
           })}
@@ -89,20 +87,12 @@ export function SettingsPanel({
         </div>
       </div>
       <div className="settings__actions">
-        <button type="button" onClick={onStart} disabled={!canStart} className="primary">
+        <button type="button" onClick={onStart} disabled={!canStart} className={buttonClass}>
           {translate(hasActiveGame ? 'controls.changeSetup' : 'controls.start')}
         </button>
-        <button type="button" onClick={onRestart} disabled={!hasActiveGame}>
-          {translate('controls.restart')}
-        </button>
-        <div className="settings__hint">
-          {isRunning
-            ? translate('status.inProgress')
-            : isComplete
-            ? translate('status.completed')
-            : translate('status.idle')}
-        </div>
       </div>
     </section>
   );
 }
+
+

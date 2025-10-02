@@ -28,6 +28,8 @@ export function GameBoard({ cards, animalsById, onCardClick, isInteractive, tran
         const revealed = card.revealed || card.matched;
         const disabled = card.matched || card.revealed || !isInteractive;
         const imageSrc = animal.image && animal.image.trim() ? animal.image : '/assets/placeholder.svg';
+        const groupKey = (animal.group || '').toLowerCase();
+        const backIconSrc = groupKey ? `/assets/icons/${groupKey}.png` : '';
         return (
           <button
             key={card.id}
@@ -49,8 +51,12 @@ export function GameBoard({ cards, animalsById, onCardClick, isInteractive, tran
                 <h3 className="memory-card__name">{animal.commonName}</h3>
               </div>
             ) : (
-              <div className="memory-card__back">
-                <span>{translate('game.tapToReveal')}</span>
+              <div className="memory-card__back" data-group={animal.group}>
+                {backIconSrc ? (
+                  <img className="memory-card__back-image" src={backIconSrc} alt={animal.group ? `${animal.group} icon` : translate('game.tapToReveal')} loading="lazy" />
+                ) : (
+                  <span className="memory-card__back-label">{translate('game.tapToReveal')}</span>
+                )}
               </div>
             )}
           </button>

@@ -24,7 +24,25 @@ export function DeckPanel({ animals, currentIndex, onPrev, onNext, translate }: 
       {hasCards && current ? (
         <div className="deck__content">
           <div className="deck__image">
+            <button
+              type="button"
+              className="deck__arrow deck__arrow--prev"
+              onClick={onPrev}
+              disabled={!hasCards || currentIndex === 0}
+              aria-label={translate('deck.prev')}
+            >
+              &#8592;
+            </button>
             <img src={imageSrc} alt={current.commonName} loading="lazy" />
+            <button
+              type="button"
+              className="deck__arrow deck__arrow--next"
+              onClick={onNext}
+              disabled={!hasCards || currentIndex >= animals.length - 1}
+              aria-label={translate('deck.next')}
+            >
+              &#8594;
+            </button>
           </div>
           <div className="deck__details">
             <h3>{current.commonName}</h3>
@@ -52,18 +70,6 @@ export function DeckPanel({ animals, currentIndex, onPrev, onNext, translate }: 
       ) : (
         <p className="deck__empty">{translate('deck.empty')}</p>
       )}
-      <div className="deck__controls">
-        <button type="button" onClick={onPrev} disabled={!hasCards || currentIndex === 0}>
-          {translate('deck.prev')}
-        </button>
-        <button
-          type="button"
-          onClick={onNext}
-          disabled={!hasCards || currentIndex >= animals.length - 1}
-        >
-          {translate('deck.next')}
-        </button>
-      </div>
     </section>
   );
 }

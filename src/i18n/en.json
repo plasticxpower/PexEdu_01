@@ -7,7 +7,7 @@
     "groupLabel": "Animal group",
     "gridLabel": "Number of cards",
     "gridOption": "{{count}} cards",
-    "start": "Start new game",
+    "start": "Start the Adventure",
     "changeSetup": "Apply settings",
     "restart": "Restart",
     "availableCount": "{{count}} animals ready",

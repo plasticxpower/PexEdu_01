@@ -161,9 +161,6 @@ export default function App() {
             settings={settings}
             onChange={setSettings}
             onStart={handleStart}
-            onRestart={handleRestart}
-            isRunning={game.isRunning}
-            isComplete={game.isComplete}
             hasActiveGame={hasActiveGame}
             availableGroups={availableGroups}
             translate={t}
