@@ -10,6 +10,7 @@ interface SettingsPanelProps {
 }
 
 const GRID_OPTIONS: GameSettings['gridSize'][] = [12, 18, 24];
+const PLAYER_OPTIONS: GameSettings['playerCount'][] = [1, 2, 3, 4];
 
 export function SettingsPanel({
   settings,
@@ -31,6 +32,13 @@ export function SettingsPanel({
       return;
     }
     onChange({ ...settings, gridSize });
+  };
+
+  const handlePlayerCountChange = (playerCount: GameSettings['playerCount']) => {
+    if (playerCount === settings.playerCount) {
+      return;
+    }
+    onChange({ ...settings, playerCount });
   };
 
   const canStart = availableGroups.some(
@@ -86,6 +94,25 @@ export function SettingsPanel({
           })}
         </div>
       </div>
+      <div className="settings__group">
+        <h2>{translate('controls.playersLabel')}</h2>
+        <div className="settings__options">
+          {PLAYER_OPTIONS.map((option) => {
+            const selected = settings.playerCount === option;
+            return (
+              <button
+                key={option}
+                type="button"
+                className={'pill' + (selected ? ' selected' : '')}
+                onClick={() => handlePlayerCountChange(option)}
+                aria-pressed={selected}
+              >
+                {translate('controls.playerCountOption', { count: option })}
+              </button>
+            );
+          })}
+        </div>
+      </div>
       <div className="settings__actions">
         <button type="button" onClick={onStart} disabled={!canStart} className={buttonClass}>
           {translate(hasActiveGame ? 'controls.changeSetup' : 'controls.start')}
@@ -94,5 +121,3 @@ export function SettingsPanel({
     </section>
   );
 }
-
-

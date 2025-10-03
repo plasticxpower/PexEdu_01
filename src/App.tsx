@@ -16,6 +16,7 @@ import type { AnimalEntry, AnimalGroup, AnimalLocaleOverrides, GameSettings } fr
 const DEFAULT_SETTINGS: GameSettings = {
   group: 'mammals',
   gridSize: 12,
+  playerCount: 1,
 };
 
 const GROUPS: AnimalGroup[] = ['mammals', 'fish', 'amphibians', 'reptiles', 'birds'];
@@ -185,6 +186,8 @@ export default function App() {
               moves={game.moves}
               secondsElapsed={game.secondsElapsed}
               isComplete={game.isComplete}
+              players={game.players}
+              currentPlayerIndex={game.currentPlayerIndex}
               translate={t}
             />
 
@@ -209,8 +212,9 @@ export default function App() {
               visible={game.isComplete}
               moves={game.moves}
               secondsElapsed={game.secondsElapsed}
-              onRestart={handleRestart}
+              players={game.players}
               translate={t}
+              onRestart={handleRestart}
             />
           </section>
         )}

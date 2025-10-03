@@ -11,7 +11,10 @@
     "changeSetup": "Apply settings",
     "restart": "Restart",
     "availableCount": "{{count}} animals ready",
-    "language": "Language"
+    "language": "Language",
+    "playersLabel": "Number of players",
+    "playerCountOption_one": "{{count}} player",
+    "playerCountOption_other": "{{count}} players"
   },
   "status": {
     "idle": "Pick a group and start the adventure.",
@@ -21,7 +24,12 @@
   "stats": {
     "moves": "Moves",
     "time": "Time",
-    "completed": "All pairs cleared!"
+    "completed": "All pairs cleared!",
+    "players": "Players",
+    "playerName": "Player {{index}}",
+    "pairs_one": "{{count}} pair",
+    "pairs_other": "{{count}} pairs",
+    "currentTurn": "{{player}}'s turn"
   },
   "game": {
     "waitingForStart": "Select a group and grid size to begin.",
@@ -44,7 +52,10 @@
   },
   "completion": {
     "title": "Great memory!",
-    "subtitle": "You revealed every pair."
+    "subtitle": "You revealed every pair.",
+    "singleWinner": "{{player}} wins with {{pairs}}.",
+    "sharedWin": "{{players}} share the lead with {{pairs}}.",
+    "everyoneTie": "Everyone finished with {{pairs}}."
   },
   "groups": {
     "mammals": "Mammals",

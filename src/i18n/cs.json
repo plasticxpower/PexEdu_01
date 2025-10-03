@@ -11,7 +11,12 @@
     "changeSetup": "Použít nastavení",
     "restart": "Restartovat",
     "availableCount": "K dispozici {{count}} zvířat",
-    "language": "Jazyk"
+    "language": "Jazyk",
+    "playersLabel": "Počet hráčů",
+    "playerCountOption_one": "{{count}} hráč",
+    "playerCountOption_few": "{{count}} hráči",
+    "playerCountOption_many": "{{count}} hráčů",
+    "playerCountOption_other": "{{count}} hráčů"
   },
   "status": {
     "idle": "Vyberte skupinu a vydejte se za dobrodružstvím.",
@@ -21,7 +26,14 @@
   "stats": {
     "moves": "Tahy",
     "time": "Čas",
-    "completed": "Všechny dvojice odhaleny!"
+    "completed": "Všechny dvojice odhaleny!",
+    "players": "Hráči",
+    "playerName": "Hráč {{index}}",
+    "pairs_one": "{{count}} dvojice",
+    "pairs_few": "{{count}} dvojice",
+    "pairs_many": "{{count}} dvojic",
+    "pairs_other": "{{count}} dvojic",
+    "currentTurn": "Na tahu je {{player}}"
   },
   "game": {
     "waitingForStart": "Zvolte skupinu a velikost mřížky pro zahájení hry.",
@@ -44,7 +56,10 @@
   },
   "completion": {
     "title": "Skvělá paměť!",
-    "subtitle": "Odhalili jste všechny páry."
+    "subtitle": "Odhalili jste všechny páry.",
+    "singleWinner": "{{player}} vítězí s výsledkem {{pairs}}.",
+    "sharedWin": "{{players}} se dělí o vedení s výsledkem {{pairs}}.",
+    "everyoneTie": "Všichni skončili se skóre {{pairs}}."
   },
   "groups": {
     "mammals": "Savci",

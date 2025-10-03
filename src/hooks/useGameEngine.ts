@@ -7,6 +7,11 @@ interface UseGameEngineArgs {
   animals: AnimalEntry[];
 }
 
+interface PlayerState {
+  id: number;
+  score: number;
+}
+
 interface UseGameEngineResult {
   cards: Array<{
     id: string;
@@ -16,6 +21,8 @@ interface UseGameEngineResult {
   }>;
   activeSettings: GameSettings | null;
   matchedAnimals: AnimalEntry[];
+  players: PlayerState[];
+  currentPlayerIndex: number;
   moves: number;
   secondsElapsed: number;
   isRunning: boolean;
@@ -31,6 +38,8 @@ export function useGameEngine({ animals }: UseGameEngineArgs): UseGameEngineResu
   const cardsRef = useRef(cards);
   const [activeSettings, setActiveSettings] = useState<GameSettings | null>(null);
   const [matchedAnimals, setMatchedAnimals] = useState<AnimalEntry[]>([]);
+  const [players, setPlayers] = useState<PlayerState[]>([{ id: 0, score: 0 }]);
+  const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
   const [moves, setMoves] = useState(0);
   const [secondsElapsed, setSecondsElapsed] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
@@ -39,10 +48,12 @@ export function useGameEngine({ animals }: UseGameEngineArgs): UseGameEngineResu
   const timerRef = useRef<number | null>(null);
   const hideTimeoutRef = useRef<number | null>(null);
   const lockRef = useRef(false);
+  const totalPlayers = players.length;
 
   useEffect(() => {
     cardsRef.current = cards;
   }, [cards]);
+
 
   const animalsById = useMemo(() => {
     return animals.reduce<Record<string, AnimalEntry>>((acc, animal) => {
@@ -77,9 +88,12 @@ export function useGameEngine({ animals }: UseGameEngineArgs): UseGameEngineResu
 
   const reset = useCallback(() => {
     resetTimers();
+    const singlePlayer = [{ id: 0, score: 0 }];
     setCards([]);
     setActiveSettings(null);
     setMatchedAnimals([]);
+    setPlayers(singlePlayer);
+    setCurrentPlayerIndex(0);
     setMoves(0);
     setSecondsElapsed(0);
     setIsRunning(false);
@@ -113,6 +127,10 @@ export function useGameEngine({ animals }: UseGameEngineArgs): UseGameEngineResu
         throw new Error('Not enough animals available for requested grid size');
       }
       resetTimers();
+      const playerCount = settings.playerCount ?? 1;
+      const initialPlayers = Array.from({ length: playerCount }, (_, index) => ({ id: index, score: 0 }));
+      setPlayers(initialPlayers);
+      setCurrentPlayerIndex(0);
       const picked = sample(groupAnimals, settings.gridSize / 2);
       setCards(createCards(picked));
       setActiveSettings(settings);
@@ -140,6 +158,13 @@ export function useGameEngine({ animals }: UseGameEngineArgs): UseGameEngineResu
     );
   }, []);
 
+  const advancePlayer = useCallback(() => {
+    if (totalPlayers <= 1) {
+      return;
+    }
+    setCurrentPlayerIndex((index) => (index + 1) % totalPlayers);
+  }, [totalPlayers]);
+
   const revealCard = useCallback(
     (cardId: string) => {
       if (!isRunning || lockRef.current) {
@@ -164,6 +189,11 @@ export function useGameEngine({ animals }: UseGameEngineArgs): UseGameEngineResu
           if (firstCard && secondCard) {
             if (firstCard.animalId === secondCard.animalId) {
               markCardsAs([firstId, secondId], { matched: true });
+              setPlayers((prev) =>
+                prev.map((player, index) =>
+                  index === currentPlayerIndex ? { ...player, score: player.score + 1 } : player
+                )
+              );
               const matchedAnimal = animalsById[firstCard.animalId];
               setMatchedAnimals((prev) => {
                 if (prev.some((entry) => entry.id === matchedAnimal.id)) {
@@ -176,10 +206,15 @@ export function useGameEngine({ animals }: UseGameEngineArgs): UseGameEngineResu
                 setSelectedCardIds([]);
               }, 300);
             } else {
+              advancePlayer();
+              if (hideTimeoutRef.current !== null) {
+                window.clearTimeout(hideTimeoutRef.current);
+              }
               hideTimeoutRef.current = window.setTimeout(() => {
                 markCardsAs([firstId, secondId], { revealed: false });
                 lockRef.current = false;
                 setSelectedCardIds([]);
+                hideTimeoutRef.current = null;
               }, 800);
             }
           }
@@ -187,7 +222,7 @@ export function useGameEngine({ animals }: UseGameEngineArgs): UseGameEngineResu
         return next;
       });
     },
-    [animalsById, isRunning, markCardsAs]
+    [animalsById, isRunning, markCardsAs, currentPlayerIndex, advancePlayer]
   );
 
   useEffect(() => {
@@ -204,6 +239,8 @@ export function useGameEngine({ animals }: UseGameEngineArgs): UseGameEngineResu
     cards,
     activeSettings,
     matchedAnimals,
+    players,
+    currentPlayerIndex,
     moves,
     secondsElapsed,
     isRunning,

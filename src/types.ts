@@ -17,6 +17,7 @@ export type AnimalLocaleOverrides = Partial<Pick<AnimalEntry, 'commonName' | 'si
 export interface GameSettings {
   group: AnimalGroup;
   gridSize: 12 | 18 | 24;
+  playerCount: 1 | 2 | 3 | 4;
 }
 
 export interface CardData {
