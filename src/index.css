@@ -394,7 +394,7 @@ button:disabled {
 
 .primary--wild::after {
   z-index: -1;
-  background: url('/assets/graphics/358029164_c765b876-ce8e-4f04-a88e-ba041d04ba39.svg');
+  background: var(--wild-background-image, none);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

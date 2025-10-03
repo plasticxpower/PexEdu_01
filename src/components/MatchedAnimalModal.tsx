@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import type { MouseEvent } from 'react';
 
 import type { AnimalEntry } from '../types';
+import { PLACEHOLDER_IMAGE, resolveAssetPath } from '../utils/assets';
 
 interface MatchedAnimalModalProps {
   animal: AnimalEntry;
@@ -24,7 +25,7 @@ export function MatchedAnimalModal({ animal, onClose, translate }: MatchedAnimal
     };
   }, [onClose]);
 
-  const imageSrc = animal.image && animal.image.trim() ? animal.image : '/assets/placeholder.svg';
+  const imageSrc = resolveAssetPath(animal.image) || PLACEHOLDER_IMAGE;
   const labelId = `matched-animal-${animal.id}`;
 
   const handleInnerClick = (event: MouseEvent<HTMLDivElement>) => {

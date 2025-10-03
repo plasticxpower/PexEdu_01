@@ -1,9 +1,11 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { resolveAssetPath } from '../utils/assets';
+
 const LANGS = [
-  { code: 'en', label: 'English', icon: '/assets/flags/en.svg' },
-  { code: 'cs', label: 'Česky', icon: '/assets/flags/cs.svg' },
+  { code: 'en', label: 'English', icon: resolveAssetPath('assets/flags/en.svg') },
+  { code: 'cs', label: 'Česky', icon: resolveAssetPath('assets/flags/cs.svg') },
 ];
 
 export function LanguageSwitcher() {

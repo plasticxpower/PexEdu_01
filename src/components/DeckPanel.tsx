@@ -1,4 +1,5 @@
 import type { AnimalEntry } from '../types';
+import { PLACEHOLDER_IMAGE, resolveAssetPath } from '../utils/assets';
 
 interface DeckPanelProps {
   animals: AnimalEntry[];
@@ -11,7 +12,7 @@ interface DeckPanelProps {
 export function DeckPanel({ animals, currentIndex, onPrev, onNext, translate }: DeckPanelProps) {
   const hasCards = animals.length > 0;
   const current = hasCards ? animals[currentIndex] : null;
-  const imageSrc = current && current.image && current.image.trim() ? current.image : '/assets/placeholder.svg';
+  const imageSrc = resolveAssetPath(current?.image) || PLACEHOLDER_IMAGE;
 
   return (
     <section className="deck">

@@ -1,4 +1,5 @@
 import type { AnimalGroup, GameSettings } from '../types';
+import { resolveAssetPath } from '../utils/assets';
 
 interface SettingsPanelProps {
   settings: GameSettings;
@@ -56,7 +57,7 @@ export function SettingsPanel({
             const disabled = option.count < settings.gridSize / 2;
             const selected = settings.group === option.group;
             const label = translate('groups.' + option.group);
-            const iconSrc = '/assets/icons/' + option.group + '.png';
+            const iconSrc = resolveAssetPath(`assets/icons/${option.group}.png`);
             return (
               <button
                 key={option.group}

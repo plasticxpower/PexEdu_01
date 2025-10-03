@@ -1,4 +1,5 @@
 import type { AnimalEntry, CardData } from '../types';
+import { PLACEHOLDER_IMAGE, resolveAssetPath } from '../utils/assets';
 
 interface GameBoardProps {
   cards: CardData[];
@@ -27,9 +28,9 @@ export function GameBoard({ cards, animalsById, onCardClick, isInteractive, tran
         }
         const revealed = card.revealed || card.matched;
         const disabled = card.matched || card.revealed || !isInteractive;
-        const imageSrc = animal.image && animal.image.trim() ? animal.image : '/assets/placeholder.svg';
+        const imageSrc = resolveAssetPath(animal.image) || PLACEHOLDER_IMAGE;
         const groupKey = (animal.group || '').toLowerCase();
-        const backIconSrc = groupKey ? `/assets/icons/${groupKey}.png` : '';
+        const backIconSrc = groupKey ? resolveAssetPath(`assets/icons/${groupKey}.png`) : '';
         return (
           <button
             key={card.id}
