@@ -12,6 +12,18 @@ export function resolveAssetPath(path: string | null | undefined): string {
   if (EXTERNAL_PATH_REGEX.test(path)) {
     return path;
   }
+  if (path.startsWith(BASE_URL)) {
+    return path;
+  }
+  const baseWithoutSlashes = BASE_URL.replace(/^\/+|\/+$/g, '');
+  if (baseWithoutSlashes) {
+    if (path.startsWith(`/${baseWithoutSlashes}`)) {
+      return path;
+    }
+    if (path.startsWith(baseWithoutSlashes)) {
+      return `/${path}`;
+    }
+  }
   const trimmed = path.replace(/^\/+/, '');
   return `${BASE_URL}${trimmed}`;
 }
