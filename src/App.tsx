@@ -5,6 +5,7 @@ import animalsJson from '../data/animals.json';
 import csLocaleOverrides from '../data/animals.locale.cs.json';
 import { CompletionBanner } from './components/CompletionBanner';
 import { DeckPanel } from './components/DeckPanel';
+import { FinalResultModal } from './components/FinalResultModal';
 import { GameBoard } from './components/GameBoard';
 import { LanguageSwitcher } from './components/LanguageSwitcher';
 import { MatchedAnimalModal } from './components/MatchedAnimalModal';
@@ -86,6 +87,7 @@ export default function App() {
   const previousMatchCount = useRef(0);
   const [view, setView] = useState<ActiveView>('menu');
   const [modalAnimalId, setModalAnimalId] = useState<string | null>(null);
+  const [showFinalResult, setShowFinalResult] = useState(false);
 
   useEffect(() => {
     const matches = game.matchedAnimals.length;
@@ -104,14 +106,28 @@ export default function App() {
     previousMatchCount.current = matches;
   }, [deckIndex, game.matchedAnimals]);
 
+  useEffect(() => {
+    if (game.isComplete) {
+      // Show final result modal when game completes
+      const timer = setTimeout(() => {
+        setShowFinalResult(true);
+      }, 500);
+      return () => clearTimeout(timer);
+    } else {
+      setShowFinalResult(false);
+    }
+  }, [game.isComplete]);
+
   const handleStart = () => {
     game.startGame(settings);
     setModalAnimalId(null);
+    setShowFinalResult(false);
     setView('game');
   };
 
   const handleRestart = () => {
     setModalAnimalId(null);
+    setShowFinalResult(false);
     game.restart();
   };
 
@@ -120,6 +136,7 @@ export default function App() {
     setDeckIndex(0);
     previousMatchCount.current = 0;
     setModalAnimalId(null);
+    setShowFinalResult(false);
     setView('menu');
   };
 
@@ -143,6 +160,10 @@ export default function App() {
 
   const handleCloseModal = () => {
     setModalAnimalId(null);
+  };
+
+  const handleCloseFinalResult = () => {
+    setShowFinalResult(false);
   };
 
   const hasActiveGame = game.activeSettings !== null;
@@ -247,6 +268,17 @@ export default function App() {
       {modalAnimal && (
         <MatchedAnimalModal animal={modalAnimal} onClose={handleCloseModal} translate={t} />
       )}
+      
+      <FinalResultModal
+        visible={showFinalResult}
+        moves={game.moves}
+        secondsElapsed={game.secondsElapsed}
+        players={game.players}
+        matchedAnimalsCount={game.matchedAnimals.length}
+        translate={t}
+        onClose={handleCloseFinalResult}
+        onRestart={handleRestart}
+      />
     </div>
   );
 }

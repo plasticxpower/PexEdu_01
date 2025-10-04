@@ -33,7 +33,9 @@
     "pairs_few": "{{count}} dvojice",
     "pairs_many": "{{count}} dvojic",
     "pairs_other": "{{count}} dvojic",
-    "currentTurn": "Na tahu je {{player}}"
+    "currentTurn": "Na tahu je {{player}}",
+    "matches": "Shody",
+    "playerScores": "Skóre hráčů"
   },
   "game": {
     "waitingForStart": "Zvolte skupinu a velikost mřížky pro zahájení hry.",

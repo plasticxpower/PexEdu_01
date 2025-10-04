@@ -29,7 +29,9 @@
     "playerName": "Player {{index}}",
     "pairs_one": "{{count}} pair",
     "pairs_other": "{{count}} pairs",
-    "currentTurn": "{{player}}'s turn"
+    "currentTurn": "{{player}}'s turn",
+    "matches": "Matches",
+    "playerScores": "Player Scores"
   },
   "game": {
     "waitingForStart": "Select a group and grid size to begin.",
