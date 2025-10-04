@@ -118,6 +118,15 @@ export default function App() {
     }
   }, [game.isComplete]);
 
+  useEffect(() => {
+    // Pause timer when modal is open, resume when closed
+    if (modalAnimalId) {
+      game.pauseTimer();
+    } else if (game.isRunning && !game.isComplete) {
+      game.resumeTimer();
+    }
+  }, [modalAnimalId, game.pauseTimer, game.resumeTimer, game.isRunning, game.isComplete]);
+
   const handleStart = () => {
     game.startGame(settings);
     setModalAnimalId(null);

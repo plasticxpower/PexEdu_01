@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import type { MouseEvent } from 'react';
 
 import { formatDuration } from '../utils/time';
@@ -25,6 +25,8 @@ export function FinalResultModal({
   onClose,
   onRestart,
 }: FinalResultModalProps) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
   useEffect(() => {
     if (!visible) return;
 
@@ -40,6 +42,53 @@ export function FinalResultModal({
       window.removeEventListener('keydown', handleKeyDown);
     };
   }, [visible, onClose]);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video || !visible) return;
+
+    let rafId: number;
+    let hasStopped = false;
+
+    const checkTime = () => {
+      if (!video.duration || hasStopped) return;
+      
+      if (video.currentTime >= video.duration - 0.3) {
+        video.currentTime = video.duration - 0.3;
+        video.pause();
+        hasStopped = true;
+      } else if (!video.paused) {
+        rafId = requestAnimationFrame(checkTime);
+      }
+    };
+
+    const handlePlay = () => {
+      hasStopped = false;
+      rafId = requestAnimationFrame(checkTime);
+    };
+
+    const handleLoadedMetadata = () => {
+      if (video.duration) {
+        rafId = requestAnimationFrame(checkTime);
+      }
+    };
+
+    video.addEventListener('play', handlePlay);
+    video.addEventListener('loadedmetadata', handleLoadedMetadata);
+
+    // Start checking if video is already loaded
+    if (video.readyState >= 1) {
+      rafId = requestAnimationFrame(checkTime);
+    }
+
+    return () => {
+      if (rafId) {
+        cancelAnimationFrame(rafId);
+      }
+      video.removeEventListener('play', handlePlay);
+      video.removeEventListener('loadedmetadata', handleLoadedMetadata);
+    };
+  }, [visible]);
 
   if (!visible) {
     return null;
@@ -81,7 +130,12 @@ export function FinalResultModal({
       <div className="final-result-modal__card" role="document" onClick={handleInnerClick}>
         {videoSrc && (
           <div className="final-result-modal__video">
-            <video autoPlay muted playsInline>
+            <video 
+              ref={videoRef} 
+              autoPlay 
+              muted 
+              playsInline
+            >
               <source src={videoSrc} type="video/mp4" />
             </video>
           </div>

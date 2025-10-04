@@ -31,6 +31,8 @@ interface UseGameEngineResult {
   restart: () => void;
   revealCard: (cardId: string) => void;
   reset: () => void;
+  pauseTimer: () => void;
+  resumeTimer: () => void;
 }
 
 export function useGameEngine({ animals }: UseGameEngineArgs): UseGameEngineResult {
@@ -77,6 +79,21 @@ export function useGameEngine({ animals }: UseGameEngineArgs): UseGameEngineResu
       timerRef.current = null;
     }
   }, []);
+
+  const pauseTimer = useCallback(() => {
+    if (timerRef.current !== null) {
+      window.clearInterval(timerRef.current);
+      timerRef.current = null;
+    }
+  }, []);
+
+  const resumeTimer = useCallback(() => {
+    if (isRunning && !isComplete && timerRef.current === null) {
+      timerRef.current = window.setInterval(() => {
+        setSecondsElapsed((value) => value + 1);
+      }, 1000);
+    }
+  }, [isRunning, isComplete]);
 
   const resetTimers = useCallback(() => {
     stopTimer();
@@ -249,5 +266,7 @@ export function useGameEngine({ animals }: UseGameEngineArgs): UseGameEngineResu
     restart,
     revealCard,
     reset,
+    pauseTimer,
+    resumeTimer,
   };
 }
