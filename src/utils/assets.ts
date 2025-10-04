@@ -29,6 +29,3 @@ export function resolveAssetPath(path: string | null | undefined): string {
 }
 
 export const PLACEHOLDER_IMAGE = resolveAssetPath('assets/placeholder.svg');
-export const WILD_BACKGROUND_IMAGE = resolveAssetPath(
-  'assets/graphics/358029164_c765b876-ce8e-4f04-a88e-ba041d04ba39.svg'
-);

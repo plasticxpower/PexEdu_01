@@ -46,7 +46,7 @@ export function SettingsPanel({
     (option) => option.group === settings.group && option.count >= settings.gridSize / 2
   );
 
-  const buttonClass = 'primary primary--wild start-button' + (hasActiveGame ? ' start-button--active' : '');
+  const buttonClass = 'primary start-button' + (hasActiveGame ? ' start-button--active' : '');
 
   return (
     <section className="settings">

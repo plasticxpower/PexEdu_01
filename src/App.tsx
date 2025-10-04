@@ -11,7 +11,7 @@ import { LanguageSwitcher } from './components/LanguageSwitcher';
 import { MatchedAnimalModal } from './components/MatchedAnimalModal';
 import { SettingsPanel } from './components/SettingsPanel';
 import { StatsBar } from './components/StatsBar';
-import { PLACEHOLDER_IMAGE, WILD_BACKGROUND_IMAGE, resolveAssetPath } from './utils/assets';
+import { PLACEHOLDER_IMAGE, resolveAssetPath } from './utils/assets';
 import { useGameEngine } from './hooks/useGameEngine';
 import type { AnimalEntry, AnimalGroup, AnimalLocaleOverrides, GameSettings } from './types';
 
@@ -181,20 +181,6 @@ export default function App() {
   const localizedMatchedAnimals = useMemo(() => {
     return game.matchedAnimals.map((animal) => localizedAnimalsById[animal.id] ?? animal);
   }, [game.matchedAnimals, localizedAnimalsById]);
-
-  useEffect(() => {
-    if (!WILD_BACKGROUND_IMAGE) {
-      return;
-    }
-    const root = document.documentElement;
-    const backgroundValue = `url("${WILD_BACKGROUND_IMAGE}")`;
-    root.style.setProperty('--wild-background-image', backgroundValue);
-    return () => {
-      if (root.style.getPropertyValue('--wild-background-image') === backgroundValue) {
-        root.style.removeProperty('--wild-background-image');
-      }
-    };
-  }, []);
 
   const modalAnimal = modalAnimalId
     ? localizedAnimalsById[modalAnimalId] ?? animalsById[modalAnimalId]
