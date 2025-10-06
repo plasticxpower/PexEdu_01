@@ -4,7 +4,7 @@ interface StatsBarProps {
   moves: number;
   secondsElapsed: number;
   isComplete: boolean;
-  players: Array<{ id: number; score: number }>;
+  players: Array<{ id: number; score: number; time: number }>;
   currentPlayerIndex: number;
   translate: (key: string, options?: Record<string, unknown>) => string;
 }
@@ -34,10 +34,15 @@ export function StatsBar({ moves, secondsElapsed, isComplete, players, currentPl
               const name = translate('stats.playerName', { index: index + 1 });
               const score = translate('stats.pairs', { count: player.score });
               const isActive = index === currentPlayerIndex && !isComplete;
+              const formattedTime = formatDuration(player.time ?? 0);
+              const timeLabel = translate('stats.timeSpent', { time: formattedTime });
               return (
                 <li key={player.id} className={isActive ? 'active' : undefined}>
                   <span className="stats__players-name">{name}</span>
-                  <span className="stats__players-score">{score}</span>
+                  <span className="stats__players-meta">
+                    <span className="stats__players-score">{score}</span>
+                    <span className="stats__players-time" aria-label={timeLabel}>{formattedTime}</span>
+                  </span>
                 </li>
               );
             })}
@@ -50,4 +55,3 @@ export function StatsBar({ moves, secondsElapsed, isComplete, players, currentPl
     </section>
   );
 }
-

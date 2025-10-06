@@ -88,6 +88,17 @@ export default function App() {
   const [view, setView] = useState<ActiveView>('menu');
   const [modalAnimalId, setModalAnimalId] = useState<string | null>(null);
   const [showFinalResult, setShowFinalResult] = useState(false);
+  const [pendingFinalResult, setPendingFinalResult] = useState(false);
+
+  useEffect(() => {
+    if (game.isComplete) {
+      setPendingFinalResult(true);
+    } else {
+      setPendingFinalResult(false);
+      setShowFinalResult(false);
+    }
+  }, [game.isComplete]);
+
 
   useEffect(() => {
     const matches = game.matchedAnimals.length;
@@ -105,18 +116,6 @@ export default function App() {
     }
     previousMatchCount.current = matches;
   }, [deckIndex, game.matchedAnimals]);
-
-  useEffect(() => {
-    if (game.isComplete) {
-      // Show final result modal when game completes
-      const timer = setTimeout(() => {
-        setShowFinalResult(true);
-      }, 500);
-      return () => clearTimeout(timer);
-    } else {
-      setShowFinalResult(false);
-    }
-  }, [game.isComplete]);
 
   useEffect(() => {
     // Pause timer when modal is open, resume when closed
@@ -169,6 +168,12 @@ export default function App() {
 
   const handleCloseModal = () => {
     setModalAnimalId(null);
+    if (game.isComplete && pendingFinalResult) {
+      window.setTimeout(() => {
+        setShowFinalResult(true);
+      }, 300);
+      setPendingFinalResult(false);
+    }
   };
 
   const handleCloseFinalResult = () => {

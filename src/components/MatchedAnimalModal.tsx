@@ -65,7 +65,7 @@ export function MatchedAnimalModal({ animal, onClose, translate }: MatchedAnimal
               <dd>{animal.funFact}</dd>
             </div>
           </dl>
-          <button type="button" className="primary" onClick={onClose}>
+          <button type="button" className="primary animal-modal__continue" onClick={onClose}>
             {translate('game.continue')}
           </button>
         </div>

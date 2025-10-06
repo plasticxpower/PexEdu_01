@@ -8,7 +8,7 @@ interface FinalResultModalProps {
   visible: boolean;
   moves: number;
   secondsElapsed: number;
-  players: Array<{ id: number; score: number }>;
+  players: Array<{ id: number; score: number; time: number }>;
   matchedAnimalsCount: number;
   translate: (key: string, options?: Record<string, unknown>) => string;
   onClose: () => void;
@@ -168,21 +168,34 @@ export function FinalResultModal({
             <div className="final-result-modal__players">
               <h3>{translate('stats.playerScores')}</h3>
               <ul>
-                {players.map((player) => (
-                  <li key={player.id}>
-                    <span>{translate('stats.playerName', { index: player.id + 1 })}</span>
-                    <span>{translate('stats.pairs', { count: player.score })}</span>
-                  </li>
-                ))}
+                {players.map((player) => {
+                  const name = translate('stats.playerName', { index: player.id + 1 });
+                  const pairsLabel = translate('stats.pairs', { count: player.score });
+                  const formattedTime = formatDuration(player.time ?? 0);
+                  const timeLabel = translate('stats.timeSpent', { time: formattedTime });
+                  return (
+                    <li key={player.id}>
+                      <span className="final-result-modal__player-name">{name}</span>
+                      <span className="final-result-modal__player-meta">
+                        <span className="final-result-modal__player-score">{pairsLabel}</span>
+                        <span className="final-result-modal__player-time" aria-label={timeLabel}>{formattedTime}</span>
+                      </span>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           )}
 
           <div className="final-result-modal__actions">
-            <button type="button" className="primary" onClick={onRestart}>
+            <button type="button" className="primary final-result-modal__action" onClick={onRestart}>
               {translate('controls.restart')}
             </button>
-            <button type="button" className="ghost" onClick={onClose}>
+            <button
+              type="button"
+              className="primary final-result-modal__action final-result-modal__action--continue"
+              onClick={onClose}
+            >
               {translate('game.continue')}
             </button>
           </div>

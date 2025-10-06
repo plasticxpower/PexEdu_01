@@ -4,7 +4,7 @@ interface CompletionBannerProps {
   visible: boolean;
   moves: number;
   secondsElapsed: number;
-  players: Array<{ id: number; score: number }>;
+  players: Array<{ id: number; score: number; time: number }>;
   translate: (key: string, options?: Record<string, unknown>) => string;
   onRestart: () => void;
 }

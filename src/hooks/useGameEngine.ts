@@ -10,6 +10,7 @@ interface UseGameEngineArgs {
 interface PlayerState {
   id: number;
   score: number;
+  time: number;
 }
 
 interface UseGameEngineResult {
@@ -40,7 +41,7 @@ export function useGameEngine({ animals }: UseGameEngineArgs): UseGameEngineResu
   const cardsRef = useRef(cards);
   const [activeSettings, setActiveSettings] = useState<GameSettings | null>(null);
   const [matchedAnimals, setMatchedAnimals] = useState<AnimalEntry[]>([]);
-  const [players, setPlayers] = useState<PlayerState[]>([{ id: 0, score: 0 }]);
+  const [players, setPlayers] = useState<PlayerState[]>([{ id: 0, score: 0, time: 0 }]);
   const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
   const [moves, setMoves] = useState(0);
   const [secondsElapsed, setSecondsElapsed] = useState(0);
@@ -50,11 +51,16 @@ export function useGameEngine({ animals }: UseGameEngineArgs): UseGameEngineResu
   const timerRef = useRef<number | null>(null);
   const hideTimeoutRef = useRef<number | null>(null);
   const lockRef = useRef(false);
+  const currentPlayerIndexRef = useRef(currentPlayerIndex);
   const totalPlayers = players.length;
 
   useEffect(() => {
     cardsRef.current = cards;
   }, [cards]);
+
+  useEffect(() => {
+    currentPlayerIndexRef.current = currentPlayerIndex;
+  }, [currentPlayerIndex]);
 
 
   const animalsById = useMemo(() => {
@@ -70,6 +76,16 @@ export function useGameEngine({ animals }: UseGameEngineArgs): UseGameEngineResu
     }
     timerRef.current = window.setInterval(() => {
       setSecondsElapsed((value) => value + 1);
+      setPlayers((prev) => {
+        const index = currentPlayerIndexRef.current;
+        if (!prev[index]) {
+          return prev;
+        }
+        const next = [...prev];
+        const player = next[index];
+        next[index] = { ...player, time: player.time + 1 };
+        return next;
+      });
     }, 1000);
   }, []);
 
@@ -89,11 +105,9 @@ export function useGameEngine({ animals }: UseGameEngineArgs): UseGameEngineResu
 
   const resumeTimer = useCallback(() => {
     if (isRunning && !isComplete && timerRef.current === null) {
-      timerRef.current = window.setInterval(() => {
-        setSecondsElapsed((value) => value + 1);
-      }, 1000);
+      startTimer();
     }
-  }, [isRunning, isComplete]);
+  }, [isRunning, isComplete, startTimer]);
 
   const resetTimers = useCallback(() => {
     stopTimer();
@@ -105,12 +119,13 @@ export function useGameEngine({ animals }: UseGameEngineArgs): UseGameEngineResu
 
   const reset = useCallback(() => {
     resetTimers();
-    const singlePlayer = [{ id: 0, score: 0 }];
+    const singlePlayer = [{ id: 0, score: 0, time: 0 }];
     setCards([]);
     setActiveSettings(null);
     setMatchedAnimals([]);
     setPlayers(singlePlayer);
     setCurrentPlayerIndex(0);
+    currentPlayerIndexRef.current = 0;
     setMoves(0);
     setSecondsElapsed(0);
     setIsRunning(false);
@@ -145,9 +160,10 @@ export function useGameEngine({ animals }: UseGameEngineArgs): UseGameEngineResu
       }
       resetTimers();
       const playerCount = settings.playerCount ?? 1;
-      const initialPlayers = Array.from({ length: playerCount }, (_, index) => ({ id: index, score: 0 }));
+      const initialPlayers = Array.from({ length: playerCount }, (_, index) => ({ id: index, score: 0, time: 0 }));
       setPlayers(initialPlayers);
       setCurrentPlayerIndex(0);
+      currentPlayerIndexRef.current = 0;
       const picked = sample(groupAnimals, settings.gridSize / 2);
       setCards(createCards(picked));
       setActiveSettings(settings);
@@ -179,7 +195,11 @@ export function useGameEngine({ animals }: UseGameEngineArgs): UseGameEngineResu
     if (totalPlayers <= 1) {
       return;
     }
-    setCurrentPlayerIndex((index) => (index + 1) % totalPlayers);
+    setCurrentPlayerIndex((index) => {
+      const nextIndex = (index + 1) % totalPlayers;
+      currentPlayerIndexRef.current = nextIndex;
+      return nextIndex;
+    });
   }, [totalPlayers]);
 
   const revealCard = useCallback(
@@ -232,7 +252,7 @@ export function useGameEngine({ animals }: UseGameEngineArgs): UseGameEngineResu
                 lockRef.current = false;
                 setSelectedCardIds([]);
                 hideTimeoutRef.current = null;
-              }, 800);
+              }, 1000);
             }
           }
         }

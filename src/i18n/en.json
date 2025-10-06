@@ -31,7 +31,8 @@
     "pairs_other": "{{count}} pairs",
     "currentTurn": "{{player}}'s turn",
     "matches": "Matches",
-    "playerScores": "Player Scores"
+    "playerScores": "Player Scores",
+    "timeSpent": "{{time}} elapsed"
   },
   "game": {
     "waitingForStart": "Select a group and grid size to begin.",
