@@ -70,5 +70,42 @@
     "amphibians": "Obojživelíci",
     "reptiles": "Plazi",
     "birds": "Ptáci"
+  },
+  "info": {
+    "about": {
+      "button": "O aplikaci",
+      "title": "O aplikaci PexEdu",
+      "paragraphs": [
+        "Tuto aplikaci vyvíjí obyčejný nadšenec s velkou vášní pro přírodu a hravé učení.",
+        "Vaše zpětná vazba a komentáře jsou velmi vítané. Napište nám na plasticxpower@gmail.com.",
+        "Pokud se vám aplikace líbí, můžete nás podpořit drobným příspěvkem, díky kterému budeme pokračovat ve zlepšování a plnění vašich nápadů. IBAN: CZ71 3030 0000 0017 7659 6010."
+      ]
+    },
+    "help": {
+      "button": "Nápověda a pravidla",
+      "title": "Jak hra funguje",
+      "intro": "Odkrývejte kartičky, hledejte dvojice zvířat a plňte svou sbírku objevů.",
+      "steps": [
+        {
+          "title": "Připravte si dobrodružství",
+          "description": "Vyberte skupinu zvířat a velikost mřížky. Větší mřížka znamená více dvojic k zapamatování."
+        },
+        {
+          "title": "Střídejte se v otáčení karet",
+          "description": "V každém tahu otočíte dvě karty. Pokud se shodují, zůstanou odkryté a připojí se do vaší sbírky."
+        },
+        {
+          "title": "Sledujte statistiky",
+          "description": "Počet tahů a čas ukazují, jak si vedete. Při hře více hráčů se kola střídají automaticky."
+        }
+      ],
+      "tipsTitle": "Užitečné tipy",
+      "tips": [
+        "Prohlížejte si odkrytá zvířata ve sbírce a poznávejte jejich vlastnosti.",
+        "Trénujte paměť a spolupracujte s přáteli, abyste vyčistili hrací plochu rychleji."
+      ]
+    },
+    "close": "Zavřít",
+    "menuLabel": "Otevřít info nabídku"
   }
 }

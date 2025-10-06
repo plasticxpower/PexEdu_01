@@ -8,6 +8,7 @@ import { DeckPanel } from './components/DeckPanel';
 import { FinalResultModal } from './components/FinalResultModal';
 import { GameBoard } from './components/GameBoard';
 import { LanguageSwitcher } from './components/LanguageSwitcher';
+import { InfoModal } from './components/InfoModal';
 import { MatchedAnimalModal } from './components/MatchedAnimalModal';
 import { SettingsPanel } from './components/SettingsPanel';
 import { StatsBar } from './components/StatsBar';
@@ -89,6 +90,10 @@ export default function App() {
   const [modalAnimalId, setModalAnimalId] = useState<string | null>(null);
   const [showFinalResult, setShowFinalResult] = useState(false);
   const [pendingFinalResult, setPendingFinalResult] = useState(false);
+  const [isAboutOpen, setIsAboutOpen] = useState(false);
+  const [isHelpOpen, setIsHelpOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (game.isComplete) {
@@ -118,13 +123,22 @@ export default function App() {
   }, [deckIndex, game.matchedAnimals]);
 
   useEffect(() => {
-    // Pause timer when modal is open, resume when closed
-    if (modalAnimalId) {
+    // Pause timer when any overlay/modal is open, resume when closed
+    if (modalAnimalId || isAboutOpen || isHelpOpen || isMenuOpen) {
       game.pauseTimer();
     } else if (game.isRunning && !game.isComplete) {
       game.resumeTimer();
     }
-  }, [modalAnimalId, game.pauseTimer, game.resumeTimer, game.isRunning, game.isComplete]);
+  }, [
+    modalAnimalId,
+    isAboutOpen,
+    isHelpOpen,
+    isMenuOpen,
+    game.pauseTimer,
+    game.resumeTimer,
+    game.isRunning,
+    game.isComplete,
+  ]);
 
   const handleStart = () => {
     game.startGame(settings);
@@ -180,8 +194,47 @@ export default function App() {
     setShowFinalResult(false);
   };
 
+  useEffect(() => {
+    if (!isMenuOpen) {
+      return;
+    }
+    const handleClick = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsMenuOpen(false);
+      }
+    };
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsMenuOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClick);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('mousedown', handleClick);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isMenuOpen]);
+
+  const handleToggleMenu = () => {
+    setIsMenuOpen((open) => !open);
+  };
+
+  const handleOpenAbout = () => {
+    setIsAboutOpen(true);
+    setIsHelpOpen(false);
+    setIsMenuOpen(false);
+  };
+
+  const handleOpenHelp = () => {
+    setIsHelpOpen(true);
+    setIsAboutOpen(false);
+    setIsMenuOpen(false);
+  };
+
   const hasActiveGame = game.activeSettings !== null;
-  const isInteractive = game.isRunning && !game.isComplete && !modalAnimalId;
+  const isInteractive =
+    game.isRunning && !game.isComplete && !modalAnimalId && !isAboutOpen && !isHelpOpen && !isMenuOpen;
 
   const localizedMatchedAnimals = useMemo(() => {
     return game.matchedAnimals.map((animal) => localizedAnimalsById[animal.id] ?? animal);
@@ -191,14 +244,52 @@ export default function App() {
     ? localizedAnimalsById[modalAnimalId] ?? animalsById[modalAnimalId]
     : null;
 
+  const aboutParagraphs = t('info.about.paragraphs', { returnObjects: true }) as string[];
+  const helpSteps = t('info.help.steps', { returnObjects: true }) as Array<{
+    title: string;
+    description: string;
+  }>;
+  const helpTips = t('info.help.tips', { returnObjects: true }) as string[];
+  const helpIntro = t('info.help.intro');
+  const helpTipsTitle = t('info.help.tipsTitle');
+  const infoCloseLabel = t('info.close');
+
   return (
     <div className="app">
       <header className="app__header">
-        <div>
+        <div className="app__header-toolbar">
+          <LanguageSwitcher />
+          <div className="app__menu" ref={menuRef}>
+            <button
+              type="button"
+              className={`app__menu-toggle${isMenuOpen ? ' is-open' : ''}`}
+              onClick={handleToggleMenu}
+              aria-haspopup="menu"
+              aria-expanded={isMenuOpen}
+              aria-label={t('info.menuLabel')}
+            >
+              <span className="app__menu-icon" aria-hidden="true">
+                <span />
+                <span />
+                <span />
+              </span>
+            </button>
+            {isMenuOpen && (
+              <div className="app__menu-dropdown" role="menu">
+                <button type="button" className="app__menu-item" role="menuitem" onClick={handleOpenAbout}>
+                  {t('info.about.button')}
+                </button>
+                <button type="button" className="app__menu-item" role="menuitem" onClick={handleOpenHelp}>
+                  {t('info.help.button')}
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+        <div className="app__header-intro">
           <h1>{t('app.title')}</h1>
           <p>{t('app.description')}</p>
         </div>
-        <LanguageSwitcher />
       </header>
 
       <main className="app__main">
@@ -268,7 +359,40 @@ export default function App() {
       {modalAnimal && (
         <MatchedAnimalModal animal={modalAnimal} onClose={handleCloseModal} translate={t} />
       )}
-      
+      <InfoModal
+        visible={isAboutOpen}
+        title={t('info.about.title')}
+        closeLabel={infoCloseLabel}
+        onClose={() => setIsAboutOpen(false)}
+      >
+        {aboutParagraphs.map((paragraph, index) => (
+          <p key={`about-paragraph-${index}`}>{paragraph}</p>
+        ))}
+      </InfoModal>
+      <InfoModal
+        visible={isHelpOpen}
+        title={t('info.help.title')}
+        closeLabel={infoCloseLabel}
+        onClose={() => setIsHelpOpen(false)}
+      >
+        <p>{helpIntro}</p>
+        <ol className="info-modal__steps">
+          {helpSteps.map((step) => (
+            <li key={step.title}>
+              <span className="info-modal__step-title">{step.title}</span>
+              <p>{step.description}</p>
+            </li>
+          ))}
+        </ol>
+        <div className="info-modal__tips">
+          <span className="info-modal__tips-title">{helpTipsTitle}</span>
+          <ul>
+            {helpTips.map((tip, index) => (
+              <li key={`help-tip-${index}`}>{tip}</li>
+            ))}
+          </ul>
+        </div>
+      </InfoModal>
       <FinalResultModal
         visible={showFinalResult}
         moves={game.moves}

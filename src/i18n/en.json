@@ -66,5 +66,42 @@
     "amphibians": "Amphibians",
     "reptiles": "Reptiles",
     "birds": "Birds"
+  },
+  "info": {
+    "about": {
+      "button": "About",
+      "title": "About PexEdu",
+      "paragraphs": [
+        "This app is developed by an ordinary enthusiast with a passion for wildlife and playful learning.",
+        "Your feedback and comments are highly appreciated. Reach us at plasticxpower@gmail.com.",
+        "If you like the app you can support us with a small donation so we can keep improving it and bring your ideas to life. IBAN: CZ71 3030 0000 0017 7659 6010."
+      ]
+    },
+    "help": {
+      "button": "Help & Rules",
+      "title": "How the Game Works",
+      "intro": "Flip cards to match animal pairs and fill your discovery deck.",
+      "steps": [
+        {
+          "title": "Set up your adventure",
+          "description": "Choose an animal group and grid size. Larger grids mean more pairs to remember."
+        },
+        {
+          "title": "Take turns flipping cards",
+          "description": "Reveal two cards per turn. If they match, they stay uncovered and join your deck."
+        },
+        {
+          "title": "Keep an eye on stats",
+          "description": "Moves and time track your efficiency. In multiplayer, turns rotate automatically."
+        }
+      ],
+      "tipsTitle": "Helpful tips",
+      "tips": [
+        "Review matched animals in the discovery deck to learn their traits.",
+        "Use memory skills and collaborate with friends to clear the board faster."
+      ]
+    },
+    "close": "Close",
+    "menuLabel": "Open info menu"
   }
 }
