@@ -31,6 +31,15 @@ export function GameBoard({ cards, animalsById, onCardClick, isInteractive, tran
         const imageSrc = resolveAssetPath(animal.image) || PLACEHOLDER_IMAGE;
         const groupKey = (animal.group || '').toLowerCase();
         const backIconSrc = groupKey ? resolveAssetPath(`assets/icons/${groupKey}.png`) : '';
+        const trimmedName = animal.commonName?.trim() ?? '';
+        const nameLength = trimmedName.length;
+        const wordCount = trimmedName === '' ? 0 : trimmedName.split(/\s+/).length;
+        let nameClassName = 'memory-card__name';
+        if (nameLength > 26 || wordCount >= 4) {
+          nameClassName += ' memory-card__name--xsmall';
+        } else if (nameLength > 18 || wordCount >= 3) {
+          nameClassName += ' memory-card__name--small';
+        }
         return (
           <button
             key={card.id}
@@ -49,7 +58,7 @@ export function GameBoard({ cards, animalsById, onCardClick, isInteractive, tran
                 <div className="memory-card__image">
                   <img src={imageSrc} alt={animal.commonName} loading="lazy" />
                 </div>
-                <h3 className="memory-card__name">{animal.commonName}</h3>
+                <h3 className={nameClassName}>{animal.commonName}</h3>
               </div>
             ) : (
               <div className="memory-card__back" data-group={animal.group}>
