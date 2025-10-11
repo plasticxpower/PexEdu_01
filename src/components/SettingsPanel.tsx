@@ -1,5 +1,5 @@
 import type { AnimalGroup, GameSettings } from '../types';
-import { resolveAssetPath } from '../utils/assets';
+import { buildResponsiveAsset, resolveAssetPath } from '../utils/assets';
 
 interface SettingsPanelProps {
   settings: GameSettings;
@@ -57,7 +57,13 @@ export function SettingsPanel({
             const disabled = option.count < settings.gridSize / 2;
             const selected = settings.group === option.group;
             const label = translate('groups.' + option.group);
-            const iconSrc = resolveAssetPath(`assets/icons/${option.group}.png`);
+            const iconPath = `assets/icons/${option.group}.png`;
+            const iconAsset = buildResponsiveAsset(iconPath, {
+              widths: [256, 512],
+              formats: ['webp'],
+            });
+            const iconFallback = iconAsset?.fallback || resolveAssetPath(iconPath);
+            const iconSources = iconAsset?.sources ?? [];
             return (
               <button
                 key={option.group}
@@ -68,7 +74,17 @@ export function SettingsPanel({
                 aria-pressed={selected}
               >
                 <span className="pill__icon" aria-hidden="true">
-                  <img src={iconSrc} alt="" loading="lazy" />
+                  <picture>
+                    {iconSources.map((source) => (
+                      <source
+                        key={source.type}
+                        type={source.type}
+                        srcSet={source.srcSet}
+                        sizes="64px"
+                      />
+                    ))}
+                    <img src={iconFallback} alt="" loading="lazy" width={64} height={64} decoding="async" />
+                  </picture>
                 </span>
                 <span className="pill__label">{label}</span>
               </button>

@@ -1,5 +1,5 @@
 import type { AnimalEntry } from '../types';
-import { PLACEHOLDER_IMAGE, resolveAssetPath } from '../utils/assets';
+import { PLACEHOLDER_IMAGE, buildResponsiveAsset, resolveAssetPath } from '../utils/assets';
 
 interface DeckPanelProps {
   animals: AnimalEntry[];
@@ -12,7 +12,11 @@ interface DeckPanelProps {
 export function DeckPanel({ animals, currentIndex, onPrev, onNext, translate }: DeckPanelProps) {
   const hasCards = animals.length > 0;
   const current = hasCards ? animals[currentIndex] : null;
-  const imageSrc = resolveAssetPath(current?.image) || PLACEHOLDER_IMAGE;
+  const deckImageAsset = current ? buildResponsiveAsset(current.image) : null;
+  const deckImageFallback =
+    deckImageAsset?.fallback || resolveAssetPath(current?.image) || PLACEHOLDER_IMAGE;
+  const deckImageSources = deckImageAsset?.sources ?? [];
+  const deckImageSizes = '(max-width: 768px) 90vw, (max-width: 1280px) 45vw, 420px';
 
   return (
     <section className="deck">
@@ -34,7 +38,24 @@ export function DeckPanel({ animals, currentIndex, onPrev, onNext, translate }: 
             >
               &#8592;
             </button>
-            <img src={imageSrc} alt={current.commonName} loading="lazy" />
+            <picture>
+              {deckImageSources.map((source) => (
+                <source
+                  key={source.type}
+                  type={source.type}
+                  srcSet={source.srcSet}
+                  sizes={deckImageSizes}
+                />
+              ))}
+              <img
+                src={deckImageFallback}
+                alt={current.commonName}
+                loading="lazy"
+                width={400}
+                height={200}
+                decoding="async"
+              />
+            </picture>
             <button
               type="button"
               className="deck__arrow deck__arrow--next"

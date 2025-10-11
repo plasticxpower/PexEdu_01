@@ -336,7 +336,7 @@ button:disabled {
   font-size: 0.95rem;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: var(--ink-subtle);
+  color: var(--ink);
 }
 
 .settings__options {
@@ -390,6 +390,12 @@ button:disabled {
   align-items: center;
   justify-content: center;
   box-shadow: 0 10px 20px rgba(58, 50, 42, 0.08);
+}
+
+.pill__icon picture {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .pill__icon img {
@@ -872,6 +878,13 @@ button:disabled {
   border-radius: 0;
 }
 
+.memory-card__image picture,
+.memory-card__back picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 .memory-card__image img {
   width: 100%;
   height: 100%;
@@ -952,6 +965,12 @@ button:disabled {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.deck__image picture {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .deck__arrow {
@@ -1206,6 +1225,16 @@ button:disabled {
   border: 1px solid rgba(199, 148, 74, 0.24);
   display: grid;
   gap: 0;
+}
+
+.animal-modal__image {
+  width: 100%;
+}
+
+.animal-modal__image picture {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .animal-modal__image img {

@@ -1,5 +1,5 @@
 import type { AnimalEntry, CardData } from '../types';
-import { PLACEHOLDER_IMAGE, resolveAssetPath } from '../utils/assets';
+import { PLACEHOLDER_IMAGE, buildResponsiveAsset, resolveAssetPath } from '../utils/assets';
 
 interface GameBoardProps {
   cards: CardData[];
@@ -28,9 +28,22 @@ export function GameBoard({ cards, animalsById, onCardClick, isInteractive, tran
         }
         const revealed = card.revealed || card.matched;
         const disabled = card.matched || card.revealed || !isInteractive;
-        const imageSrc = resolveAssetPath(animal.image) || PLACEHOLDER_IMAGE;
         const groupKey = (animal.group || '').toLowerCase();
-        const backIconSrc = groupKey ? resolveAssetPath(`assets/icons/${groupKey}.png`) : '';
+        const cardImageAsset = buildResponsiveAsset(animal.image);
+        const cardImageFallback = cardImageAsset?.fallback || resolveAssetPath(animal.image) || PLACEHOLDER_IMAGE;
+        const cardImageSources = cardImageAsset?.sources ?? [];
+
+        const groupIconPath = groupKey ? `assets/icons/${groupKey}.png` : null;
+        const backIconAsset = groupIconPath
+          ? buildResponsiveAsset(groupIconPath, { widths: [256, 512], formats: ['webp'] })
+          : null;
+        const backIconFallback = groupIconPath
+          ? backIconAsset?.fallback || resolveAssetPath(groupIconPath)
+          : '';
+        const backIconSources = backIconAsset?.sources ?? [];
+
+        const cardImageSizes = '(max-width: 600px) 42vw, (max-width: 1200px) 24vw, 200px';
+        const cardBackSizes = cardImageSizes;
         const trimmedName = animal.commonName?.trim() ?? '';
         const nameLength = trimmedName.length;
         const wordCount = trimmedName === '' ? 0 : trimmedName.split(/\s+/).length;
@@ -56,14 +69,49 @@ export function GameBoard({ cards, animalsById, onCardClick, isInteractive, tran
             {revealed ? (
               <div className="memory-card__content">
                 <div className="memory-card__image">
-                  <img src={imageSrc} alt={animal.commonName} loading="lazy" />
+                  <picture>
+                    {cardImageSources.map((source) => (
+                      <source
+                        key={source.type}
+                        type={source.type}
+                        srcSet={source.srcSet}
+                        sizes={cardImageSizes}
+                      />
+                    ))}
+                    <img
+                      src={cardImageFallback}
+                      alt={animal.commonName}
+                      loading="lazy"
+                      width={400}
+                      height={300}
+                      decoding="async"
+                    />
+                  </picture>
                 </div>
                 <h3 className={nameClassName}>{animal.commonName}</h3>
               </div>
             ) : (
               <div className="memory-card__back" data-group={animal.group}>
-                {backIconSrc ? (
-                  <img className="memory-card__back-image" src={backIconSrc} alt={animal.group ? `${animal.group} icon` : translate('game.tapToReveal')} loading="lazy" />
+                {backIconFallback ? (
+                  <picture>
+                    {backIconSources.map((source) => (
+                      <source
+                        key={source.type}
+                        type={source.type}
+                        srcSet={source.srcSet}
+                        sizes={cardBackSizes}
+                      />
+                    ))}
+                    <img
+                      className="memory-card__back-image"
+                      src={backIconFallback}
+                      alt={animal.group ? `${animal.group} icon` : translate('game.tapToReveal')}
+                      loading="lazy"
+                      width={256}
+                      height={192}
+                      decoding="async"
+                    />
+                  </picture>
                 ) : (
                   <span className="memory-card__back-label">{translate('game.tapToReveal')}</span>
                 )}

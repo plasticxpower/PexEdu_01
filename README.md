@@ -51,3 +51,5 @@ Translations live in src/i18n/en.json and src/i18n/cs.json. i18next with automat
 ## Deployment
 
 The project is Vite-based; npm run build emits production assets under dist/. Configure VITE_BASE_PATH to match your GitHub Pages repository path before building if the site will be hosted in a subdirectory.
+
+For Play Store packaging via a Trusted Web Activity, follow `docs/twa-bubblewrap-guide.md`.

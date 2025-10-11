@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import type { MouseEvent } from 'react';
 
 import type { AnimalEntry } from '../types';
-import { PLACEHOLDER_IMAGE, resolveAssetPath } from '../utils/assets';
+import { PLACEHOLDER_IMAGE, buildResponsiveAsset, resolveAssetPath } from '../utils/assets';
 
 interface MatchedAnimalModalProps {
   animal: AnimalEntry;
@@ -25,7 +25,10 @@ export function MatchedAnimalModal({ animal, onClose, translate }: MatchedAnimal
     };
   }, [onClose]);
 
-  const imageSrc = resolveAssetPath(animal.image) || PLACEHOLDER_IMAGE;
+  const modalImageAsset = buildResponsiveAsset(animal.image);
+  const modalImageFallback = modalImageAsset?.fallback || resolveAssetPath(animal.image) || PLACEHOLDER_IMAGE;
+  const modalImageSources = modalImageAsset?.sources ?? [];
+  const modalImageSizes = '(max-width: 768px) 90vw, (max-width: 1280px) 55vw, 520px';
   const labelId = `matched-animal-${animal.id}`;
 
   const handleInnerClick = (event: MouseEvent<HTMLDivElement>) => {
@@ -42,7 +45,24 @@ export function MatchedAnimalModal({ animal, onClose, translate }: MatchedAnimal
     >
       <div className="animal-modal__card" role="document" onClick={handleInnerClick}>
         <div className="animal-modal__image">
-          <img src={imageSrc} alt={animal.commonName} loading="lazy" />
+          <picture>
+            {modalImageSources.map((source) => (
+              <source
+                key={source.type}
+                type={source.type}
+                srcSet={source.srcSet}
+                sizes={modalImageSizes}
+              />
+            ))}
+            <img
+              src={modalImageFallback}
+              alt={animal.commonName}
+              loading="lazy"
+              width={480}
+              height={360}
+              decoding="async"
+            />
+          </picture>
         </div>
         <div className="animal-modal__body">
           <h2 id={labelId}>{animal.commonName}</h2>
