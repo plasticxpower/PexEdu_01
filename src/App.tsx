@@ -253,6 +253,7 @@ export default function App() {
   const helpIntro = t('info.help.intro');
   const helpTipsTitle = t('info.help.tipsTitle');
   const infoCloseLabel = t('info.close');
+  const privacyPolicyUrl = resolveAssetPath('privacy-policy.html');
 
   return (
     <div className="app">
@@ -282,6 +283,18 @@ export default function App() {
                 <button type="button" className="app__menu-item" role="menuitem" onClick={handleOpenHelp}>
                   {t('info.help.button')}
                 </button>
+                {privacyPolicyUrl && (
+                  <a
+                    className="app__menu-item"
+                    role="menuitem"
+                    href={privacyPolicyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {t('info.privacy.button')}
+                  </a>
+                )}
               </div>
             )}
           </div>

@@ -106,6 +106,9 @@
       ]
     },
     "close": "Zavřít",
-    "menuLabel": "Otevřít info nabídku"
+    "menuLabel": "Otevřít info nabídku",
+    "privacy": {
+      "button": "Zásady ochrany osobních údajů"
+    }
   }
 }

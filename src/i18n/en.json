@@ -102,6 +102,9 @@
       ]
     },
     "close": "Close",
-    "menuLabel": "Open info menu"
+    "menuLabel": "Open info menu",
+    "privacy": {
+      "button": "Privacy Policy"
+    }
   }
 }

@@ -1,0 +1,47 @@
+Privacy Policy for PexEdu
+Effective Date: October 19, 2025
+Developer / Publisher: Blacktree Studio
+Contact Email: plasticxpower@gmail.com
+
+1. Introduction
+Welcome to PexEdu!
+This Privacy Policy explains how we handle information when you use our mobile application PexEdu, developed and published by Blacktree Studio.
+
+We respect your privacy and are committed to protecting it. This app is designed to be used without collecting, storing, or sharing any personal data.
+
+2. Information We Do Not Collect
+- We do not collect, store, or share any personal information.
+- We do not track user activity.
+- We do not use cookies or analytics tools.
+- We do not show ads or use advertising identifiers.
+
+3. Voluntary Information
+The only time we may receive information from you is if you choose to contact us voluntarily by email (for example, to send feedback or ask for support).
+
+In that case:
+- Your email and message content are used only to respond to your inquiry.
+- We do not share or sell this information to anyone.
+
+4. Donations
+PexEdu allows users to send voluntary donations to support the app.
+We do not process payments directly — any donations are handled securely by the payment service provider you use (for example, Google Play or another third-party platform).
+
+We do not collect or store your financial or payment information.
+
+5. Third-Party Services
+PexEdu does not integrate any third-party analytics, advertising, or tracking services.
+If, in the future, we add such services, this Privacy Policy will be updated accordingly.
+
+6. Children’s Privacy
+PexEdu does not collect any data from users of any age.
+The app is suitable for general audiences and does not contain content inappropriate for children.
+
+7. Changes to This Policy
+We may update this Privacy Policy occasionally.
+If we make significant changes, we will post the updated version at the same location and update the effective date above.
+
+8. Contact Us
+If you have any questions or concerns about this Privacy Policy or about PexEdu, please contact us at:
+plasticxpower@gmail.com
+
+© 2025 Blacktree Studio. All rights reserved.
