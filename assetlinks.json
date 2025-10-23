@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.plasticxpower.pexedu",
+        "sha256_cert_fingerprints": ["16:D2:5A:E5:92:BD:BB:7F:63:52:3C:94:68:07:8A:46:7B:4B:41:7C:75:CE:26:5B:F8:C8:40:EB:9B:F6:45:22"]
+      }
+    }]

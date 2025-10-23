@@ -1,0 +1,52 @@
+{
+  "packageId": "com.plasticxpower.pexedu",
+  "host": "plasticxpower.github.io",
+  "name": "PexEdu",
+  "launcherName": "PexEdu",
+  "display": "standalone",
+  "themeColor": "#1DA1DB",
+  "themeColorDark": "#000000",
+  "navigationColor": "#000000",
+  "navigationColorDark": "#000000",
+  "navigationDividerColor": "#000000",
+  "navigationDividerColorDark": "#000000",
+  "backgroundColor": "#0C4A6E",
+  "enableNotifications": false,
+  "startUrl": "/PexEdu_01/?source=pwa",
+  "iconUrl": "https://plasticxpower.github.io/PexEdu_01/icons/icon-512x512.png",
+  "maskableIconUrl": "https://plasticxpower.github.io/PexEdu_01/icons/icon-512x512-maskable.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "C:\\Users\\dwg\\windsurf\\pexedu\\android-twa\\android.keystore",
+    "alias": "pexedu"
+  },
+  "appVersionName": "1",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://plasticxpower.github.io/PexEdu_01/manifest.webmanifest",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://plasticxpower.github.io/PexEdu_01/",
+  "minSdkVersion": 21,
+  "orientation": "portrait",
+  "fingerprints": [
+    {
+      "name": "upload key",
+      "value": "16:D2:5A:E5:92:BD:BB:7F:63:52:3C:94:68:07:8A:46:7B:4B:41:7C:75:CE:26:5B:F8:C8:40:EB:9B:F6:45:22"
+    }
+  ],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": [],
+  "protocolHandlers": [],
+  "fileHandlers": [],
+  "launchHandlerClientMode": "",
+  "displayOverride": [],
+  "appVersion": "1"
+}

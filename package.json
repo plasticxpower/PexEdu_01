@@ -11,8 +11,9 @@
     "build": "npm run build:images && npm run generate:privacy && tsc && vite build",
     "preview": "vite preview",
     "predeploy": "cross-env VITE_BASE_PATH=/PexEdu_01/ npm run build",
-    "deploy": "gh-pages -d dist --add --dotfiles",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+    "deploy": "gh-pages -d dist --add --dotfiles --nojekyll",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "bubblewrap:init": "node ./scripts/generate-twa.cjs"
   },
   "dependencies": {
     "i18next": "^23.10.1",
@@ -23,6 +24,7 @@
     "sharp": "^0.34.4"
   },
   "devDependencies": {
+    "@bubblewrap/cli": "^1.24.1",
     "@types/react": "^18.2.34",
     "@types/react-dom": "^18.2.15",
     "@vitejs/plugin-react": "^4.2.1",

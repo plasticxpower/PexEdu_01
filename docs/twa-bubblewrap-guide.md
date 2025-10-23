@@ -1,118 +1,138 @@
 # Packaging PexEdu with Bubblewrap (Trusted Web Activity)
 
-This guide covers the end-to-end flow for shipping the existing PexEdu PWA to the Google Play Store as an Android App Bundle (AAB) using a Trusted Web Activity (TWA).
+This guide explains how to ship the PexEdu PWA (`https://plasticxpower.github.io/PexEdu_01/`) to the Google Play Store as an Android App Bundle (AAB) using a Trusted Web Activity (TWA).
 
 ## 1. Prerequisites
 
-- PWA served over HTTPS at a production domain (e.g. `https://pexedu.example.com`).
+- Production PWA deployed at `https://plasticxpower.github.io/PexEdu_01/` (or a custom domain pointing to the same build).
 - Node.js 18+ and npm.
-- JDK 17 (Android Studio installs it automatically).
-- Android Studio (latest stable) with Android SDK 34+.
-- Google Play Console access with an existing app listing or the ability to create one.
-- A signing keystore for Play releases (you can re-use an existing one or let Play App Signing manage it).
+- Local `@bubblewrap/cli` dependency (already listed in `devDependencies`).
+- JDK 17 and Android SDK 34+ (install via Android Studio).
+- Google Play Console access for the PexEdu listing.
+- A Play-signing compatible upload keystore (new or existing).
 
 ## 2. Verify the PWA
 
-1. Build the production bundle:
-   ```bash
-   npm install
-   npm run build
-   ```
-2. Deploy the contents of `dist/` to your HTTPS host.
-3. Run [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) (Chrome DevTools → Lighthouse → Progressive Web App) against the live URL. Confirm:
-   - The page is served over HTTPS.
-   - The manifest (`https://your-domain/manifest.webmanifest`) passes installability checks (icons, name, start URL, etc.).
-   - A service worker controls the page and provides a basic offline experience.
-
-Only proceed once Lighthouse shows the PWA is installable.
-
-## 3. Install Bubblewrap CLI
-
 ```bash
-npm install -g @bubblewrap/cli
+npm install
+npm run build
 ```
 
-If you prefer `npx`, add it before each command instead of a global install.
+Deploy `dist/` to production and run Lighthouse (Chrome DevTools → Lighthouse → Progressive Web App) against the live URL. Only continue once the installability checks pass (HTTPS, manifest, service worker, offline).
 
-## 4. Initialise the TWA Project
+## 3. Generate / Refresh the TWA wrapper
 
-1. Pick an empty directory for the Android project (e.g. `android-twa/`).
-2. Run:
-   ```bash
-   bubblewrap init --manifest=https://your-domain/manifest.webmanifest
-   ```
-3. Bubblewrap prompts for app details. Recommended answers:
-   - **Application Id**: e.g. `com.yourcompany.pexedu`
-   - **Launcher name**: `PexEdu`
-   - **Host**: `pexedu.example.com`
-   - **Sign With Play Signing**: `y` (unless you want to manage the keystore manually)
-4. The command downloads icons and creates `twa-manifest.json` plus an Android project (`app/`).
-
-> **Tip**: If you need to adjust metadata later (name, theme colours, etc.), edit `twa-manifest.json` and run `bubblewrap update`.
-
-## 5. Configure Digital Asset Links
-
-TWA requires a mutual trust relationship between the Android app and your domain.
-
-1. After initialising, run:
-   ```bash
-   bubblewrap install
-   bubblewrap update
-   bubblewrap build
-   ```
-   The CLI prints a `Digital Asset Links` snippet similar to:
-   ```json
-   [
-     {
-       "relation": ["delegate_permission/common.handle_all_urls"],
-       "target": {
-         "namespace": "android_app",
-         "package_name": "com.yourcompany.pexedu",
-         "sha256_cert_fingerprints": ["AA:BB:CC:..."]
-       }
-     }
-   ]
-   ```
-2. Host that JSON at `https://pexedu.example.com/.well-known/assetlinks.json`.
-3. Deploy and verify the endpoint via:
-   ```bash
-   curl https://pexedu.example.com/.well-known/assetlinks.json
-   ```
-
-## 6. Android Studio & Signing
-
-1. Open the generated Android project (`android-twa/`) in Android Studio.
-2. Let Gradle sync. Make any branding tweaks (app name, colours, splash screen) directly in the project if needed.
-3. Configure signing:
-   - If you opted into Play App Signing, upload the generated signing key to the Play Console when prompted.
-   - Otherwise, create or reference an existing keystore (`Build` → `Generate Signed Bundle / APK…`).
-
-## 7. Build the App Bundle
-
-From the project root (or via Android Studio):
 ```bash
-./gradlew bundleRelease
+npm run bubblewrap:init
 ```
-The AAB appears at `app/build/outputs/bundle/release/app-release.aab`.
 
-Run a quick smoke test:
+The script performs a non-interactive `bubblewrap init`:
+
+- Reads `public/manifest.webmanifest` and icon assets from disk.
+- Regenerates `android-twa/` with:
+  - Application Id: `com.plasticxpower.pexedu`
+  - Host: `plasticxpower.github.io`
+  - Start URL: `/PexEdu_01/?source=pwa`
+  - Launcher + maskable icons from `public/icons/`
+- Writes `android-twa/twa-manifest.json` and `android-twa/manifest-checksum.txt`.
+
+Re-run the script whenever manifest values, colours, or icons change.
+
+## 4. Provision the signing key
+
+The manifest expects a keystore at `android-twa/android.keystore` with alias `pexedu`. Create it (or reuse an existing upload key):
+
 ```bash
-adb install-multiple app/build/outputs/bundle/release/app-release.aab
+keytool -genkeypair ^
+  -alias pexedu ^
+  -keyalg RSA ^
+  -keysize 2048 ^
+  -validity 9125 ^
+  -keystore android-twa/android.keystore ^
+  -storepass "<strong-password>" ^
+  -keypass "<strong-password>" ^
+  -dname "CN=PexEdu, OU=Apps, O=PlasticXPower, C=CZ"
 ```
-The device should launch your live PWA in full-screen Chrome. If you see a fallback browser UI, double-check the Asset Links file and that the production domain is HTTPS.
 
-## 8. Upload to Google Play
+> Keep the password safe. You will need it for both local builds and the Play Console.
 
-1. Log into the Play Console → create or select your app.
-2. Fill in the store listing (graphics, description, categorisation, privacy policy).
-3. Upload the AAB in the “Production” (or internal testing) track.
-4. Complete content rating, data safety, and pricing sections.
-5. Submit for review.
+If Play App Signing manages the final release key, upload this keystore as the *upload key* during Play onboarding.
 
-## 9. Ongoing Maintenance
+## 5. Publish the Digital Asset Links file
 
-- Update the PWA content as usual; users receive changes instantly because the Android shell always loads the live site.
-- When changing the domain or significant manifest properties, regenerate the TWA project via `bubblewrap update`.
-- Keep the Asset Links file in sync if you rotate signing keys.
+After the keystore exists, derive the SHA‑256 fingerprint:
 
-That’s it—PexEdu is now ready for Google Play distribution through a Trusted Web Activity wrapper.
+```bash
+npx bubblewrap fingerprint ^
+  --manifest=android-twa/twa-manifest.json ^
+  --signingKeyPath=android-twa/android.keystore ^
+  --signingKeyAlias=pexedu ^
+  --signingKeyPassword="<strong-password>"
+```
+
+Bubblewrap prints the JSON for `assetlinks.json`. Deploy it with the site:
+
+```bash
+mkdir -p public/.well-known
+cat > public/.well-known/assetlinks.json <<'JSON'
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.plasticxpower.pexedu",
+      "sha256_cert_fingerprints": [
+        "AA:BB:CC:..."
+      ]
+    }
+  }
+]
+JSON
+```
+
+Replace the placeholder fingerprint with the value printed by Bubblewrap. After deployment, verify:
+
+```bash
+curl https://plasticxpower.github.io/PexEdu_01/.well-known/assetlinks.json
+```
+
+If you migrate to a custom domain, host the same JSON at `https://<your-domain>/.well-known/assetlinks.json`.
+
+## 6. Build the Android App Bundle
+
+1. Open `android-twa/` in Android Studio (Electric Eel or newer).
+2. Allow Gradle sync; install any requested SDK platforms or build tools.
+3. Configure the release signing config to use `android.keystore` (or Play’s upload key).
+4. Build the bundle:
+
+   ```bash
+   cd android-twa
+   ./gradlew bundleRelease
+   ```
+
+   Output: `android-twa/app/build/outputs/bundle/release/app-release.aab`.
+
+5. Optional device smoke test (requires Chrome 115+):
+
+   ```bash
+   adb install-multiple app/build/outputs/bundle/release/app-release.aab
+   ```
+
+   The app should launch full-screen without Chrome UI; if it falls back to a custom tab, re-check `assetlinks.json` and HTTPS.
+
+## 7. Submit to Google Play
+
+1. Create or select the PexEdu listing in Play Console.
+2. Upload store listing assets: screenshots, feature graphics, descriptions, privacy policy URL.
+3. Upload `app-release.aab` to the *Internal Testing* track first (recommended).
+4. Complete Data Safety, Content Rating, Target Audience, and Pricing sections.
+5. After internal QA, promote the build to Production and submit for review.
+
+## 8. Maintenance checklist
+
+- Keep the PWA installable (manifest, service worker, HTTPS).
+- Re-run `npm run bubblewrap:init` whenever manifest details/icons change to refresh `android-twa/`.
+- Regenerate `assetlinks.json` if the signing certificate rotates.
+- The Android shell always loads the live PWA, so content updates do not require Play resubmissions unless permissions change.
+
+Following these steps keeps the Bubblewrap wrapper aligned with the live PWA and prepares release artefacts suitable for Google Play.
