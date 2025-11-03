@@ -81,10 +81,10 @@ export function GameBoard({ cards, animalsById, onCardClick, isInteractive, tran
                     <img
                       src={cardImageFallback}
                       alt={animal.commonName}
-                      loading="lazy"
                       width={400}
                       height={300}
                       decoding="async"
+                      fetchPriority="low"
                     />
                   </picture>
                 </div>
@@ -106,10 +106,10 @@ export function GameBoard({ cards, animalsById, onCardClick, isInteractive, tran
                       className="memory-card__back-image"
                       src={backIconFallback}
                       alt={animal.group ? `${animal.group} icon` : translate('game.tapToReveal')}
-                      loading="lazy"
                       width={256}
                       height={192}
                       decoding="async"
+                      fetchPriority="low"
                     />
                   </picture>
                 ) : (

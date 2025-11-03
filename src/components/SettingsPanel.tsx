@@ -83,7 +83,14 @@ export function SettingsPanel({
                         sizes="64px"
                       />
                     ))}
-                    <img src={iconFallback} alt="" loading="lazy" width={64} height={64} decoding="async" />
+                    <img
+                      src={iconFallback}
+                      alt=""
+                      width={64}
+                      height={64}
+                      decoding="async"
+                      fetchPriority="low"
+                    />
                   </picture>
                 </span>
                 <span className="pill__label">{label}</span>

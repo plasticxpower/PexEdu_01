@@ -57,10 +57,10 @@ export function MatchedAnimalModal({ animal, onClose, translate }: MatchedAnimal
             <img
               src={modalImageFallback}
               alt={animal.commonName}
-              loading="lazy"
               width={480}
               height={360}
               decoding="async"
+              fetchPriority="high"
             />
           </picture>
         </div>

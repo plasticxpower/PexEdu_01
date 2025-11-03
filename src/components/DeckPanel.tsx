@@ -50,10 +50,10 @@ export function DeckPanel({ animals, currentIndex, onPrev, onNext, translate }: 
               <img
                 src={deckImageFallback}
                 alt={current.commonName}
-                loading="lazy"
                 width={400}
                 height={200}
                 decoding="async"
+                fetchPriority="high"
               />
             </picture>
             <button

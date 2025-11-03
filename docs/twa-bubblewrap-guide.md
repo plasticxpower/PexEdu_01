@@ -18,7 +18,7 @@ npm install
 npm run build
 ```
 
-Deploy `dist/` to production and run Lighthouse (Chrome DevTools → Lighthouse → Progressive Web App) against the live URL. Only continue once the installability checks pass (HTTPS, manifest, service worker, offline).
+Deploy `dist/` to production and run Lighthouse (Chrome DevTools -> Lighthouse -> Progressive Web App) against the live URL. Only continue once the installability checks pass (HTTPS, manifest, service worker, offline).
 
 ## 3. Generate / Refresh the TWA wrapper
 
@@ -60,7 +60,7 @@ If Play App Signing manages the final release key, upload this keystore as the *
 
 ## 5. Publish the Digital Asset Links file
 
-After the keystore exists, derive the SHA‑256 fingerprint:
+After the keystore exists, derive the SHA-256 fingerprint:
 
 ```bash
 npx bubblewrap fingerprint ^
@@ -82,7 +82,7 @@ cat > public/.well-known/assetlinks.json <<'JSON'
       "namespace": "android_app",
       "package_name": "com.plasticxpower.pexedu",
       "sha256_cert_fingerprints": [
-        "AA:BB:CC:..."
+        "16:D2:5A:E5:92:BD:BB:7F:63:52:3C:94:68:07:8A:46:7B:4B:41:7C:75:CE:26:5B:F8:C8:40:EB:9B:F6:45:22"
       ]
     }
   }
@@ -90,7 +90,7 @@ cat > public/.well-known/assetlinks.json <<'JSON'
 JSON
 ```
 
-Replace the placeholder fingerprint with the value printed by Bubblewrap. After deployment, verify:
+Update the JSON with the fingerprint printed by Bubblewrap (the current upload key value is shown above). After deployment, verify (and remember to copy the same file into the root Pages repo described below):
 
 ```bash
 curl https://plasticxpower.github.io/PexEdu_01/.well-known/assetlinks.json
@@ -98,11 +98,54 @@ curl https://plasticxpower.github.io/PexEdu_01/.well-known/assetlinks.json
 
 If you migrate to a custom domain, host the same JSON at `https://<your-domain>/.well-known/assetlinks.json`.
 
+### Host the asset link at the domain root (required for Play)
+
+Bubblewrap and Google Play always query `https://plasticxpower.github.io/.well-known/assetlinks.json`. Because the PWA lives under `/PexEdu_01/`, you must stand up a user/organization Pages site so the root path serves the same JSON:
+
+1. **Create the root Pages repo**
+   ```text
+   - Go to https://github.com/plasticxpower
+   - Create a public repository named plasticxpower.github.io (exact name)
+   - Leave it empty; no starter files are required
+   ```
+
+2. **Clone and seed**
+   ```powershell
+   cd C:\Users\dwg\windsurf
+   git clone https://github.com/plasticxpower/plasticxpower.github.io.git
+   cd plasticxpower.github.io
+   mkdir .well-known
+   copy C:\Users\dwg\windsurf\pexedu\public\.well-known\assetlinks.json .well-known\assetlinks.json
+   ```
+   (PowerShell 7 equivalents: `New-Item -ItemType Directory .well-known -Force` and `Copy-Item`.)
+
+3. **Commit and push**
+   ```powershell
+   git add .well-known\assetlinks.json
+   git commit -m "Add assetlinks.json for PexEdu TWA"
+   git push origin main
+   ```
+
+4. **Disable Jekyll so `.well-known` is published**
+   ```powershell
+   New-Item -ItemType File .nojekyll -Force
+   git add .nojekyll
+   git commit -m "Disable Jekyll for .well-known directory"
+   git push origin main
+   ```
+
+5. **Verify after Pages redeploys (~60 s)**
+   ```powershell
+   curl https://plasticxpower.github.io/.well-known/assetlinks.json
+   ```
+   A 200 response confirms the root association. If it still 404s, ensure `.nojekyll` is committed and the repo is public.
+
 ## 6. Build the Android App Bundle
 
 1. Open `android-twa/` in Android Studio (Electric Eel or newer).
 2. Allow Gradle sync; install any requested SDK platforms or build tools.
-3. Configure the release signing config to use `android.keystore` (or Play’s upload key).
+   > Tip: If the Gradle build complains that it cannot find the Android SDK, add a `local.properties` file in `android-twa/` containing `sdk.dir=C:\\Users\\dwg\\.bubblewrap\\android_sdk` (or set `ANDROID_SDK_ROOT` to the same path).
+3. Configure the release signing config to use `android.keystore` (or Play's upload key).
 4. Build the bundle:
 
    ```bash
@@ -114,9 +157,20 @@ If you migrate to a custom domain, host the same JSON at `https://<your-domain>/
 
 5. Optional device smoke test (requires Chrome 115+):
 
-   ```bash
-   adb install-multiple app/build/outputs/bundle/release/app-release.aab
-   ```
+   - **ADB (fastest, USB only):**
+     ```bash
+     adb devices
+     adb install --bundle android-twa/app/build/outputs/bundle/release/app-release.aab
+     ```
+     (Use `--bundle` with recent SDK tools; older versions require bundletool.)
+
+   - **bundletool (any connected device):**
+     ```bash
+     java -jar bundletool-all-1.16.0.jar install-apks ^
+       --apks=android-twa/app/build/outputs/bundle/release/app-release.aab ^
+       --device-id=<adb-device-id>
+     ```
+     Retrieve `device-id` from `adb devices`.
 
    The app should launch full-screen without Chrome UI; if it falls back to a custom tab, re-check `assetlinks.json` and HTTPS.
 
