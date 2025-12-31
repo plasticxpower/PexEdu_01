@@ -47,7 +47,8 @@
       "size": "Velikost",
       "lifespan": "Délka života",
       "habitat": "Prostředí",
-      "funFact": "Zajímavost"
+      "funFact": "Zajímavost",
+      "doNotShowDetails": "Nezobrazovat pokaždé detaily karty"
     }
   },
   "deck": {

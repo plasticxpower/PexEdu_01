@@ -44,7 +44,8 @@
       "lifespan": "Life expectancy",
       "habitat": "Habitat",
       "funFact": "Fun fact"
-    }
+    },
+    "doNotShowDetails": "Do not show card details every time"
   },
   "deck": {
     "title": "Discovery deck",

@@ -632,7 +632,7 @@ button:disabled {
   border: 1px solid rgba(74, 124, 138, 0.16);
 }
 
-.stats > div {
+.stats>div {
   display: flex;
   flex-direction: column;
   gap: 0.15rem;
@@ -1289,24 +1289,11 @@ button:disabled {
 
 .animal-modal__continue {
   padding: 1.2rem 1.6rem;
-  font-size: 1.05rem;
-  width: 100%;
-  min-height: 3.5rem;
 }
 
-.animal-modal__continue:hover:not(:disabled),
-.animal-modal__continue:focus-visible:not(:disabled) {
-  transform: translateY(-1px);
+.settings__actions button {
+  min-width: 240px;
 }
-
-@media (min-width: 600px) {
-  .settings__actions {
-    align-items: center;
-  }
-
-  .settings__actions button {
-    min-width: 240px;
-  }
 }
 
 @media (min-width: 900px) {
@@ -1548,6 +1535,7 @@ button:disabled {
     opacity: 0;
     transform: translateY(-20px) scale(0.95);
   }
+
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -1715,7 +1703,7 @@ button:disabled {
   width: 100%;
 }
 
-.final-result-modal__actions .final-result-modal__action + .final-result-modal__action {
+.final-result-modal__actions .final-result-modal__action+.final-result-modal__action {
   margin-left: 0;
 }
 
@@ -1746,3 +1734,84 @@ button:disabled {
   }
 }
 
+
+/* Checkbox Field Styles */
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.92rem;
+  color: var(--ink);
+  cursor: pointer;
+  padding: 0.65rem 0.9rem;
+  border-radius: 12px;
+  background: var(--surface);
+  border: 1px solid rgba(74, 124, 138, 0.2);
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.checkbox-field:hover {
+  background: rgba(199, 148, 74, 0.08);
+  border-color: rgba(199, 148, 74, 0.35);
+  transform: translateY(-1px);
+}
+
+.checkbox-field input[type="checkbox"] {
+  appearance: none;
+  background-color: var(--surface);
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid var(--ink-subtle);
+  border-radius: 4px;
+  display: grid;
+  place-content: center;
+  transition: 0.2s ease;
+}
+
+.checkbox-field input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em white;
+  transform-origin: center;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.checkbox-field input[type="checkbox"]:checked {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.checkbox-field input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.animal-modal__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.animal-modal__actions .checkbox-field {
+  background: transparent;
+  border: none;
+  padding: 0;
+  justify-content: center;
+  width: 100%;
+  color: var(--ink-muted);
+}
+
+.animal-modal__actions .checkbox-field:hover {
+  transform: none;
+  background: transparent;
+  color: var(--ink);
+}

@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import type { MouseEvent } from 'react';
 
+
 import type { AnimalEntry } from '../types';
 import { PLACEHOLDER_IMAGE, buildResponsiveAsset, resolveAssetPath } from '../utils/assets';
 
@@ -8,9 +9,17 @@ interface MatchedAnimalModalProps {
   animal: AnimalEntry;
   onClose: () => void;
   translate: (key: string, options?: Record<string, unknown>) => string;
+  doNotShowDetails: boolean;
+  onToggleShowDetails: (value: boolean) => void;
 }
 
-export function MatchedAnimalModal({ animal, onClose, translate }: MatchedAnimalModalProps) {
+export function MatchedAnimalModal({
+  animal,
+  onClose,
+  translate,
+  doNotShowDetails,
+  onToggleShowDetails,
+}: MatchedAnimalModalProps) {
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape' || event.key === 'Enter' || event.key === ' ') {
@@ -85,9 +94,19 @@ export function MatchedAnimalModal({ animal, onClose, translate }: MatchedAnimal
               <dd>{animal.funFact}</dd>
             </div>
           </dl>
-          <button type="button" className="primary animal-modal__continue" onClick={onClose}>
-            {translate('game.continue')}
-          </button>
+          <div className="animal-modal__actions">
+            <label className="checkbox-field">
+              <input
+                type="checkbox"
+                checked={doNotShowDetails}
+                onChange={(e) => onToggleShowDetails(e.target.checked)}
+              />
+              <span>{translate('game.doNotShowDetails')}</span>
+            </label>
+            <button type="button" className="primary animal-modal__continue" onClick={onClose}>
+              {translate('game.continue')}
+            </button>
+          </div>
         </div>
       </div>
     </div>

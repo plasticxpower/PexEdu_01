@@ -93,7 +93,15 @@ export default function App() {
   const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [isHelpOpen, setIsHelpOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [doNotShowCardDetails, setDoNotShowCardDetails] = useState(() => {
+    return localStorage.getItem('pexedu_doNotShowCardDetails') === 'true';
+  });
   const menuRef = useRef<HTMLDivElement | null>(null);
+
+  const handleToggleDoNotShowDetails = (value: boolean) => {
+    setDoNotShowCardDetails(value);
+    localStorage.setItem('pexedu_doNotShowCardDetails', String(value));
+  };
 
   useEffect(() => {
     if (game.isComplete) {
@@ -113,14 +121,14 @@ export default function App() {
     } else if (matches > previousMatchCount.current) {
       setDeckIndex(matches - 1);
       const newestAnimal = game.matchedAnimals[matches - 1];
-      if (newestAnimal) {
+      if (newestAnimal && !doNotShowCardDetails) {
         setModalAnimalId(newestAnimal.id);
       }
     } else if (deckIndex >= matches) {
       setDeckIndex(Math.max(matches - 1, 0));
     }
     previousMatchCount.current = matches;
-  }, [deckIndex, game.matchedAnimals]);
+  }, [deckIndex, game.matchedAnimals, doNotShowCardDetails]);
 
   useEffect(() => {
     // Pause timer when any overlay/modal is open, resume when closed
@@ -304,7 +312,6 @@ export default function App() {
           <p>{t('app.description')}</p>
         </div>
       </header>
-
       <main className="app__main">
         {view === 'menu' ? (
           <SettingsPanel
@@ -321,6 +328,14 @@ export default function App() {
               <button type="button" className="ghost" onClick={handleReturnToMenu}>
                 {t('game.returnToMenu')}
               </button>
+              <label className="checkbox-field">
+                <input
+                  type="checkbox"
+                  checked={doNotShowCardDetails}
+                  onChange={(e) => handleToggleDoNotShowDetails(e.target.checked)}
+                />
+                <span>{t('game.doNotShowDetails')}</span>
+              </label>
               <button
                 type="button"
                 className="ghost"
@@ -369,9 +384,17 @@ export default function App() {
         )}
       </main>
 
-      {modalAnimal && (
-        <MatchedAnimalModal animal={modalAnimal} onClose={handleCloseModal} translate={t} />
-      )}
+      {
+        modalAnimal && (
+          <MatchedAnimalModal
+            animal={modalAnimal}
+            onClose={handleCloseModal}
+            translate={t}
+            doNotShowDetails={doNotShowCardDetails}
+            onToggleShowDetails={handleToggleDoNotShowDetails}
+          />
+        )
+      }
       <InfoModal
         visible={isAboutOpen}
         title={t('info.about.title')}
@@ -416,6 +439,6 @@ export default function App() {
         onClose={handleCloseFinalResult}
         onRestart={handleRestart}
       />
-    </div>
+    </div >
   );
 }
