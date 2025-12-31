@@ -619,12 +619,13 @@ button:disabled {
 .stats {
   grid-area: stats;
   display: flex;
-  gap: 1rem;
+  gap: 0 1rem;
+  /* minimal row gap, standard col gap */
   background: var(--surface);
 
   z-index: 1;
   border-radius: 24px;
-  padding: 0.9rem 1.2rem;
+  padding: 0.5rem 0.8rem;
   box-shadow: var(--shadow-sm);
   align-items: flex-start;
   justify-content: space-between;
@@ -657,7 +658,7 @@ button:disabled {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
-  margin-top: 0.35rem;
+  margin-top: 0;
 }
 
 .stats__players-list {
@@ -677,7 +678,10 @@ button:disabled {
   border-radius: 12px;
   background: rgba(74, 124, 138, 0.08);
   border: 1px solid rgba(74, 124, 138, 0.14);
-  font-size: 0.9rem;
+  font-size: 0.75rem;
+  padding: 0.35rem 0.5rem;
+  gap: 0.8rem;
+  /* Ensure spacing between name and score */
 }
 
 .stats__players-list li.active {
@@ -689,10 +693,13 @@ button:disabled {
 .stats__players-name {
   font-weight: 600;
   color: var(--ink);
+  font-size: 0.75rem !important;
+  /* Force resize */
+  line-height: 1.1;
 }
 
 .stats__players-score {
-  font-size: 0.85rem;
+  font-size: 0.7rem !important;
   color: var(--ink-muted);
 }
 
@@ -704,7 +711,7 @@ button:disabled {
 }
 
 .stats__players-time {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--ink-muted);
 }
 
@@ -740,6 +747,139 @@ button:disabled {
     'completion';
   gap: 1.25rem;
   min-height: calc(100vh - 220px);
+}
+
+/* Mobile Landscape Optimization & Tablet */
+@media (max-height: 600px) {
+  .game-screen {
+    /* STACK VERTICALLY but with optimized order */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+      'stats'
+      'actions'
+      'board'
+      'deck'
+      'completion';
+    align-items: start;
+    min-height: calc(100vh - 40px);
+    gap: 0.75rem;
+  }
+
+  /* Reduce padding and size for better content ratio in landscape */
+  .app {
+    padding: 0.5rem 1rem 1rem;
+  }
+
+  .app__header {
+    flex-direction: row;
+    padding: 0.35rem 1rem;
+    gap: 1rem;
+  }
+
+  .app__header h1 {
+    font-size: 1.1rem;
+  }
+
+  .app__header p {
+    display: none;
+  }
+
+  /* Compact Stats */
+  .stats {
+    padding: 0.25rem 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "moves time"
+      "players players";
+    gap: 0.4rem 1rem;
+    width: 100%;
+  }
+
+  .stats>div:nth-child(1) {
+    grid-area: moves;
+  }
+
+  .stats>div:nth-child(2) {
+    grid-area: time;
+    text-align: right;
+  }
+
+  .stats__players {
+    grid-area: players;
+  }
+
+  .stats__players-list {
+    display: flex;
+    overflow-x: visible;
+    max-width: none;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .stats__players {
+    flex: 1;
+    min-width: 0;
+  }
+
+  /* Compact Actions */
+  .game-screen__actions {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  /* Smaller buttons to not dominate */
+  .ghost,
+  .primary {
+    padding: 0.45rem 0.8rem;
+    font-size: 0.85rem;
+    min-height: auto;
+    flex: 1 1 auto;
+  }
+
+  .settings__actions button {
+    min-width: auto;
+  }
+
+  /* Reduce Deck size */
+  .deck {
+    max-height: none;
+    padding: 0.75rem;
+  }
+
+  .deck__image img {
+    height: 120px;
+  }
+}
+
+/* Full Landscape / Desktop adjustments overlap with above but add specific constraints */
+@media (max-width: 900px) and (orientation: landscape) and (max-height: 600px) {
+  .app {
+    padding: 0.5rem 1rem;
+    /* Minimize padding on short screens */
+    max-width: 100%;
+  }
+
+  .app__header {
+    flex-direction: row;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .app__header h1 {
+    font-size: 1.2rem;
+  }
+
+  .app__header p {
+    display: none;
+    /* Hide description to save space */
+  }
+
+  .game-screen {
+    gap: 0.75rem;
+  }
 }
 
 .game-screen__actions {
@@ -778,19 +918,21 @@ button:disabled {
 
 .board {
   grid-area: board;
-  display: grid;
-  gap: 0.85rem;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  align-content: start;
   min-height: 0;
+  /* Dynamic Grid Sizing Strategy */
+  /* We use vmin to ensure cards scale with the viewport size, preventing scroll on many devices */
+  display: grid;
+  gap: clamp(0.25rem, 1vmin, 0.65rem);
+  grid-template-columns: repeat(auto-fill, minmax(clamp(110px, 19vmin, 180px), 1fr));
+  align-content: start;
 }
 
 .board[data-grid-size='18'] {
-  grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(clamp(100px, 16vmin, 160px), 1fr));
 }
 
 .board[data-grid-size='24'] {
-  grid-template-columns: repeat(auto-fill, minmax(106px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(clamp(90px, 14vmin, 150px), 1fr));
 }
 
 .board--empty {
@@ -935,9 +1077,9 @@ button:disabled {
   background: var(--surface);
   color: var(--ink);
   border-radius: 28px;
-  padding: 1.4rem 1.5rem;
+  padding: 0.75rem 1rem;
   display: grid;
-  gap: 1.1rem;
+  gap: 0.75rem;
   box-shadow: var(--shadow-lg);
   border: 1px solid rgba(155, 69, 40, 0.2);
 }
@@ -947,6 +1089,11 @@ button:disabled {
   justify-content: space-between;
   align-items: center;
   gap: 0.75rem;
+}
+
+.deck__header h2 {
+  font-size: 1rem;
+  margin: 0;
 }
 
 .deck__count {
@@ -1015,7 +1162,7 @@ button:disabled {
 
 .deck__image img {
   width: 100%;
-  height: 200px;
+  height: 280px;
   object-fit: cover;
 }
 
@@ -1028,7 +1175,7 @@ button:disabled {
   margin: 0;
 
   border-radius: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--ink);
 }
 
@@ -1294,7 +1441,6 @@ button:disabled {
 .settings__actions button {
   min-width: 240px;
 }
-}
 
 @media (min-width: 900px) {
   .app {
@@ -1326,15 +1472,15 @@ button:disabled {
   }
 
   .board {
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(clamp(110px, 13vmin, 180px), 1fr));
   }
 
   .board[data-grid-size='18'] {
-    grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(clamp(100px, 12vmin, 160px), 1fr));
   }
 
   .board[data-grid-size='24'] {
-    grid-template-columns: repeat(auto-fill, minmax(138px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(clamp(90px, 11vmin, 150px), 1fr));
   }
 
   .deck {
@@ -1347,7 +1493,8 @@ button:disabled {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 640px),
+(max-height: 600px) {
   .deck__details li span {
     font-size: 0.85rem;
   }
@@ -1403,91 +1550,74 @@ button:disabled {
   }
 }
 
-@media (max-width: 960px) and (orientation: landscape) {
+/* Ensure vertical stack with restricted image height for landscape mobile */
+@media (max-width: 900px) and (orientation: landscape) {
   .animal-modal {
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 1rem;
     align-items: center;
+    /* Center on screen */
   }
 
+  /* Ensure SIDE-BY-SIDE layout (Image Left, Text Right) */
   .animal-modal__card {
-    width: min(96vw, 680px);
-    height: min(90vh, 520px);
-    max-height: 90vh;
+    width: min(700px, 96vw);
+    max-height: 95vh;
+    height: auto;
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    /* SIDE-BY-SIDE */
     overflow: hidden;
   }
 
   .animal-modal__image {
-    flex: 0 1 46%;
+    flex: 0 0 45%;
+    /* Take up approx 45% of width */
+    width: auto;
+    height: auto;
+    max-height: none;
+    /* Fill full height of card */
+    padding: 0;
+    background: rgba(0, 0, 0, 0.05);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.75rem 0.85rem 0.75rem 0.75rem;
-    background: rgba(0, 0, 0, 0.05);
-    min-width: 0;
-  }
-
-  .animal-modal__image picture {
-    width: 100%;
-    height: 100%;
-    display: flex;
   }
 
   .animal-modal__image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     max-height: 100%;
     object-fit: contain;
-    border-radius: 20px;
+    border-radius: 0;
   }
 
   .animal-modal__body {
-    flex: 1 1 auto;
+    flex: 1 1 55%;
+    overflow-y: auto;
+    padding: 1.2rem;
     display: flex;
     flex-direction: column;
-    padding: 1rem 1.2rem 1.05rem;
-    gap: 0.55rem;
-    overflow: hidden;
-    min-width: 0;
-  }
-
-  .animal-modal__body h2 {
-    font-size: 1.2rem;
-    margin: 0;
-  }
-
-  .animal-modal__scientific {
-    font-size: 0.9rem;
+    gap: 0.8rem;
   }
 
   .animal-modal__details {
-    flex: 1 1 auto;
     overflow-y: auto;
-    gap: 0.3rem;
-    padding-right: 0.35rem;
+    /* Allow inner scrolling if text is long */
   }
 
-  .animal-modal__details div {
-    gap: 0.1rem;
-  }
-
-  .animal-modal__details dt {
-    font-size: 0.64rem;
-  }
-
-  .animal-modal__details dd {
-    font-size: 0.88rem;
+  .animal-modal__body h2 {
+    font-size: 1.1rem;
   }
 
   .animal-modal__continue {
-    margin-top: auto;
-    min-height: 2.75rem;
-    padding: 0.85rem 1.1rem;
-    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+    min-height: auto;
   }
 }
+
+
+
+
 
 
 
